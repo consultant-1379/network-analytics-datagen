@@ -1,0 +1,24 @@
+# Replace any . (dot) chars with _ (underscore) in counter names
+
+# Constants must start with _ (underscore)
+_MAX_REQUESTS=25000
+
+# Mobility Management 
+
+# WCDMA
+#VS_MM_SrvccCsAndPsToWAtt_E  = int( rand(_MAX_REQUESTS) )
+#VS_MM_SrvccCsAndPsToWSucc_E = int( VS_MM_SrvccCsAndPsToWAtt_E - rand(VS_MM_SrvccCsAndPsToWAtt_E) * 0.035 )
+
+#VS_MM_SrvccCsOnlyToWAtt_E  = int( rand(VS_MM_SrvccCsAndPsToWAtt_E) )
+VS_MM_SrvccCsOnlyToWSucc_E = 1000
+
+#VS_MM_SrvccCsAndPsToWCsSuccPsFailed_E = 0
+
+
+# GSM
+#VS_MM_SrvccCsOnlyToGAtt_E  = int( rand(_MAX_REQUESTS) )
+VS_MM_SrvccCsOnlyToGSucc_E = 1000
+
+#MM_AttAttachAcceptNon3GPPCompliant_G = int( rand(_MAX_REQUESTS) )
+
+

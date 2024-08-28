@@ -1,0 +1,9 @@
+# Mobility
+pmHoPrepAttLteIntraF		= int( rand(1000) )
+pmHoPrepSuccLteIntraF		= int( pmHoPrepAttLteIntraF - rand( pmHoPrepAttLteIntraF * 0.02) ) # up to 2% fail
+pmHoExeAttLteIntraF		= int( rand(1000) )
+pmHoExeSuccLteIntraF		= int( pmHoExeAttLteIntraF - rand ( pmHoExeAttLteIntraF * 0.02) ) # up to 2% fail
+pmHoPrepSuccLteInterF		= int( rand(1000) )
+pmHoPrepAttLteInterF	= int( rand(1000) )
+pmHoExeSuccLteInterF	= int( rand(1000) )
+pmHoExeAttLteInterF	= int( rand(1000) )

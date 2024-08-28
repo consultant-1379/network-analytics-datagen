@@ -1,0 +1,5 @@
+MCPAON = int(rand(10))
+MCPAOFF = int(rand(10))
+NUMMCPAOFFPS = int(rand(10))
+NUMTRXSCAN = int(rand(10))
+

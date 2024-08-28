@@ -1,0 +1,19 @@
+_MAX_ESTAB=10       # number of MS establishments
+_MAX_ERLANG=2000
+_MAX_SCAN=90        # scans occur every 10s, so 6 (per min) * 15 (rop length) = 90 in 15 mins (max)
+_MAX_CONG_TIME=900  # congestion time in seconds
+
+THNSCAN       = int( rand(_MAX_SCAN) ) 
+THTRALACC     = int( rand(_MAX_ERLANG) * THNSCAN )
+THMSESTB      = int( THTRALACC/THNSCAN * (1 + rand(_MAX_ESTAB)) )
+THMSESTBSUB   = int( THTRALACC/THNSCAN * (1 + rand(_MAX_ESTAB)) )
+
+
+THNDROP       = int( rand(THMSESTB)    * 0.05)  # up to 5% fail
+THNDROPSUB    = int( rand(THMSESTBSUB) * 0.05)  # up to 5% fail
+THNRELCONG    = int( rand(THNDROP)     * 0.25)  # up to 25% of drops are due to congestion
+THNRELCONGSUB = int( rand(THNDROPSUB)  * 0.25)  # up to 25% of drops are due to congestion
+
+THCASSALL     = int( THMSESTB    * 1.05 )   # plus assume 5% failures
+THCASSALLSUB  = int( THMSESTBSUB * 1.05 )   # plus assume 5% failures
+

@@ -1,0 +1,37 @@
+set temporary option ESCAPE_CHARACTER='ON';
+set temporary option ON_ERROR='EXIT';
+
+LOAD TABLE <PARTITION> (
+BbProcessingResource,
+DC_RELEASE,
+DC_SOURCE,
+DC_SUSPECTFLAG,
+DC_TIMEZONE,
+DeviceGroup,
+Equipment,
+ERBS,
+MOID,
+NESW,
+OSS_ID,
+PERIOD_DURATION,
+PlugInUnit,
+ROWSTATUS,
+SESSION_ID,
+SN,
+Subrack,
+TIMELEVEL,
+<COUNTERS>
+MIN_ID,
+HOUR_ID,
+DAY_ID,
+MONTH_ID,
+YEAR_ID,
+DATE_ID,
+UTC_DATETIME_ID,
+DATETIME_ID datetime('YYYY-MM-DD HH:NN:SS')
+)
+FROM '/eniq/home/dcuser/ETL/<TABLE>/data_anon.csv'
+ESCAPES OFF
+QUOTES OFF
+DELIMITED BY '|'
+WITH CHECKPOINT OFF

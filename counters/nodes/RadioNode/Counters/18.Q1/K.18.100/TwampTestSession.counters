@@ -1,0 +1,47 @@
+delayRtAvg       = twamp('delayRt', 'avg')
+delayRtMax       = twamp('delayRt', 'max')
+delayRtMin       = twamp('delayRt', 'min')
+delayRtP95       = twamp('delayRt', 'p95')
+delayRtP98       = twamp('delayRt', 'p98')
+delayRtP99       = twamp('delayRt', 'p99')
+
+ipdvFwdAvg       = twamp('ipdvFwd', 'avg')
+ipdvFwdMax       = twamp('ipdvFwd', 'max')
+ipdvFwdMin       = twamp('ipdvFwd', 'min')
+ipdvFwdP95       = twamp('ipdvFwd', 'p95')
+ipdvFwdP98       = twamp('ipdvFwd', 'p98')
+ipdvFwdP99       = twamp('ipdvFwd', 'p99')
+
+ipdvRevAvg       = twamp('ipdvRev', 'avg')
+ipdvRevMax       = twamp('ipdvRev', 'max')
+ipdvRevMin       = twamp('ipdvRev', 'min')
+ipdvRevP95       = twamp('ipdvRev', 'p95')
+ipdvRevP98       = twamp('ipdvRev', 'p98')
+ipdvRevP99       = twamp('ipdvRev', 'p99')
+
+dscpRecMax       = twamp('dscpRec', 'max')
+dscpRecMin       = twamp('dscpRec', 'min')
+
+lostPeriodMaxFwd = twamp('lostPeriodMaxFwd', 'max')
+lostPeriodMinFwd = twamp('lostPeriodMinFwd', 'min')
+
+lostPeriodMaxRev = twamp('lostPeriodMaxRev', 'max')
+lostPeriodMinRev = twamp('lostPeriodMinRev', 'min')
+
+ttlMaxFwd        = twamp('ttlMaxFwd', 'max')
+ttlMinFwd        = twamp('ttlMinFwd', 'min')
+
+ttlMaxRev        = twamp('ttlMaxRev', 'max')
+ttlMinRev        = twamp('ttlMinRev', 'min')
+
+duplicPktFwd     = twamp('duplicPktFwd', 'max')
+duplicPktRev     = twamp('duplicPktRev', 'max')
+lostPeriodsFwd   = twamp('lostPeriodsFwd', 'max')
+lostPeriodsRev   = twamp('lostPeriodsRev', 'max')
+lostPktsFwd      = twamp('lostPktsFwd', 'max')
+lostPktsRev      = twamp('lostPktsRev', 'max')
+reorderPktFwd    = twamp('reorderPktFwd', 'max')
+reorderPktRev    = twamp('reorderPktRev', 'max')
+rxPkts           = twamp('rxPkts', 'max')
+txPkts           = twamp('txPkts', 'max')
+

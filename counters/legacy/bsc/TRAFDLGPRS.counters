@@ -1,0 +1,13 @@
+TBFDLGPRS   = int( rand(100000) )
+TBFDLEGPRS  = int( rand(100000) )
+
+DLTBFPBPDCH = int( rand(100000) )
+DLTBFPGPDCH = int( rand(100000) )
+DLBPDCH     = int( rand(100) )
+DLGPDCH     = int( rand(100) )
+
+TRAFFDLGPRSSCAN = int( rand(100) ) + DLBPDCH + DLGPDCH
+
+DLTBFPEPDCH = int( rand(100000) )
+DLEPDCH     = int( rand(100) )
+

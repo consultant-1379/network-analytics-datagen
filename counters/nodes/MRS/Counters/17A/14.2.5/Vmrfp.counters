@@ -1,0 +1,4 @@
+pmTerminationReqs  = int ( rand(1000000) + 10 )
+pmStreamIpv4Reqs   = int ( rand(1000000) + 10 )
+pmStreamIpv6Reqs   = int ( rand(1000000) + 10 )
+

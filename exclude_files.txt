@@ -1,0 +1,4 @@
+counters/ManagedObjects
+counters/test
+counters/legacy
+counters/mgw

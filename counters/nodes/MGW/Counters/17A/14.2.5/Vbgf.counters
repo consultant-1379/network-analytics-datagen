@@ -1,0 +1,7 @@
+pmStreamReqs   = int ( rand(10000) + 10 )
+pmAmrSeizures  = int ( rand(1000) + 10 )
+pmG711Seizures = int ( rand(1000) + 10 )
+pmG722Seizures = int ( rand(1000) + 10 )
+pmG729Seizures = int ( rand(1000) + 10 )
+pmEvsSeizures  = int ( rand(1000) + 10 )
+

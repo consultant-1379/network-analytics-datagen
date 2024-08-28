@@ -1,0 +1,6 @@
+HOASBCL  = int( rand(25) )
+HOSUCBCL = int( HOASBCL - rand(HOASBCL) * 0.05)  # up to 5% fail
+
+HOASWCL  = int( rand(25) )
+HOSUCWCL = int( HOASWCL - rand(HOASWCL) * 0.05)  # up to 5% fail
+

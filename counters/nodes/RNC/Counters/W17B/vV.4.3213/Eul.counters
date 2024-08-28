@@ -1,0 +1,5 @@
+# Constants
+_MAX_TRAFFIC_VALUE           = 1000
+
+pmSumEulRlcUserPacketThp     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmSamplesEulRlcUserPacketThp = 900

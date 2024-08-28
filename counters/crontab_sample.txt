@@ -1,0 +1,73 @@
+# VoLTE
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh cscf 2>&1 >> /eniq/home/dcuser/counters/log/cscf_crontab.log
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh vcscf 2>&1 >> /eniq/home/dcuser/counters/log/vcscf_crontab.log
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh mtas  2>&1 >> /eniq/home/dcuser/counters/log/mtas_crontab.log
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh vmtas 2>&1 >> /eniq/home/dcuser/counters/log/vmtas_crontab.log
+
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh msc      2>&1 >> /eniq/home/dcuser/counters/log/msc_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh ggsn     2>&1 >> /eniq/home/dcuser/counters/log/ggsn_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh wmg      2>&1 >> /eniq/home/dcuser/counters/log/wmg_crontab.log
+
+# VoLTE, LTE Optimisation, Energy, TWAMP
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_ERBS_counter_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/ERBS_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_RadioNode_counter_files.pl   2>&1 >> /eniq/home/dcuser/counters/log/RadioNode_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_5GRadioNode_counter_files.pl 2>&1 >> /eniq/home/dcuser/counters/log/5GRadioNode_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_TWAMP_counter_files.pl       2>&1 >> /eniq/home/dcuser/counters/log/TWAMP_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_SGSN_MME_counter_files.pl    2>&1 >> /eniq/home/dcuser/counters/log/SGSN_MME_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_SBG_counter_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/SBG_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_HSS_counter_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/HSS_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_vHSS_counter_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/vHSS_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_MGW_counter_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/MGW_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_MRS_counter_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/MRS_crontab.log
+
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/generate_vSBG_counter_files.pl 2>&1 >> /eniq/home/dcuser/counters/log/vSBG_crontab.log
+
+30 0 * * *         /eniq/home/dcuser/counters/bin/generate_ERBS_bulkcm_files.pl       2>&1 >> /eniq/home/dcuser/counters/log/ERBS_bulkcm_crontab.log
+35 0 * * *         /eniq/home/dcuser/counters/bin/generate_RadioNode_bulkcm_files.pl  2>&1 >> /eniq/home/dcuser/counters/log/RadioNode_bulkcm_crontab.log
+
+#
+# Energy
+# WCDMA
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_RNC_counter_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/RNC_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_RBS_counter_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/RBS_crontab.log
+# GSM
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_BSC_counter_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/BSC_crontab.log
+# Topology
+12 0 * * *         /eniq/home/dcuser/counters/bin/generate_5GRadioNode_topology_files.pl 2>&1 >> /eniq/home/dcuser/counters/log/5GRadioNode_topology_crontab.log
+10 0 * * *         /eniq/home/dcuser/counters/bin/generate_RadioNode_topology_files.pl   2>&1 >> /eniq/home/dcuser/counters/log/RadioNode_topology_crontab.log
+15 0 * * *         /eniq/home/dcuser/counters/bin/generate_ERBS_topology_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/ERBS_topology_crontab.log
+20 0 * * *         /eniq/home/dcuser/counters/bin/generate_WCDMA_topology_files.pl       2>&1 >> /eniq/home/dcuser/counters/log/WCDMA_topology_crontab.log
+25 0 * * *         /eniq/home/dcuser/counters/bin/generate_BSC_topology_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/BSC_topology_crontab.log
+30 0 * * *         /eniq/home/dcuser/counters/bin/generate_Site_topology_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/Site_topology_crontab.log
+35 0 * * *         /eniq/home/dcuser/counters/bin/generate_TWAMP_topology_files.pl       2>&1 >> /eniq/home/dcuser/counters/log/TWAMP_topology_crontab.log
+40 0 * * *         /eniq/home/dcuser/counters/bin/generate_SGSN_MME_topology_files.pl    2>&1 >> /eniq/home/dcuser/counters/log/SGSN_MME_topology_crontab.log
+45 0 * * *         /eniq/home/dcuser/counters/bin/generate_core_topology_files.pl        2>&1 >> /eniq/home/dcuser/counters/log/core_topology_crontab.log
+35 0 * * *         /eniq/home/dcuser/counters/bin/generate_SBG_topology_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/SBG_topology_crontab.log
+35 0 * * *         /eniq/home/dcuser/counters/bin/generate_HSS_topology_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/HSS_topology_crontab.log
+55 0 * * *         /eniq/home/dcuser/counters/bin/generate_MGW_topology_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/MGW_topology_crontab.log
+55 0 * * *         /eniq/home/dcuser/counters/bin/generate_MRS_topology_files.pl         2>&1 >> /eniq/home/dcuser/counters/log/MRS_topology_crontab.log
+
+
+# Anomaly generation scripts
+#
+# TWAMP
+10,25,40,55 * * * * /eniq/home/dcuser/counters/bin/create_anomalies.bsh create_TWAMP_anomalies.sql 2>&1 >> /eniq/home/dcuser/counters/log/create_anomalies_TWAMP.log
+
+# RAN Performance
+10,25,40,55 * * * * /eniq/home/dcuser/counters/bin/create_anomalies.bsh create_Retainability_anomalies.sql 2>&1 >> /eniq/home/dcuser/counters/log/create_anomalies_RANPerf.log
+10,25,40,55 * * * * /eniq/home/dcuser/counters/bin/create_anomalies.bsh create_Accessibility_anomalies.sql 2>&1 >> /eniq/home/dcuser/counters/log/create_anomalies_RANPerf2.log
+
+
+
+#IP Probe
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/generate_IPProbe_counter_files.pl  2>&1 >> /eniq/home/dcuser/counters/log/ipprobe.log
+45 0 * * *         /eniq/home/dcuser/counters/bin/generate_IPProbe_topology_files.pl 2>&1 >> /eniq/home/dcuser/counters/log/IPProbe_topology_crontab.log
+
+# Videotron Data
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/transform_videotron_data.sh        2>&1 >> /eniq/home/dcuser/counters/log/transform_videotron_data.log
+55 0 * * *         /eniq/home/dcuser/counters/bin/transform_videotron_topology.sh    2>&1 >> /eniq/home/dcuser/counters/log/transform_videotron_topology.log
+
+# IMS SAPC
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh sapc  2>&1 >> /eniq/home/dcuser/counters/log/sapc_crontab.log
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh vsapc 2>&1 >> /eniq/home/dcuser/counters/log/vsapc_crontab.log
+

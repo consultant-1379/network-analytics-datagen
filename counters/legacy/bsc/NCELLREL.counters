@@ -1,0 +1,4 @@
+HOVERCNT = int( rand(100) + 50 )
+HOVERSUC = int( HOVERCNT - rand(HOVERCNT) * 0.05) # up to 5% fail
+HORTTOCH = int( rand(HOVERCNT - HOVERSUC) * 0.5)  # up to 50% are handed back after failure
+

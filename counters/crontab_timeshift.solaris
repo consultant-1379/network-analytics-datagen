@@ -1,0 +1,22 @@
+#0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh cscf     2>&1 >> /eniq/home/dcuser/counters/log/cscf_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh sbg      2>&1 >> /eniq/home/dcuser/counters/log/sbg_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh msc      2>&1 >> /eniq/home/dcuser/counters/log/msc_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh erbs     2>&1 >> /eniq/home/dcuser/counters/log/erbs_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh sgsn_mme 2>&1 >> /eniq/home/dcuser/counters/log/sgsn_mme_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh mtas     2>&1 >> /eniq/home/dcuser/counters/log/mtas_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh ggsn     2>&1 >> /eniq/home/dcuser/counters/log/ggsn_crontab.log
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh wmg     2>&1 >> /eniq/home/dcuser/counters/log/wmg_crontab.log
+
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh WMG      2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_wmg.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh GGSN     2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_ggsn.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh MTAS     2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_mtas.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh SBG      2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_sbg.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh MSC      2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_msc.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh SGSN_MME 2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_sgsn_mme.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh ERBS     2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_erbs.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh ERBSG2   2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_erbsG2.log
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh CSCF     2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_cscf.log
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /eniq/home/dcuser/counters/test/bin/timeshift_input_files.sh CSCFv    2>&1 >> /eniq/home/dcuser/counters/test/log/timeshift_input_files_cscfv.log
+
+#0,15,30,45 * * * * /eniq/home/dcuser/counters/test/bin/generate_output_files.sh 2>&1 >> /eniq/home/dcuser/counters/test/log/generate_output_files.log
+

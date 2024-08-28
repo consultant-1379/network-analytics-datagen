@@ -1,0 +1,12 @@
+IKE_SA_Establishment_Attempts     = int ( rand(100000) + 10000 )
+IKE_SA_Establishment_Success      = int ( IKE_SA_Establishment_Attempts - rand(IKE_SA_Establishment_Attempts * 0.01) ) # up to 1% failures
+IKE_SA_Establishment_Success_Rate = 100 * IKE_SA_Establishment_Success / IKE_SA_Establishment_Attempts
+
+Authentication_and_Authorization_Attempts     = int ( rand(100000) + 10000 )
+Authentication_and_Authorization_Success      = int ( Authentication_and_Authorization_Attempts - rand(Authentication_and_Authorization_Attempts * 0.01) ) # up to 1% failures
+Authentication_and_Authorization_Success_Rate = 100 * Authentication_and_Authorization_Success / Authentication_and_Authorization_Attempts
+
+IPsec_Tunnel_Establishment_Attempts     = int ( rand(100000) + 10000 )
+IPsec_Tunnel_Establishment_Success      = int ( IPsec_Tunnel_Establishment_Attempts - rand(IPsec_Tunnel_Establishment_Attempts * 0.01) ) # up to 1% failures
+IPsec_Tunnel_Establishment_Success_Rate = 100 * IPsec_Tunnel_Establishment_Success / IPsec_Tunnel_Establishment_Attempts
+

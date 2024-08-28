@@ -1,0 +1,3 @@
+scscfOriginatingMessageSuccess = int ( rand(10000) + 10000 ) 
+scscfTerminatingMessageSuccess = int ( rand(10000) + 10000 ) 
+

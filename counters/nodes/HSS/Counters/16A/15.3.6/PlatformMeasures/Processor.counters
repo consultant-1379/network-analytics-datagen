@@ -1,0 +1,4 @@
+CpuLoad = sprintf '%.6f',rand(100)  
+
+MemUsed = sprintf '%.6f',rand(50)  
+

@@ -1,0 +1,6 @@
+CDISSS    = int( rand(4) )
+CDISSSSUB = int( rand(4) )
+CDISQA    = int( rand(4) )
+CDISQASUB = int( rand(4) )
+CDISTA    = int( rand(4) )
+

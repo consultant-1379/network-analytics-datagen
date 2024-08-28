@@ -1,0 +1,235 @@
+[
+    {
+        type => 'measFileHeader',
+        value => 
+            [                  
+                {
+                    type  => 'fileFormatVersion',
+                    value => 1
+                },
+                {
+                    type  => 'senderName',
+                    value => 'msc_04'
+                },
+                {
+                    type  => 'senderType',
+                    value => 'msc'
+                },
+                {
+                    type  => 'vendorName',
+                    value => 'Ericsson'
+                },
+                {
+                    type  => 'collectionBeginTime',
+                    value => '19700101000000+0100'
+                },
+            ]      
+    },
+    {         
+        type => 'measData',
+        value => 
+            [ 
+                [
+                    {
+                        type => 'nEId',
+                        value => 
+                            [
+                                {
+                                    type  => 'nEUserName',
+                                    value => 'BO Reports Data'
+                                },
+                                { 
+                                    type  => 'nEDistinguishedName',
+                                    value => 'Exchange Identity=msc_04,Object Type=msc_04'                   
+                                }
+                            ]
+                    },
+                    {
+                        type => 'measInfo',
+                        value => 
+                            [
+                              [
+                                {
+                                    type  => 'measTimeStamp',
+                                    value => '19700101000000+0100'
+                                },
+                                { 
+                                    type  => 'granularityPeriod',
+                                    value => 900                  
+                                },
+                                {
+                                     type => 'measTypes',
+                                     value => [{'type' => 'graphic_string', 'value' => 'P2CCOMPLACK'}, {'type' => 'graphic_string', 'value' => 'P2CREQUTOT'},]
+                                },
+                                {
+                                     type => 'measValues',
+                                     value => 
+                                        [
+                                          [
+                                            {
+                                                type  => 'measObjInstId',
+                                                value => 'MMESTAT.sgsn_mme_01'
+                                            },
+                                            {
+                                                type  => 'measResults',
+                                                value => [{ 'type' => 'neValue', 'value' => 47821 }, { 'type' => 'neValue', 'value' => 49134 },]
+                                            },
+                                            {
+                                                type  => 'suspectFlag',
+                                                value => ''
+                                            }
+                                          ]
+                                        ]                                      
+                                },
+
+                              ],
+                              [
+                                {
+                                    type  => 'measTimeStamp',
+                                    value => '19700101000000+0100'
+                                },
+                                { 
+                                    type  => 'granularityPeriod',
+                                    value => 900                  
+                                },
+                                {
+                                     type => 'measTypes',
+                                     value => [{'type' => 'graphic_string', 'value' => 'P2CCOMPLACK'}, {'type' => 'graphic_string', 'value' => 'P2CREQUTOT'},]
+                                },
+                                {
+                                     type => 'measValues',
+                                     value => 
+                                        [
+                                          [
+                                            {
+                                                type  => 'measObjInstId',
+                                                value => 'MMESTAT.sgsn_mme_02'
+                                            },
+                                            {
+                                                type  => 'measResults',
+                                                value => [{ 'type' => 'neValue', 'value' => 25113 }, { 'type' => 'neValue', 'value' => 25986 },]
+                                            },
+                                            {
+                                                type  => 'suspectFlag',
+                                                value => ''
+                                            }
+                                          ]
+                                        ]                                      
+                                },
+
+                              ],
+                              [
+                                {
+                                    type  => 'measTimeStamp',
+                                    value => '19700101000000+0100'
+                                },
+                                { 
+                                    type  => 'granularityPeriod',
+                                    value => 900                  
+                                },
+                                {
+                                     type => 'measTypes',
+                                     value => [{'type' => 'graphic_string', 'value' => 'P2CCOMPLACK'}, {'type' => 'graphic_string', 'value' => 'P2CREQUTOT'},]
+                                },
+                                {
+                                     type => 'measValues',
+                                     value => 
+                                        [
+                                          [
+                                            {
+                                                type  => 'measObjInstId',
+                                                value => 'MMESTAT.sgsn_mme_03'
+                                            },
+                                            {
+                                                type  => 'measResults',
+                                                value => [{ 'type' => 'neValue', 'value' => 64831 }, { 'type' => 'neValue', 'value' => 67133 },]
+                                            },
+                                            {
+                                                type  => 'suspectFlag',
+                                                value => ''
+                                            }
+                                          ]
+                                        ]                                      
+                                },
+
+                              ],
+                              [
+                                {
+                                    type  => 'measTimeStamp',
+                                    value => '19700101000000+0100'
+                                },
+                                { 
+                                    type  => 'granularityPeriod',
+                                    value => 900                  
+                                },
+                                {
+                                     type => 'measTypes',
+                                     value => [{'type' => 'graphic_string', 'value' => 'NS2UASUCC'}, {'type' => 'graphic_string', 'value' => 'NS2UATOT'},]
+                                },
+                                {
+                                     type => 'measValues',
+                                     value => 
+                                        [
+                                          [
+                                            {
+                                                type  => 'measObjInstId',
+                                                value => 'NBRMSCS2U.-'
+                                            },
+                                            {
+                                                type  => 'measResults',
+                                                value => [{ 'type' => 'neValue', 'value' => 33730 }, { 'type' => 'neValue', 'value' => 33890 },]
+                                            },
+                                            {
+                                                type  => 'suspectFlag',
+                                                value => ''
+                                            }
+                                          ]
+                                        ]                                      
+                                },
+
+                              ],
+                              [
+                                {
+                                    type  => 'measTimeStamp',
+                                    value => '19700101000000+0100'
+                                },
+                                { 
+                                    type  => 'granularityPeriod',
+                                    value => 900                  
+                                },
+                                {
+                                     type => 'measTypes',
+                                     value => [{'type' => 'graphic_string', 'value' => 'NRELREQSUCC'}, {'type' => 'graphic_string', 'value' => 'NRELREQTOT'},]
+                                },
+                                {
+                                     type => 'measValues',
+                                     value => 
+                                        [
+                                          [
+                                            {
+                                                type  => 'measObjInstId',
+                                                value => 'SRVCC2U.-'
+                                            },
+                                            {
+                                                type  => 'measResults',
+                                                value => [{ 'type' => 'neValue', 'value' => 13601 }, { 'type' => 'neValue', 'value' => 13846 },]
+                                            },
+                                            {
+                                                type  => 'suspectFlag',
+                                                value => ''
+                                            }
+                                          ]
+                                        ]                                      
+                                },
+
+                              ],
+                            ],
+                    },
+                 ]
+            ]
+    },
+    {         
+        type => 'measFileFooter',
+        value => '19700101000000+0100'
+    }
+]

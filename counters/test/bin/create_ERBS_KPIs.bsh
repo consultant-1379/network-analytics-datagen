@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+# Generate the KPIs into a load file in /eniq/home/dcuser/dc_cv_erbs_eutrancell/DC_CV_ERBS_EUTRANCELL.txt
+
+/eniq/home/dcuser/counters/bin/generate_ERBS_KPI_files.pl
+
+# Load the file into table DC_CV_ERBS_EUTRANCELL
+
+SYBASE=/eniq/sybase_iq
+export SYBASE
+
+SQLANY=/eniq/sql_anywhere
+export SQLANY
+
+. ${SYBASE}/IQ.sh
+
+/eniq/sybase_iq/IQ-16_0/bin64/dbisql -c "UID=dc;PWD=dc" -host localhost -port 2640 -onerror exit -nogui "load table dc_cv_erbs_eutrancell_raw_01 (NODE_FDN,CELL_FDN,OSS_ID,MEASURE_ID,MeasureValue,ROWSTATUS,DATETIME_ID datetime('YYYY-MM-DD HH:NN:SS'),UTC_DATETIME_ID datetime('YYYY-MM-DD HH:NN:SS')) from '/eniq/home/dcuser/dc_cv_erbs_eutrancell/DC_CV_ERBS_EUTRANCELL.txt' escapes off quotes off with checkpoint on delimited by '\x09'"
+

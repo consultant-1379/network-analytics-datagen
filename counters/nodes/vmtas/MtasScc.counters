@@ -1,0 +1,17 @@
+# SCC
+MtasSccInitOrigSessCsOk   = int ( rand(100000) + 10000 )
+MtasSccInitOrigSessCsNOkI = int ( rand(MtasSccInitOrigSessCsOk * 0.02) ) # up to 2% failures
+MtasSccInitOrigSessCsNOkE = int ( rand(MtasSccInitOrigSessCsOk * 0.03) ) # up to 3% failures
+
+MtasSccInitOrigUnregSessCsOk   = int ( rand(100000) + 30000 )
+MtasSccInitOrigUnregSessCsNOkI = int ( rand(MtasSccInitOrigUnregSessCsOk * 0.01) ) # up to 1% failures
+MtasSccInitOrigUnregSessCsNOkE = int ( rand(MtasSccInitOrigUnregSessCsOk * 0.04) ) # up to 4% failures
+
+MtasSccTermCsSuccAttempt        = int ( rand(MtasSccInitOrigSessCsOk * 0.10) ) # up to 10%
+MtasSccTermCsFailedAttempt      = int ( rand(MtasSccTermCsSuccAttempt * 0.02) ) # up to 2% failures
+
+MtasSccTermUnregCsSuccAttempt   = int ( rand(MtasSccInitOrigUnregSessCsOk * 0.10) ) # up to 10%
+MtasSccTermUnregCsFailedAttempt = int ( rand(MtasSccTermUnregCsSuccAttempt * 0.03) ) # up to 3% failures
+
+#SELECT Source, g3ManagedElement, MOID, SN, MtasScc, OSS_ID, MTAS_DC, g3SubNetwork, DATE_ID, YEAR_ID, MONTH_ID, DAY_ID, HOUR_ID, DATETIME_ID, MIN_ID, TIMELEVEL, SESSION_ID, BATCH_ID, PERIOD_DURATION, ROWSTATUS, DC_RELEASE, DC_SOURCE, DC_TIMEZONE, DC_SUSPECTFLAG, UTC_DATETIME_ID, MtasSccTermUnregPsSuccAttempt, MtasSccTermInviteNOkI, MtasSccInitTermSessNOkE, MtasSccInitTermSessNOkI, MtasSccCurrentTermSessionCs, MtasSccCurrentTermSessionPs, MtasSccOrigInvitePsNOkE, MtasSccTermInviteNOkE, MtasSccOrigInviteCsNOkI, MtasSccRegEventPollNOkI, MtasSccTermCsFailed, MtasSccInitTermSessOk, MtasSccInitOrigSessPsOk, MtasSccInitOrigSessPsNOkE, MtasSccInitOrigUnregSessPsNOkI, MtasSccInitOrigUnregSessCsNOkI, MtasSccTermPsFailed, MtasSccTermCsSuccAttempt, MtasSccTermCsFailedAttempt, MtasSccInitOrigUnregSessPsNOkE, MtasSccTermPsSuccAttempt, MtasSccInitOrigSessCsOk, MtasSccInitOrigSessCsNOkE, MtasSccCurrentOrigSessionPs, MtasSccOrigInviteCs, MtasSccTermPsOk, MtasSccCurrentOrigSessionCs, MtasSccInitTermUnregSessNOkI, MtasSccTermInvite, MtasSccTermUnregCsSuccAttempt, MtasSccInitTermUnregSessNOkE, MtasSccOrigInviteCsNOkE, MtasSccTermCsOk, MtasSccOrigInvitePs, MtasSccRegEventPollNOkE, MtasSccInitOrigUnregSessPsOk, MtasSccOrigInvitePsNOkI, MtasSccInitOrigSessCsNOkI, MtasSccTermUnregCsFailedAttempt, MtasSccInitOrigUnregSessCsOk, MtasSccTermPsFailedAttempt, MtasSccInitOrigUnregSessCsNOkE, MtasSccTermUnregPsFailedAttempt, MtasSccInitTermUnregSessOk, MtasSccInitOrigSessPsNOkI, MtasSccRegEventPollOk FROM DC_E_MTAS_MTASSCC_RAW;
+#

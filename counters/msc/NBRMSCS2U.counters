@@ -1,0 +1,4 @@
+NS2UATOT   = int( rand(100000) )
+NS2UASUCC  = int( NS2UATOT -  rand(NS2UATOT  * 0.05) ) # up to 2% fail
+
+

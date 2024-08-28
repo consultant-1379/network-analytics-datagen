@@ -1,0 +1,4 @@
+pmRadioRaCbAttMsg2  = int ( rand(10000) + 300 )
+pmRadioRaCbSuccMsg3 = int ( pmRadioRaCbAttMsg2 - rand(pmRadioRaCbAttMsg2 * 0.025) ) # up to 2.5%  failures 
+ 
+

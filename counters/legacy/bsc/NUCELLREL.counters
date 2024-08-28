@@ -1,0 +1,4 @@
+HOVERCNTUTRAN = int( rand(100) + 50 )
+HOVERSUCUTRAN = int( HOVERCNTUTRAN - rand(HOVERCNTUTRAN) * 0.05)  # up to 5% fail
+HORTTOCHUTRAN = int( rand(HOVERCNTUTRAN - HOVERSUCUTRAN) * 0.5)   # up to 50% are handed back after failure
+

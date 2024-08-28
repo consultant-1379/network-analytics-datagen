@@ -1,0 +1,23 @@
+_MAX_ATTEMPTS                           = 10000
+sbgSipTotalIncSessSetups	             = int ( _MAX_ATTEMPTS + rand(10000) )
+sbgSipNetIncSessionEstabNetworkSuccess  = int ( sbgSipTotalIncSessSetups - rand(sbgSipTotalIncSessSetups * 0.02) ) # up to 2% fail
+sbgSipRejectedIncAlertingSessions488	 = int ( rand(_MAX_ATTEMPTS * 0.015) ) # add some small number of rejects
+sbgSipRejectedIncPreAlertingSessions488 = int ( rand(_MAX_ATTEMPTS * 0.005) ) # add some small number of rejects
+sbgSipRegStatRejInitialRegCnt400        = int ( rand(_MAX_ATTEMPTS * 0.005) ) # add some small number of rejects
+sbgSipRegStatRejInitialRegCnt403        = int ( rand(_MAX_ATTEMPTS * 0.0025) ) # add some small number of rejects
+
+
+sbgSipTotalOutSessSetups               = int ( rand(100000) )
+sbgSipNetOutSessionEstabNetworkSuccess = int ( sbgSipTotalOutSessSetups - rand(sbgSipTotalOutSessSetups * 0.03) ) # up to 3% fail
+
+
+# dup sbgSipTotalIncSessSetups   = int ( rand(100000) )
+sbgSipSuccessIncSessions   = int ( sbgSipTotalIncSessSetups - rand(sbgSipTotalIncSessSetups * 0.05) ) # up to 5% fail
+
+sbgSipNetIncSessionSetupTime        = int ( rand(1000) )
+sbgSipNetIncSessionSetupUserSuccess	= int ( rand(50) + 1 )
+sbgSipNetOutSessionSetupTime        = int ( rand(1000) )
+sbgSipNetOutSessionSetupUserSuccess	= int ( rand(50) + 1 )
+
+
+sbgSipRespondedIncSessions = int ( rand(100000) )

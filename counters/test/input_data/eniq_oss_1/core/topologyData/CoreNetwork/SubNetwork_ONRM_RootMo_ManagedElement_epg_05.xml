@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE model PUBLIC "-//Ericsson NMS CIF CS//CS Filtered Export DTD//" "export.dtd">
+<model>  
+
+   <mo fdn="SubNetwork=ONRM_RootMo,ManagedElement=epg_05" mimName="ONRM" mimVersion="13.2.4">
+      <attr name="sourceType">
+        <seq count="1">
+        <item>SSR8020</item>
+        </seq>
+      </attr>
+      <attr name="userLabel">epg_05</attr>
+      <attr name="nodeVersion">15B</attr>
+      <attr name="siteRef">SubNetwork=ONRM_RootMo,Site=Athlone</attr>
+      <attr name="managedElementType">
+        <seq count="1">
+          <item>EPG</item>
+        </seq>
+      </attr>
+      <attr name="managedFunctionType">
+       <seq count="4">
+         <item>GGSN</item>
+         <item>PGW</item>
+         <item>SGW</item>
+         <item>MBMSGW</item>
+       </seq>
+      </attr>
+   </mo>
+
+</model>
+

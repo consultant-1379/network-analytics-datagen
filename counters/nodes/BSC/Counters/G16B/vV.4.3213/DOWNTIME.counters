@@ -1,0 +1,4 @@
+BDWNACC  = int(rand(10))
+TDWNSCAN = int(rand(10))
+TDWNACC = int(rand(10))
+TDWNSCAN = int(rand(10))

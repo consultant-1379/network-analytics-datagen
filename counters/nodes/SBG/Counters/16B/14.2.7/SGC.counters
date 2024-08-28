@@ -1,0 +1,2 @@
+sbgSgcRegResCurrentTotalReg = int ( rand(2000) + 100 )
+

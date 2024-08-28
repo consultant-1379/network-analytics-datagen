@@ -1,0 +1,15 @@
+# Constants
+_MAX_PACKETS=10000000
+
+
+# SS7 Over IP QoS
+
+pmIpInReceives      = int( rand(_MAX_PACKETS) )
+pmIpInDiscards      = int( rand(pmIpInReceives) * 0.001 )
+pmIpInAddrErrors    = int( rand(pmIpInReceives) * 0.001 )
+pmIpInHdrErrors     = int( rand(pmIpInReceives) * 0.001 )
+pmIpInUnknownProtos = int( rand(pmIpInReceives) * 0.001 )
+
+pmIpOutRequests     = int( rand(_MAX_PACKETS) )
+pmIpOutDiscards     = int( rand(pmIpOutRequests) * 0.001 )
+

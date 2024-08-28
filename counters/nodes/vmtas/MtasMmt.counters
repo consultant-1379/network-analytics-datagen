@@ -1,0 +1,44 @@
+#MMT
+MtasMmtOrigNetworkSuccessSessionEstablish      = int ( rand(100000) + 100000 )
+MtasMmtOrigUnregNetworkSuccessSessionEstablish = int ( rand(100000) + 50000 )
+
+MtasMmtOrigFailedAttempt      = int ( rand(MtasMmtOrigNetworkSuccessSessionEstablish * 0.03) ) # up to 3%  failures
+MtasMmtOrigUnregFailedAttempt = int ( rand(MtasMmtOrigUnregNetworkSuccessSessionEstablish * 0.04) ) # up to 4%  failures
+
+# These following counters are derived in the code
+#MtasMmtOrigFailedAttemptCause
+#MtasMmtOrigUnregFailedAttemptCause
+
+MtasMmtTermNetworkSuccessSessionEstablish      = int ( rand(100000) + 100000 )
+MtasMmtTermUnregNetworkSuccessSessionEstablish = int ( rand(100000) + 50000 )
+
+MtasMmtTermFailedAttempt      = int ( rand(MtasMmtTermNetworkSuccessSessionEstablish * 0.01) ) # up to 1%  failures
+MtasMmtTermUnregFailedAttempt = int ( rand(MtasMmtTermUnregNetworkSuccessSessionEstablish * 0.10) ) # up to 10%  failures
+
+MtasMmtOrigSessEarlyCancel      = int ( rand(MtasMmtOrigNetworkSuccessSessionEstablish * 0.01) )      # up to 1% failures
+MtasMmtOrigUnregSessEarlyCancel = int ( rand(MtasMmtOrigUnregNetworkSuccessSessionEstablish * 0.02) ) # up to 2% failures
+
+MtasMmtTermSessEarlyCancel      = int ( rand(MtasMmtTermNetworkSuccessSessionEstablish * 0.01) )      # up to 1% failures
+MtasMmtTermUnregSessEarlyCancel = int ( rand(MtasMmtTermUnregNetworkSuccessSessionEstablish * 0.02) ) # up to 2% failures
+
+
+MtasMmtInitOrigSessNOkI      = int ( rand(MtasMmtTermSessEarlyCancel * 0.1) )        # up to 10% failures
+MtasMmtInitOrigUnregSessNOkI = int ( rand(MtasMmtTermUnregSessEarlyCancel * 0.05) )  # up to 5% failures
+
+# These following counters are derived in the code
+#MtasMmtOrigFailedAttemptCause
+#MtasMmtOrigUnregFailedAttemptCause
+
+
+MtasMmtTermOrigSessOk   = int ( rand(100000) + 50000 )
+MtasMmtTermOrigSessNOkE = int ( rand(MtasMmtTermOrigSessOk * 0.01) ) # up to 1%  failures
+MtasMmtTermOrigSessNOkI = int ( rand(MtasMmtTermOrigSessOk * 0.01) ) # up to 1%  failures
+
+MtasMmtTermTermSessOk   = int ( rand(100000) + 50000 )
+MtasMmtTermTermSessNOkE = int ( rand(MtasMmtTermTermSessOk * 0.01) ) # up to 1%  failures
+MtasMmtTermTermSessNOkI = int ( rand(MtasMmtTermTermSessOk * 0.01) ) # up to 1%  failures
+
+#SELECT Source, MTAS_DC, g3SubNetwork, g3ManagedElement, OSS_ID, MOID, MtasMmt, SN, DATE_ID, YEAR_ID, MONTH_ID, DAY_ID, HOUR_ID, DATETIME_ID, MIN_ID, TIMELEVEL, SESSION_ID, BATCH_ID, PERIOD_DURATION, ROWSTATUS, DC_RELEASE, DC_SOURCE, DC_TIMEZONE, DC_SUSPECTFLAG, UTC_DATETIME_ID, MtasMmtPxOrigResponseIn, MtasMmtPxTermResponseIn, MtasMmtTextStreamAdded, MtasMmtFaxStreamDropped, MtasMmtMessageStreamDropped, MtasMmtPxOrigUnregResponseIn, MtasMmtTermUnregSuccAttempt, MtasMmtPxTermUnregRequestOut, MtasMmtInitOrigSessNOkI, MtasMmtTermTermUnregSessNOkE, MtasMmtTermUnregAsSuccessSessionEstablish, MtasMmtTermTermUnregSessNOkI, MtasMmtFaxStreamAdded, MtasMmtTermOrigUnregSessNOkE, MtasMmtMessageStreamSetup, MtasMmtInitTermUnregSessOk, MtasMmtOrigCommDuration, MtasMmtInitTermSessOk, MtasMmtPxTermRequestOut, MtasMmtTermAnswered, MtasMmtAudioStreamAdded, MtasMmtTermOrigSessNOkE, MtasMmtOrigUnregNetworkSuccessSessionEstablish, MtasMmtVideoStreamDropped, MtasMmtTermTermSessNOkE, MtasMmtTermUnregFailedAttemptCause, MtasMmtTermUnregAnswered, MtasMmtOrigUnregSuccAttempt, MtasMmtInitTermSessNOkE, MtasMmtFaxStreamSetup, MtasMmtVideoStreamSetup, MtasMmtOrigAsSuccessSessionEstablish, MtasMmtTextStreamDropped, MtasMmtInitTermUnregSessNOkI, MtasMmtOrigSuccAttempt, MtasMmtAudioStreamSetup, MtasMmtInitOrigSessOk, MtasMmtInitOrigUnregSessNOkI, MtasMmtTermOrigUnregSessNOkI, MtasMmtTermOrigSessNOkI, MtasMmtInitTermUnregSessNOkE, MtasMmtTermFailedAttemptCause, MtasMmtTermUnregCommDuration, MtasMmtInitOrigUnregSessNOkE, MtasMmtUnknownStreamSetup, MtasMmtInitOrigSessNOkE, MtasMmtPxTermUnregResponseIn, MtasMmtFailedAnnouncement, MtasMmtOrigFailedAttemptCause, MtasMmtOrigFailedAttempt, MtasMmtTermFailedAttempt, MtasMmtVideoStreamAdded, MtasMmtOrigUnregFailedAttempt, MtasMmtTermNetworkSuccessSessionEstablish, MtasMmtTermUnregFailedAttempt, MtasMmtOrigUnregAnswered, MtasMmtInitOrigUnregSessOk, MtasMmtUnknownStreamAdded, MtasMmtTermUnregNetworkSuccessSessionEstablish, MtasMmtUnregTermAnswered, MtasMmtMessageStreamAdded, MtasMmtTermTermSessNOkI, MtasMmtTextStreamSetup, MtasMmtAudioStreamDropped, MtasMmtUnknownStreamDropped, MtasMmtOrigUnregFailedAttemptCause, MtasMmtOrigNetworkSuccessSessionEstablish, MtasMmtTermSuccAttempt, MtasMmtTermCommDuration, MtasMmtInitTermSessNOkI, MtasMmtOrigAnswered, MtasMmtOrigUnregCommDuration, MtasMmtPxOrigUnregRequestOut, MtasMmtTermAsSuccessSessionEstablish, MtasMmtPxOrigRequestOut, MtasMmtOrigUnregAsSuccessSessionEstablish FROM DC_E_MTAS_MTASMMT_RAW;
+
+#SELECT SN, OSS_ID, MtasMmt, MOID, g3SubNetwork, MTAS_DC, Source, g3ManagedElement, DATE_ID, YEAR_ID, MONTH_ID, DAY_ID, HOUR_ID, DATETIME_ID, MIN_ID, TIMELEVEL, SESSION_ID, BATCH_ID, PERIOD_DURATION, ROWSTATUS, DC_RELEASE, DC_SOURCE, DC_TIMEZONE, DC_SUSPECTFLAG, UTC_DATETIME_ID, MtasMmtOrigSessCancel, MtasMmtTermUnregCommDurationInit, MtasMmtTermUnregServiceDuration, MtasMmtOrigUnregSessEarlyCancel, MtasMmtSubsSessNOkE, MtasMmtSubsSessNOkI, MtasMmtTermSessEarlyCancel, MtasMmtOrigUnregSessCancel, MtasMmtSubsSessOk, MtasMmtSubsSessAttempt, MtasMmtTermUnregSessCancel, MtasMmtOrigUnregCommDurationInit, MtasMmtOrigSessEarlyCancel, MtasMmtOrigServiceDuration, MtasMmtOrigUnregServiceDuration, MtasMmtTermUnregSessEarlyCancel, MtasMmtTermCommDurationInit, MtasMmtOrigCommDurationInit, MtasMmtTermSessCancel, MtasMmtTermServiceDuration, MtasMmtOrigUnregFailedAttempt, MtasMmtOrigUnregCommDuration, MtasMmtInitTermUnregSessNOkI, MtasMmtOrigUnregAsSuccessSessionEstablish, MtasMmtTermFailedAttemptCause, MtasMmtTermUnregNetworkSuccessSessionEstablish, MtasMmtTermOrigUnregSessNOk, MtasMmtOrigSuccAttempt, MtasMmtPxOrigResponseIn, MtasMmtOrigUnregAnswered, MtasMmtTermTermUnregSessNOkI, MtasMmtTermTermSessNOk, MtasMmtInitOrigSessNOkI, MtasMmtTermOrigSessOk, MtasMmtTermOrigUnregSessNOkECause, MtasMmtTermTermSessNOkECause, MtasMmtTextStreamSetup, MtasMmtInitTermSessOk, MtasMmtInitOrigSessNOkE, MtasMmtTermOrigUnregSessNOkE, MtasMmtInitOrigUnregSessNOkE, MtasMmtTermSuccAttempt, MtasMmtOrigAnswered, MtasMmtFaxStreamDropped, MtasMmtTermOrigUnregSessNOkI, MtasMmtTermUnregSuccAttempt, MtasMmtTermOrigSessNOkI, MtasMmtPxOrigRequestOut, MtasMmtMessageStreamSetup, MtasMmtUnregTermAnswered, MtasMmtTermNetworkSuccessSessionEstablish, MtasMmtTermTermUnregSessNOkE, MtasMmtTermOrigSessNOkE, MtasMmtTermTermUnregSessOk, MtasMmtInitOrigUnregSessOk, MtasMmtTermAsSuccessSessionEstablish, MtasMmtTermUnregAnswered, MtasMmtMessageStreamAdded, MtasMmtTermOrigUnregSessNOkServiceCause, MtasMmtTermTermUnregSessNOkECause, MtasMmtTermTermUnregSessNOk, MtasMmtFaxStreamAdded, MtasMmtTextStreamAdded, MtasMmtUnknownStreamAdded, MtasMmtPxTermRequestOut, MtasMmtInitTermSessNOkE, MtasMmtTermAnswered, MtasMmtInitOrigSessOk, MtasMmtMessageStreamDropped, MtasMmtUnknownStreamSetup, MtasMmtTermTermUnregSessNOkServiceCause, MtasMmtOrigCommDuration, MtasMmtOrigFailedAttempt, MtasMmtVideoStreamDropped, MtasMmtVideoStreamSetup, MtasMmtTermUnregFailedAttempt, MtasMmtTermOrigSessNOkECause, MtasMmtOrigUnregFailedAttemptCause, MtasMmtFaxStreamSetup, MtasMmtTermUnregFailedAttemptCause, MtasMmtTermUnregCommDuration, MtasMmtAudioStreamAdded, MtasMmtTextStreamDropped, MtasMmtTermUnregAsSuccessSessionEstablish, MtasMmtOrigUnregNetworkSuccessSessionEstablish, MtasMmtTermOrigUnregSessOk, MtasMmtPxOrigUnregRequestOut, MtasMmtTermTermSessNOkI, MtasMmtTermTermSessOk, MtasMmtInitTermSessNOkI, MtasMmtAudioStreamDropped, MtasMmtPxOrigUnregResponseIn, MtasMmtOrigNetworkSuccessSessionEstablish, MtasMmtInitOrigUnregSessNOkI, MtasMmtTermOrigSessNOkServiceCause, MtasMmtOrigAsSuccessSessionEstablish, MtasMmtVideoStreamAdded, MtasMmtOrigUnregSuccAttempt, MtasMmtPxTermUnregResponseIn, MtasMmtPxTermResponseIn, MtasMmtInitTermUnregSessOk, MtasMmtUnknownStreamDropped, MtasMmtTermFailedAttempt, MtasMmtAudioStreamSetup, MtasMmtFailedAnnouncement, MtasMmtTermOrigSessNOk, MtasMmtInitTermUnregSessNOkE, MtasMmtOrigFailedAttemptCause, MtasMmtTermCommDuration, MtasMmtTermTermSessNOkE, MtasMmtPxTermUnregRequestOut, MtasMmtTermTermSessNOkServiceCause FROM DC_E_MTAS_MTASMMT_RAW;
+

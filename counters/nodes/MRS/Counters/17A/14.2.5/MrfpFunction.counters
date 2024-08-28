@@ -1,0 +1,5 @@
+licenseCapacityMrfp              = 1000
+pmMrfpSessions          = int ( rand(990) + 10 )
+pmVideoParticipants     = int ( rand(990) + 10 )
+pmAudioConfParticipants = int ( rand(990) + 10 )
+

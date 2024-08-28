@@ -1,0 +1,330 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>generate_axe_counter_files - creates the ENIQ counter directories and files for AXE nodes, i.e. MSC and BSC.</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:rurban@x-ray.at" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+<!--
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#directories">Directories</a></li>
+		<li><a href="#counter_files">Counter Files</a></li>
+		<ul>
+
+			<li><a href="#bsc">BSC</a></li>
+			<li><a href="#msc">MSC</a></li>
+		</ul>
+
+	</ul>
+
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#environment">ENVIRONMENT</a></li>
+	<ul>
+
+		<ul>
+
+			<li><a href="#bsc">BSC</a></li>
+			<li><a href="#msc">MSC</a></li>
+		</ul>
+
+	</ul>
+
+	<li><a href="#exit_status">EXIT STATUS</a></li>
+	<li><a href="#configuration">CONFIGURATION</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<li><a href="#incompatibilities">INCOMPATIBILITIES</a></li>
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#license_and_copyright">LICENSE AND COPYRIGHT</a></li>
+</ul>
+-->
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>generate_axe_counter_files - creates the ENIQ counter directories and files for AXE nodes, i.e. MSC and BSC.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to generate_axe_counter_files.pl version 1.0.</p>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<p>Run using the command:</p>
+<dl>
+<dt><strong><a name="item_generate_axe_counter_files_2epl__5boptions_5d">generate_axe_counter_files.pl [options]</a></strong>
+
+</dl>
+<pre>
+ Example:
+        generate_axe_counter_files.pl</pre>
+<pre>
+ will create the ROP files for all counters for today (for BSC by default).</pre>
+<pre>
+ Example:
+        generate_axe_counter_files.pl -a msc</pre>
+<pre>
+ will create the ROP files for all counters for today for MSC.</pre>
+<pre>
+ Example:
+        generate_axe_counter_files.pl -a bsc -t 0945</pre>
+<pre>
+ will create the ROP files for all counters for time 0945.</pre>
+<pre>
+ Example:
+        generate_axe_counter_files.pl -a msc -s 2007-04-01 -e 2007-04-20 -n 20</pre>
+<pre>
+ will create the ROP files for all counters, for the date range and NEs given.</pre>
+<pre>
+ If a ROP time is specified, there will only be one file produced for the given time, 
+ otherwise 96 ROP files for the whole day will be generated.
+ 
+ Note that start and end dates must be in the same calendar month.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<pre>
+    -a &lt;axe_type&gt;, --axe_type=&lt;axe_type&gt;
+                AXE type, e.g. BSC, MSC, etc.  [default is BSC]
+    -n &lt;NEs&gt;, --nes=&lt;NEs&gt;
+                number of NEs [default is 10]
+    -c &lt;cells&gt;, --cells=&lt;cells&gt;
+                number of cells per BSC [default is 100]
+    -s &lt;start_date&gt;, --start_date=&lt;start_date&gt;
+                start date
+    -e &lt;end_date&gt;, --end_date=&lt;end_date&gt;
+                end date
+    -t &lt;rop_time&gt;, --time=&lt;rop_time&gt;
+                ROP time
+    -h, --help
+                display this help and exit
+    -v, --verbose
+                output additional information</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script generates counter directories and files for the MSC and BSC nodes.</p>
+<p>This script creates and populates the counter ROP files with sample data.</p>
+<p>For the specification of the contents of the topology files, see ``Interwork Description for ENIQ-M xml files'',
+1/15519-APR 901 0199.</p>
+<p>
+</p>
+<h2><a name="directories">Directories</a></h2>
+<p>The topology directories created are:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fbsc_2diog">/eniq/data/pmdata/eniq_oss_1/bsc-iog</a></strong>
+
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fbsc_2diog_2">/eniq/data/pmdata/eniq_oss_1/bsc-iog/dir1</a></strong>
+
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fmsc_2diog">/eniq/data/pmdata/eniq_oss_1/msc-iog</a></strong>
+
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fmsc_2diog_2">/eniq/data/pmdata/eniq_oss_1/msc-iog/dir1</a></strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="counter_files">Counter Files</a></h2>
+<p>
+</p>
+<h3><a name="bsc">BSC</a></h3>
+<p>The counter topology files are stored in the dir1 directory, example files are:</p>
+<ul>
+<li><strong>/eniq/data/pmdata/eniq_oss_1/bsc-iog/dir1/A20070906.1315-20070906.1330_bsc03:1</strong>
+
+</ul>
+<p>
+</p>
+<h3><a name="msc">MSC</a></h3>
+<p>The counter topology files are stored in the dir1 directory, example files are:</p>
+<ul>
+<li><strong>/eniq/data/pmdata/eniq_oss_1/msc-iog/dir1/A20070906.1330-20070906.1345_msc01:1</strong>
+
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="environment">ENVIRONMENT</a></h1>
+<p>
+</p>
+<h3><a name="bsc">BSC</a></h3>
+<p>The counter definition files have the extension .counters and must be in the directory:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc">/eniq/home/dcuser/counters/bsc</a></strong>
+
+</ul>
+<p>The current set of supported counters are defined in:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcellgpr">/eniq/home/dcuser/counters/bsc/CELLGPRS.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcellcch">/eniq/home/dcuser/counters/bsc/CELLCCHDR.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fnicelas">/eniq/home/dcuser/counters/bsc/NICELASS.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcellsqi">/eniq/home/dcuser/counters/bsc/CELLSQI.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2ftrafgpr">/eniq/home/dcuser/counters/bsc/TRAFGPRS3.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcltchdr">/eniq/home/dcuser/counters/bsc/CLTCHDRF.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fceltchh">/eniq/home/dcuser/counters/bsc/CELTCHH.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcldtmqo">/eniq/home/dcuser/counters/bsc/CLDTMQOS.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcellqos">/eniq/home/dcuser/counters/bsc/CELLQOSG.counters</a></strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CELLQOSGEG.counters</strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CELLQOS.counters</strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CLTCHDRH.counters</strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/TRAFGPRS2.counters</strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fceltchf">/eniq/home/dcuser/counters/bsc/CELTCHF.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fnecelas">/eniq/home/dcuser/counters/bsc/NECELASS.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcltch_2">/eniq/home/dcuser/counters/bsc/CLTCH.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2frandoma">/eniq/home/dcuser/counters/bsc/RANDOMACC.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fclsdcch">/eniq/home/dcuser/counters/bsc/CLSDCCH.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fcelleit">/eniq/home/dcuser/counters/bsc/CELLEIT2.counters</a></strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CELLGPRS3.counters</strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2ftrafdlg">/eniq/home/dcuser/counters/bsc/TRAFDLGPRS.counters</a></strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CLSDCCHO.counters</strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fnucellr">/eniq/home/dcuser/counters/bsc/NUCELLREL.counters</a></strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CELLSQIDL.counters</strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fncellre">/eniq/home/dcuser/counters/bsc/NCELLREL.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2fnecellr">/eniq/home/dcuser/counters/bsc/NECELLREL.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2ftrafulg">/eniq/home/dcuser/counters/bsc/TRAFULGPRS.counters</a></strong>
+
+<li><strong>/eniq/home/dcuser/counters/bsc/CELLGPRS2.counters</strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fbsc_2frlinkbi">/eniq/home/dcuser/counters/bsc/RLINKBITR.counters</a></strong>
+
+</ul>
+<p>
+</p>
+<h3><a name="msc">MSC</a></h3>
+<p>The counter definition files have the extension .counters and must be in the directory:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc">/eniq/home/dcuser/counters/msc</a></strong>
+
+</ul>
+<p>The current set of supported counters are defined in:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fughndov">/eniq/home/dcuser/counters/msc/UGHNDOVER.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fmtrafty">/eniq/home/dcuser/counters/msc/MTRAFTYPE.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fnbrmscl">/eniq/home/dcuser/counters/msc/NBRMSCLST.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2ftrunkro">/eniq/home/dcuser/counters/msc/TRUNKROUTE.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fguhndov">/eniq/home/dcuser/counters/msc/GUHNDOVER.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fl3ccmsg">/eniq/home/dcuser/counters/msc/L3CCMSG.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fupdloca">/eniq/home/dcuser/counters/msc/UPDLOCAT.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fnbrmscs">/eniq/home/dcuser/counters/msc/NBRMSCSRNS.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fumtssec">/eniq/home/dcuser/counters/msc/UMTSSEC.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2floas_2e">/eniq/home/dcuser/counters/msc/LOAS.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2frncstat">/eniq/home/dcuser/counters/msc/RNCSTAT.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fsechand">/eniq/home/dcuser/counters/msc/SECHAND.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fshmsgse">/eniq/home/dcuser/counters/msc/SHMSGSERV.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fpaging_">/eniq/home/dcuser/counters/msc/PAGING.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fchassig">/eniq/home/dcuser/counters/msc/CHASSIGNT.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fnbrmscu">/eniq/home/dcuser/counters/msc/NBRMSCUGHO.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmsc_2fnbrmscg">/eniq/home/dcuser/counters/msc/NBRMSCGUH.counters</a></strong>
+
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="exit_status">EXIT STATUS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration">CONFIGURATION</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="incompatibilities">INCOMPATIBILITIES</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>eeikcoy</p>
+<p>
+</p>
+<hr />
+<h1><a name="license_and_copyright">LICENSE AND COPYRIGHT</a></h1>
+<p>Ericsson (2007)</p>
+
+</body>
+
+</html>

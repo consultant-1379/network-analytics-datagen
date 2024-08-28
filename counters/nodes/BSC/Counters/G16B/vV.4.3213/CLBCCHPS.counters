@@ -1,0 +1,6 @@
+BCCHPSPCP1 = int(rand(10))
+BCCHPSPCP2 = int(rand(10))
+BCCHPSPCP3 = int(rand(10))
+BCCHPSPCREPTIME = int(rand(10))
+BCCHPSPR = int(rand(10))
+BCCHPSPRREPTIME = int(rand(10))

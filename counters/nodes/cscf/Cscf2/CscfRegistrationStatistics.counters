@@ -1,0 +1,14 @@
+scscfThirdPartyRegistrationSuccess   = int ( rand(10000) + 1000 ) 
+scscfThirdPartyRegistrationFailure   = int ( rand(scscfThirdPartyRegistrationSuccess * 0.01) ) # up to 1% failures
+
+scscfAttemptedRegistrationPerAccess  = int ( rand(10000) + 1000 ) 
+scscfSuccessfulRegistrationPerAccess = int ( scscfAttemptedRegistrationPerAccess - rand(scscfAttemptedRegistrationPerAccess * 0.02) ) # up to 2% failures
+scscfFailedRegistrationPerAccess     = int ( scscfAttemptedRegistrationPerAccess - scscfSuccessfulRegistrationPerAccess )
+
+cscfRegistrationsFailure             = int ( rand(100) ) 
+cscfReregistrationsFailure           = int ( rand(100) ) 
+cscfDeregistrationsFailure           = int ( rand(100) ) 
+
+cscfConcurrentRegisteredUserProfiles    = int ( rand(1000) + 100 ) 
+scscfConcurrentUnregisteredUserProfiles = int ( rand(1000) + 100 ) 
+

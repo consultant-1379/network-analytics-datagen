@@ -1,0 +1,4 @@
+# Cell Activity counters
+pmEulDowntimeMan  = int( rand(1.1) )
+pmEulDowntimeAuto = int( rand(1.1) )
+

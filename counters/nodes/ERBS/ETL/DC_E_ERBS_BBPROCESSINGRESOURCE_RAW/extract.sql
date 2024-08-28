@@ -1,0 +1,35 @@
+SELECT
+BbProcessingResource,
+'<DC_RELEASE>',
+DC_SOURCE,
+DC_SUSPECTFLAG,
+'<DC_TIMEZONE>',
+DeviceGroup,
+Equipment,
+ERBS,
+MOID,
+NESW,
+OSS_ID,
+PERIOD_DURATION,
+PlugInUnit,
+ROWSTATUS,
+SESSION_ID,
+SN,
+Subrack,
+TIMELEVEL,
+<COUNTERS>
+<MINUTE>,
+<HOUR>,
+<DAY>,
+<MONTH>,
+<YEAR>,
+'<DATE>',
+'<UTC_DATETIME_ID>',
+'<DATETIME_ID>'
+FROM <TABLE>
+WHERE datetime_id = dateadd(dd, days('<DATE>', '<BASE_DATE>') + <DAY> - 1, '<DATETIME_ID>')
+  AND ERBS LIKE '<NODES_TO_MATCH>';
+OUTPUT TO ETL/<TABLE>/data.csv
+ESCAPES OFF
+DELIMITED BY '|'
+QUOTE '' ALL

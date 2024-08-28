@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE model PUBLIC "-//Ericsson NMS CIF CS//CS Filtered Export DTD//" "export.dtd">
+<model>
+   <mo fdn="SubNetwork=ONRM_RootMo,Site=Athlone" mimName="ONRM" mimVersion="5.2.0">
+      <attr name="userLabel">Athlone</attr>
+      <attr name="SiteId">Athlone</attr>
+      <attr name="timeZone">+0100</attr>
+   </mo>
+</model>

@@ -1,0 +1,4 @@
+cscfAcceptedRegistrations   = int ( rand(10000) + 1000 ) 
+cscfAcceptedReregistrations = int ( rand(10000) + 1000 ) 
+cscfAcceptedDeregistrations = int ( rand(10000) + 1000 ) 
+

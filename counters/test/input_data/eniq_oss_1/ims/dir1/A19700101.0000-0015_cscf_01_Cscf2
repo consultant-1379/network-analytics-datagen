@@ -1,0 +1,1968 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<!DOCTYPE mdc SYSTEM "MeasDataCollection.dtd">
+<mdc xmlns:HTML="http://www.w3.org/TR/REC-xml">
+   <mfh>
+      <ffv>32.435 V10.0</ffv>
+      <sn>g3ManagedElement=cscf_01</sn>
+      <st></st>
+      <vn>Ericsson</vn>
+      <cbt>19700101000000+0100</cbt>
+   </mfh>
+   <md>
+      <neid>
+         <neun>cscf_01</neun>
+         <nedn>g3ManagedElement=cscf_01</nedn>
+      </neid>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, DEFAULT</moid>
+            <r>18611</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=400</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=401</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=403</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=404</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=486</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=503</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=600</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SUM</moid>
+            <r>359</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, DEFAULT</moid>
+            <r>18252</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>600</moid>
+            <r>152</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>152</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>17947</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3y, DEFAULT</moid>
+            <r>17200</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3y, SIPResponseCode=503</moid>
+            <r>86</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3y, SUM</moid>
+            <r>86</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3y, DEFAULT</moid>
+            <r>17114</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>407</moid>
+            <r>87</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>87</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>12589</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3e, DEFAULT</moid>
+            <r>13623</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3e, SIPResponseCode=404</moid>
+            <r>23</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3e, SIPResponseCode=407</moid>
+            <r>23</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3e, SIPResponseCode=484</moid>
+            <r>23</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3e, SIPResponseCode=486</moid>
+            <r>23</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3e, SIPResponseCode=600</moid>
+            <r>23</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3e, SUM</moid>
+            <r>116</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3e, DEFAULT</moid>
+            <r>13507</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>401</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>403</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>503</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>600</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>177</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>18846</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, DEFAULT</moid>
+            <r>11613</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=500</moid>
+            <r>132</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SUM</moid>
+            <r>132</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, DEFAULT</moid>
+            <r>11481</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>401</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>83</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>11355</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, DEFAULT</moid>
+            <r>15378</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=401</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=404</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=486</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SUM</moid>
+            <r>155</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, DEFAULT</moid>
+            <r>15223</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>486</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>500</moid>
+            <r>51</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>102</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>18337</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3, DEFAULT</moid>
+            <r>15918</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=401</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=403</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=404</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=486</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=500</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=503</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SIPResponseCode=600</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3, SUM</moid>
+            <r>286</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3, DEFAULT</moid>
+            <r>15632</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>401</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>486</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>500</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>503</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>19</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>14722</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, DEFAULT</moid>
+            <r>10904</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=400</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=401</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=403</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=404</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=407</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=500</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=503</moid>
+            <r>11</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SUM</moid>
+            <r>82</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, DEFAULT</moid>
+            <r>10822</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>5</r>
+         </mv>
+         <mv>
+            <moid>401</moid>
+            <r>5</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>5</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>5</r>
+         </mv>
+         <mv>
+            <moid>600</moid>
+            <r>5</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>29</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>15147</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3an, DEFAULT</moid>
+            <r>18287</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=404</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=407</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=484</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=486</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=500</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=503</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SIPResponseCode=600</moid>
+            <r>38</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3an, SUM</moid>
+            <r>271</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3an, DEFAULT</moid>
+            <r>18016</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>12</r>
+         </mv>
+         <mv>
+            <moid>404</moid>
+            <r>12</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>12</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>12</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>48</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>19597</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, DEFAULT</moid>
+            <r>18464</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=401</moid>
+            <r>6</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=403</moid>
+            <r>6</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=407</moid>
+            <r>6</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=500</moid>
+            <r>6</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=503</moid>
+            <r>6</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=600</moid>
+            <r>6</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SUM</moid>
+            <r>38</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, DEFAULT</moid>
+            <r>18426</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>14</r>
+         </mv>
+         <mv>
+            <moid>403</moid>
+            <r>14</r>
+         </mv>
+         <mv>
+            <moid>404</moid>
+            <r>14</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>14</r>
+         </mv>
+         <mv>
+            <moid>500</moid>
+            <r>14</r>
+         </mv>
+         <mv>
+            <moid>503</moid>
+            <r>14</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>85</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>16281</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11n, DEFAULT</moid>
+            <r>18024</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=400</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=403</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=404</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=407</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=486</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=503</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SIPResponseCode=600</moid>
+            <r>46</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11n, SUM</moid>
+            <r>326</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11n, DEFAULT</moid>
+            <r>17698</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>401</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>403</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>486</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>500</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>600</moid>
+            <r>3</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>30</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>14059</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, DEFAULT</moid>
+            <r>19607</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=400</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=401</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=403</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=484</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=503</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=600</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SUM</moid>
+            <r>175</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, DEFAULT</moid>
+            <r>19432</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>83</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>83</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>10441</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, DEFAULT</moid>
+            <r>17466</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=401</moid>
+            <r>71</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=403</moid>
+            <r>71</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=503</moid>
+            <r>71</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SUM</moid>
+            <r>215</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, DEFAULT</moid>
+            <r>17251</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>403</moid>
+            <r>61</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>61</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>10782</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3i, DEFAULT</moid>
+            <r>16736</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3i, SIPResponseCode=407</moid>
+            <r>15</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3i, SIPResponseCode=486</moid>
+            <r>15</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3i, SIPResponseCode=503</moid>
+            <r>15</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3i, SUM</moid>
+            <r>45</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3i, DEFAULT</moid>
+            <r>16691</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>401</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>503</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>109</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>19854</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfAttemptedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ak, DEFAULT</moid>
+            <r>16331</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfFailedRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ak, SIPResponseCode=401</moid>
+            <r>35</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ak, SIPResponseCode=403</moid>
+            <r>35</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ak, SIPResponseCode=404</moid>
+            <r>35</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ak, SIPResponseCode=407</moid>
+            <r>35</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ak, SIPResponseCode=484</moid>
+            <r>35</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ak, SIPResponseCode=503</moid>
+            <r>35</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ak, SUM</moid>
+            <r>214</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfSuccessfulRegistrationPerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ak, DEFAULT</moid>
+            <r>16117</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationFailure</mt>
+         <mv>
+            <moid>400</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>404</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>407</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>484</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>486</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>500</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>503</moid>
+            <r>18</r>
+         </mv>
+         <mv>
+            <moid>SUM</moid>
+            <r>131</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfThirdPartyRegistrationSuccess</mt>
+         <mv>
+            <moid>DEFAULT</moid>
+            <r>18479</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11b, DEFAULT</moid>
+            <r>13971</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=400</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=403</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=404</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=486</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=500</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=503</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=600</moid>
+            <r>55</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SUM</moid>
+            <r>390</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11b, DEFAULT</moid>
+            <r>13581</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11b, DEFAULT</moid>
+            <r>18612</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=404</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=407</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=484</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=500</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=503</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SIPResponseCode=600</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11b, SUM</moid>
+            <r>336</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11b, DEFAULT</moid>
+            <r>18276</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, DEFAULT</moid>
+            <r>18388</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=400</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=401</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=403</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=407</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=484</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=486</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=503</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=600</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SUM</moid>
+            <r>333</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, DEFAULT</moid>
+            <r>18055</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, DEFAULT</moid>
+            <r>12233</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=401</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=403</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=484</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=486</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=500</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=503</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SIPResponseCode=600</moid>
+            <r>27</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3u, SUM</moid>
+            <r>189</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3u, DEFAULT</moid>
+            <r>12044</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, DEFAULT</moid>
+            <r>12839</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=404</moid>
+            <r>95</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=407</moid>
+            <r>95</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=500</moid>
+            <r>95</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=600</moid>
+            <r>95</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SUM</moid>
+            <r>383</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, DEFAULT</moid>
+            <r>12456</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, DEFAULT</moid>
+            <r>14043</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=401</moid>
+            <r>116</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SIPResponseCode=503</moid>
+            <r>116</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ab, SUM</moid>
+            <r>233</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ab, DEFAULT</moid>
+            <r>13810</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11g, DEFAULT</moid>
+            <r>15936</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=400</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=401</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=403</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=404</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=407</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=484</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=486</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=600</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SUM</moid>
+            <r>175</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11g, DEFAULT</moid>
+            <r>15761</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11g, DEFAULT</moid>
+            <r>17274</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=484</moid>
+            <r>146</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SIPResponseCode=486</moid>
+            <r>146</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11g, SUM</moid>
+            <r>293</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11g, DEFAULT</moid>
+            <r>16981</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, DEFAULT</moid>
+            <r>19001</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=400</moid>
+            <r>103</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=403</moid>
+            <r>103</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=484</moid>
+            <r>103</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=500</moid>
+            <r>103</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SUM</moid>
+            <r>415</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, DEFAULT</moid>
+            <r>18586</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, DEFAULT</moid>
+            <r>12188</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=403</moid>
+            <r>57</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SIPResponseCode=503</moid>
+            <r>57</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3a, SUM</moid>
+            <r>114</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3a, DEFAULT</moid>
+            <r>12074</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, DEFAULT</moid>
+            <r>10970</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=400</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=500</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=600</moid>
+            <r>56</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SUM</moid>
+            <r>170</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, DEFAULT</moid>
+            <r>10800</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, DEFAULT</moid>
+            <r>17677</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=401</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=404</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=486</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SIPResponseCode=503</moid>
+            <r>29</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11, SUM</moid>
+            <r>116</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11, DEFAULT</moid>
+            <r>17561</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, DEFAULT</moid>
+            <r>15754</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=403</moid>
+            <r>45</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=404</moid>
+            <r>45</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=486</moid>
+            <r>45</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=500</moid>
+            <r>45</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SUM</moid>
+            <r>181</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, DEFAULT</moid>
+            <r>15573</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, DEFAULT</moid>
+            <r>17968</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, SIPResponseCode=484</moid>
+            <r>104</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3ae, SUM</moid>
+            <r>104</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3ae, DEFAULT</moid>
+            <r>17864</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, DEFAULT</moid>
+            <r>18905</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=400</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=401</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=404</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=407</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=484</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=500</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=503</moid>
+            <r>40</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SUM</moid>
+            <r>285</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, DEFAULT</moid>
+            <r>18620</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, DEFAULT</moid>
+            <r>19952</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=401</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=403</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=404</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=407</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=486</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=500</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=503</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SIPResponseCode=600</moid>
+            <r>21</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.3z, SUM</moid>
+            <r>175</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.3z, DEFAULT</moid>
+            <r>19777</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, DEFAULT</moid>
+            <r>16212</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=403</moid>
+            <r>416</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SUM</moid>
+            <r>416</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfOrigSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, DEFAULT</moid>
+            <r>15796</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermAttemptedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, DEFAULT</moid>
+            <r>15612</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermFailedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=400</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=401</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=404</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=407</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=503</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SIPResponseCode=600</moid>
+            <r>41</r>
+         </mv>
+         <mv>
+            <moid>IEEE-802.11a, SUM</moid>
+            <r>247</r>
+         </mv>
+      </mi>
+      <mi>
+         <mts>19700101001500+0100</mts>
+         <gp>300</gp>
+         <mt>scscfTermSuccessfulEstablishedInvitePerAccess</mt>
+         <mv>
+            <moid>IEEE-802.11a, DEFAULT</moid>
+            <r>15365</r>
+         </mv>
+      </mi>
+   </md>
+   <mff><ts>19700101001500+0100</ts></mff>
+</mdc>
+

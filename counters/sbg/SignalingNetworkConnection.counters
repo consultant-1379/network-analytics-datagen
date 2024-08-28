@@ -1,0 +1,6 @@
+sbgSgcIncPriorityCallAttempts	= int ( rand(35000) )
+sbgSgcIncPriorityCallSuccessSetups	= int ( sbgSgcIncPriorityCallAttempts - rand(sbgSgcIncPriorityCallAttempts * 0.02) ) # up to 2% fail
+
+sbgSgcTotalEmergencyCallsSetups	= int ( rand(40000) )
+sbgSgcTotalEmergencyCallsSuccess	= int ( sbgSgcTotalEmergencyCallsSetups - rand(sbgSgcTotalEmergencyCallsSetups * 0.01) ) # up to 1% fail
+

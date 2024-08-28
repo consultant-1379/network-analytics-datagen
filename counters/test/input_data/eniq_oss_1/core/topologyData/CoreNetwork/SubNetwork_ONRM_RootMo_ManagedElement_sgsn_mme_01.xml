@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE model PUBLIC "-//Ericsson NMS CIF CS//CS Filtered Export DTD//" "export.dtd">
+<model>  
+
+   <mo fdn="SubNetwork=ONRM_RootMo,ManagedElement=sgsn_mme_01" mimName="ONRM" mimVersion="5.0">
+      <attr name="userLabel">sgsn_mme_01</attr>
+      <attr name="nodeVersion">15B</attr>
+      <attr name="siteRef">SubNetwork=ONRM_RootMo,Site=Athlone</attr>
+      <attr name="managedElementType">
+        <seq count="2">
+          <item>SGSN</item>
+          <item>MME</item>
+        </seq>
+      </attr>
+   </mo>
+
+</model>
+

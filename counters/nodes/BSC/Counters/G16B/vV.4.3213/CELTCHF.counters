@@ -1,0 +1,2 @@
+TFTRALACC = int(rand(10))
+TFNSCAN = int(rand(10))

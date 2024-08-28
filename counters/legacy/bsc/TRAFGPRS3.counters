@@ -1,0 +1,11 @@
+BULTBFSCAN   = int( rand(100) )
+GULTBFSCAN   = int( rand(100) )
+EULTBFSCAN   = int( rand(100) )
+
+MUTILBASICUL = int( BULTBFSCAN - int( rand(BULTBFSCAN) ) )
+MUTILGPRSUL  = int( GULTBFSCAN - int( rand(GULTBFSCAN) ) )
+MUTILEPRSUL  = int( GULTBFSCAN - int( rand(GULTBFSCAN) ) )
+
+MAXGTSUL     = int( rand(1000) )
+MAXEGTSUL    = int( rand(1000) )
+

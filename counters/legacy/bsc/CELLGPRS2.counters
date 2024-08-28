@@ -1,0 +1,15 @@
+LDISRR       = int( rand(1000) )
+LDISOTH      = int( rand(1000) )
+LDISTFI      = int( rand(1000) )
+FLUDISC      = int( rand(1000) )
+IAULREL      = int( rand(1000) )
+CRSULREL     = int( rand(1000) )
+PREJTFI      = int( rand(1000) )
+PREJOTH      = int( rand(1000) )
+OTHULREL     = int( rand(1000) )
+PREEMPTULREL = int( rand(1000) )
+
+CS14DLSCHED  = int( rand(1000) )
+MC19DLSCHED  = int( rand(1000) )
+
+   

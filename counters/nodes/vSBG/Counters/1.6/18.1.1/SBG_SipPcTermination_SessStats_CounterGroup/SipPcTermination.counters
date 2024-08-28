@@ -1,0 +1,14 @@
+_MAX_ATTEMPTS                           = 10000
+
+# Incoming
+sbgSipTotalIncSessSetups       = int ( _MAX_ATTEMPTS + rand(10000) )
+sbgSipSuccessIncSessions       = int ( sbgSipTotalIncSessSetups - rand(sbgSipTotalIncSessSetups * 0.05) ) # up to 5% fail
+sbgSipIncSessDuration          = int ( rand(1000) )
+sbgSipChallengedIncInvSessions = int ( rand(sbgSipTotalIncSessSetups * 0.01) ) # up to 1% challenged
+
+# Outgoing
+sbgSipTotalOutSessSetups       = int ( _MAX_ATTEMPTS + rand(10000) )
+sbgSipSuccessOutSessions       = int ( sbgSipTotalOutSessSetups - rand(sbgSipTotalOutSessSetups * 0.05) ) # up to 5% fail
+sbgSipOutSessDuration          = int ( rand(1000) )
+sbgSipChallengedOutInvSessions = int ( rand(sbgSipTotalOutSessSetups * 0.01) ) # up to 1% challenged
+

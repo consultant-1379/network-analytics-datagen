@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>generate_mgw_counter_files - creates the ENIQ counter directories and files for M-MGw nodes.</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:rurban@x-ray.at" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+<!--
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#directories">Directories</a></li>
+		<li><a href="#counter_files">Counter Files</a></li>
+	</ul>
+
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#environment">ENVIRONMENT</a></li>
+	<li><a href="#exit_status">EXIT STATUS</a></li>
+	<li><a href="#configuration">CONFIGURATION</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<li><a href="#incompatibilities">INCOMPATIBILITIES</a></li>
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#license_and_copyright">LICENSE AND COPYRIGHT</a></li>
+</ul>
+-->
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>generate_mgw_counter_files - creates the ENIQ counter directories and files for M-MGw nodes.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to generate_mgw_counter_files.pl version 1.0.</p>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<p>Run using the command:</p>
+<dl>
+<dt><strong><a name="item_generate_mgw_counter_files_2epl__5boptions_5d">generate_mgw_counter_files.pl [options]</a></strong>
+
+</dl>
+<pre>
+ Example:
+        generate_mgw_counter_files.pl</pre>
+<pre>
+ will create the ROP files for all counters for today.</pre>
+<pre>
+ Example:
+        generate_mgw_counter_files.pl -t 1000</pre>
+<pre>
+ will create the ROP files for all counters for 1000.</pre>
+<pre>
+ Example:
+        generate_mgw_counter_files.pl -s 2007-04-01 -e 2007-04-20 -n 20</pre>
+<pre>
+ will create the ROP files for all counters, for the date range and MGws given.</pre>
+<pre>
+ If a ROP time is specified, there will only be one file produced for the given time, 
+ otherwise 96 ROP files for the whole day will be generated.
+ 
+ Note that start and end dates must be in the same calendar month.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<pre>
+    -n &lt;NEs&gt;, --nes=&lt;NEs&gt;
+                number of NEs (MGWs)   [default is 10]
+    -s &lt;start_date&gt;, --start_date=&lt;start_date&gt;
+                start date             [default is today]
+    -e &lt;end_date&gt;, --end_date=&lt;end_date&gt;
+                end date               [default is today]
+    -t &lt;rop_time&gt;, --time=&lt;rop_time&gt;
+                ROP time               [default is all ROP times today]
+    -h, --help
+                display this help and exit
+    -v, --verbose
+                output additional information</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script generates counter directories and files for the M-MGw nodes.</p>
+<p>This script creates and populates the counter ROP files with sample data.</p>
+<p>For the specification of the contents of the topology files, see ``Interwork Description for ENIQ-M xml files'',
+1/15519-APR 901 0199.</p>
+<p>
+</p>
+<h2><a name="directories">Directories</a></h2>
+<p>The topology directories created are:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fmgw">/eniq/data/pmdata/eniq_oss_1/mgw</a></strong>
+
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fmgw_2fdir1">/eniq/data/pmdata/eniq_oss_1/mgw/dir1</a></strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="counter_files">Counter Files</a></h2>
+<p>The counter topology files are stored in the dir1 directory, an example file is:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fmgw_2fdir1_">/eniq/data/pmdata/eniq_oss_1/mgw/dir1/A20070906.1145-1200_mgw01:1.xml</a></strong>
+
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="environment">ENVIRONMENT</a></h1>
+<p>The counter definition files have the extension .counters and must be in the directory:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw">/eniq/home/dcuser/counters/mgw</a></strong>
+
+</ul>
+<p>The current set of supported counters are defined in:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fipacces">/eniq/home/dcuser/counters/mgw/IpAccessHostGpb.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fjitterh">/eniq/home/dcuser/counters/mgw/JitterHandlingService.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fmgwappl">/eniq/home/dcuser/counters/mgw/MgwApplication.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fmtp2tpa">/eniq/home/dcuser/counters/mgw/Mtp2TpAnsi.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fmtp2tpc">/eniq/home/dcuser/counters/mgw/Mtp2TpChina.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fmtp2tpi">/eniq/home/dcuser/counters/mgw/Mtp2TpItu.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fnnisaal">/eniq/home/dcuser/counters/mgw/NniSaalTp.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fpluginu">/eniq/home/dcuser/counters/mgw/PlugInUnit.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fremotes">/eniq/home/dcuser/counters/mgw/RemoteSite.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2ftdmterm">/eniq/home/dcuser/counters/mgw/TdmTermGrp.counters</a></strong>
+
+<li><strong><a name="item__2feniq_2fhome_2fdcuser_2fcounters_2fmgw_2fvmgw_2e">/eniq/home/dcuser/counters/mgw/Vmgw.counters</a></strong>
+
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="exit_status">EXIT STATUS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration">CONFIGURATION</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="incompatibilities">INCOMPATIBILITIES</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>eeikcoy</p>
+<p>
+</p>
+<hr />
+<h1><a name="license_and_copyright">LICENSE AND COPYRIGHT</a></h1>
+<p>Ericsson (2007)</p>
+
+</body>
+
+</html>

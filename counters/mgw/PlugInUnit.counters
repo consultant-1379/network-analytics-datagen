@@ -1,0 +1,8 @@
+# Constants
+_MAX_PROCESSOR_LOAD=100
+
+
+# Processor Load
+
+pmProcessorLoad = int( rand(_MAX_PROCESSOR_LOAD) )
+

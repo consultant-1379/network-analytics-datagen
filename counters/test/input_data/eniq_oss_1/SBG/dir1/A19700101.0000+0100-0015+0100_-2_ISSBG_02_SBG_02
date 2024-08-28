@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="2.435 V7.2.0" vendorName="Ericsson AB" dnPrefix="SubNetwork=IsNetwork,IsSite=sbg_02">
+<fileSender localDn="bs=02" elementType="SBG"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="bs=02" userLabel="SBG" swVersion="R3B"/>
+
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">sbgSgcPktsLostRatioGauge</measType>
+  <measValue measObjLdn="Blade=02-1,NetworkQoS=1">
+  <r p="1">204</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">sbgInitRegTime</measType>
+  <measType p="2">sbgSipEmerRegStatInitialAccCnt</measType>
+  <measType p="3">sbgSipRegStatInitialAccCnt</measType>
+  <measType p="4">sbgSipRegStatInitialAttCnt</measType>
+  <measType p="5">sbgSipRegStatRejInitialRegCnt400</measType>
+  <measType p="6">sbgSipRegStatRejInitialRegCnt403</measType>
+  <measValue measObjLdn="Blade=02-1,ProxyRegistrar=1">
+  <r p="1">172855</r>
+  <r p="2">9866</r>
+  <r p="3">12686</r>
+  <r p="4">12907</r>
+  <r p="5">3</r>
+  <r p="6">4</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">sbgSgcIncPriorityCallAttempts</measType>
+  <measType p="2">sbgSgcIncPriorityCallSuccessSetups</measType>
+  <measType p="3">sbgSgcTotalEmergencyCallsSetups</measType>
+  <measType p="4">sbgSgcTotalEmergencyCallsSuccess</measType>
+  <measValue measObjLdn="Blade=02-1,SignalingNetworkConnection=1">
+  <r p="1">16240</r>
+  <r p="2">15965</r>
+  <r p="3">23872</r>
+  <r p="4">23699</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">sbgSipNetIncSessionEstabNetworkSuccess</measType>
+  <measType p="2">sbgSipNetIncSessionSetupTime</measType>
+  <measType p="3">sbgSipNetIncSessionSetupUserSuccess</measType>
+  <measType p="4">sbgSipNetOutSessionEstabNetworkSuccess</measType>
+  <measType p="5">sbgSipNetOutSessionSetupTime</measType>
+  <measType p="6">sbgSipNetOutSessionSetupUserSuccess</measType>
+  <measType p="7">sbgSipRegStatRejInitialRegCnt400</measType>
+  <measType p="8">sbgSipRegStatRejInitialRegCnt403</measType>
+  <measType p="9">sbgSipRejectedIncAlertingSessions488</measType>
+  <measType p="10">sbgSipRejectedIncPreAlertingSessions488</measType>
+  <measType p="11">sbgSipRespondedIncSessions</measType>
+  <measType p="12">sbgSipSuccessIncSessions</measType>
+  <measType p="13">sbgSipTotalIncSessSetups</measType>
+  <measType p="14">sbgSipTotalOutSessSetups</measType>
+  <measValue measObjLdn="Blade=02-1,Sip=1">
+  <r p="1">13364</r>
+  <r p="2">697</r>
+  <r p="3">48</r>
+  <r p="4">89398</r>
+  <r p="5">415</r>
+  <r p="6">35</r>
+  <r p="7">26</r>
+  <r p="8">9</r>
+  <r p="9">32</r>
+  <r p="10">32</r>
+  <r p="11">5892</r>
+  <r p="12">13080</r>
+  <r p="13">13480</r>
+  <r p="14">91322</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

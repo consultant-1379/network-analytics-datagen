@@ -1,0 +1,3 @@
+_MAX_ATTEMPTS                   = 10
+
+sbgTotalEmergencyCallsRedirects = int ( rand(_MAX_ATTEMPTS) )

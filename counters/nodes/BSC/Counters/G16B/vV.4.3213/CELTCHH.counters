@@ -1,0 +1,2 @@
+THTRALACC = int(rand(10))
+THNSCAN = int(rand(10))

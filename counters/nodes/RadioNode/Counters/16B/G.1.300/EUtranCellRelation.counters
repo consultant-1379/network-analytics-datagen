@@ -1,0 +1,25 @@
+# Intra
+pmHoPrepAttLteIntraF  = int ( rand(10) + 30 )
+pmHoPrepSuccLteIntraF = int ( pmHoPrepAttLteIntraF  - rand(pmHoPrepAttLteIntraF  * 0.005) ) # up to 0.5%  failures
+pmHoExeAttLteIntraF   = int ( pmHoPrepSuccLteIntraF - rand(pmHoPrepSuccLteIntraF * 0.005) ) # up to 0.5%  failures
+pmHoExeSuccLteIntraF  = int ( pmHoExeAttLteIntraF   - rand(pmHoExeAttLteIntraF   * 0.005) ) # up to 0.5%  failures
+
+# Inter
+pmHoPrepAttLteInterF  = int ( rand(10) + 20 )
+pmHoPrepSuccLteInterF = int ( pmHoPrepAttLteInterF  - rand(pmHoPrepAttLteInterF  * 0.005) ) # up to 0.5%  failures
+pmHoExeAttLteInterF   = int ( pmHoPrepSuccLteInterF - rand(pmHoPrepSuccLteInterF * 0.005) ) # up to 0.5%  failures
+pmHoExeSuccLteInterF  = int ( pmHoExeAttLteInterF   - rand(pmHoExeAttLteInterF   * 0.005) ) # up to 0.5%  failures
+
+# Additional Counters
+pmHoTooEarlyHoIntraF  = int ( rand(5) )
+pmHoTooEarlyHoInterF  = int ( rand(5) )
+pmHoTooLateHoIntraF   = int ( rand(5) )
+pmHoTooLateHoInterF   = int ( rand(5) )
+
+
+pmHoPrepAttNonMob  = int ( rand((pmHoExeSuccLteIntraF + pmHoExeSuccLteInterF) * 0.05) + 3 )
+pmHoPrepSuccNonMob = int ( pmHoPrepAttNonMob  - rand(pmHoPrepAttNonMob  * 0.005) ) # up to 0.5%  failures
+pmHoExeAttNonMob   = int ( pmHoPrepSuccNonMob - rand(pmHoPrepSuccNonMob * 0.005) ) # up to 0.5%  failures
+pmHoExeSuccNonMob  = int ( pmHoExeAttNonMob   - rand(pmHoExeAttNonMob   * 0.005) ) # up to 0.5%  failures
+
+

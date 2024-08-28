@@ -1,0 +1,2 @@
+CTRALACC = int(rand(10))
+CNSCAN = int(rand(10))

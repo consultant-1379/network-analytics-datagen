@@ -1,0 +1,5 @@
+# This counter is divided by 100 to get a percentage value
+#
+sbgSgcPktsLostRatioGauge     = int ( rand(300) )
+sbgSgcPktsOutofSeqRatioGauge = int ( rand(200) )
+

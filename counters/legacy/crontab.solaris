@@ -1,0 +1,8 @@
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh cscf     2>&1 >> /eniq/home/dcuser/counters/log/cscf_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh sbg      2>&1 >> /eniq/home/dcuser/counters/log/sbg_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh msc      2>&1 >> /eniq/home/dcuser/counters/log/msc_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh erbs     2>&1 >> /eniq/home/dcuser/counters/log/erbs_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh sgsn_mme 2>&1 >> /eniq/home/dcuser/counters/log/sgsn_mme_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh mtas     2>&1 >> /eniq/home/dcuser/counters/log/mtas_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh ggsn     2>&1 >> /eniq/home/dcuser/counters/log/ggsn_crontab.log
+0,15,30,45 * * * * /eniq/home/dcuser/counters/bin/run_cronjob.sh wmg      2>&1 >> /eniq/home/dcuser/counters/log/wmg_crontab.log

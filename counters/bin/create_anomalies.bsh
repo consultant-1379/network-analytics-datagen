@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# This script injects anomalies into the generated test data used by Network Analytics Server during feature development.
+# Give the SQL file to be used as the first argument, e.g.
+# 
+# /eniq/home/dcuser/counters/bin/create_anomalies.bsh create_TWAMP_anomalies.sql
+#
+
+# Setup SYBASE environment variables
+. /eniq/sybase_iq/IQ.sh
+
+AWK=/usr/bin/awk
+CAT=/usr/bin/cat
+CHMOD=/usr/bin/chmod
+CHOWN=/usr/bin/chown
+CP=/usr/bin/cp
+DATE=/usr/bin/date
+ECHO=/usr/bin/echo
+EGREP=/usr/bin/egrep
+FIND=/usr/bin/find
+GEGREP=/usr/sfw/bin/gegrep
+GREP=/usr/bin/grep
+MKDIR=/usr/bin/mkdir
+NAWK=/usr/bin/nawk
+RM=/usr/bin/rm
+SED=/usr/bin/sed
+SU=/usr/bin/su
+TOUCH=/usr/bin/touch
+UNZIP=/usr/bin/unzip
+
+SQL_FILE=$1
+
+if [ -z ${SQL_FILE} ] ; then
+  $ECHO "A SQL file name must be specified as the first argument, e.g."
+  $ECHO "  $0 create_TWAMP_anomalies.sql"
+  exit 1;
+fi
+
+STARTTIMESTAMP=`$DATE '+%y%m%d_%H%M%S'`
+LOGPATH=/eniq/home/dcuser/counters/log
+SQL_DIR=/eniq/home/dcuser/counters/Features/SQL
+LOGFILE=${LOGPATH}/${SQL_FILE}_${STARTTIMESTAMP}.log
+ANOMALIES_SQL=${SQL_DIR}/${SQL_FILE}
+
+
+DBISQL="$(ls /eniq/sybase_iq/IQ-*/bin64/dbisql)"
+if [ ! -x "$DBISQL" ]; then
+    _err_msg_="$DBISQL commands not found or not executable."
+    abort_script "$_err_msg_"
+fi
+
+#$ECHO "Execution started at " $STARTTIMESTAMP >> ${LOGFILE}
+
+if [ ! -d ${LOGPATH} ] ; then
+  $MKDIR -p ${LOGPATH}
+  $CHMOD 744 ${LOGPATH}
+fi
+
+$DBISQL -nogui -c "eng=dwhdb;links=tcpip{host=localhost;port=2640};uid=dc;pwd=dc" ${ANOMALIES_SQL}
+
+ENDTIMESTAMP=`$DATE '+%y%m%d_%H%M%S'`
+#$ECHO "Execution ended at " $ENDTIMESTAMP >> ${LOGFILE}
+
+exit 0
+
+### Function: abort_script ###
+#
+#   This will is called if the script is aborted thru an error
+#   error signal sent by the kernel such as CTRL-C or if a serious
+#   error is encountered during runtime
+#
+# Arguments:
+#       $1 - Error message from part of program (Not always used)
+# Return Values:
+#       none
+abort_script()
+{
+if [ "$1" ]; then
+    _err_msg_=$1
+else
+    _err_msg_="Script aborted.......\n"
+fi
+if [ "${LOGFILE}" ]; then
+    $ECHO "\n$_err_msg_\n"|$TEE -a ${LOGFILE}
+else
+    $ECHO "\n$_err_msg_\n"
+fi
+}

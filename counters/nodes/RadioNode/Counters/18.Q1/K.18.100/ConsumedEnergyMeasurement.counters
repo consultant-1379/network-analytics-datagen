@@ -1,0 +1,6 @@
+pmPowerConsumption          = sprintf join(',', ('%.3f') x 150), total_pmPowerConsumption()  # creates a PDF with 150 bins
+pmVoltage                   = sprintf join(',', ('%.3f') x 150), voltage()  # creates a PDF with 150 bins
+
+pmConsumedEnergyAccumulated = int(0.25 * sum pmPowerConsumption) # [ACCUMULATED] by 0.25 to convert W to Wh, i.e. adjustment from 15 min to 1 hour
+pmConsumedEnergy            = int(0.25 * sum pmPowerConsumption) # by 0.25 to convert W to Wh, i.e. adjustment from 15 min to 1 hour
+

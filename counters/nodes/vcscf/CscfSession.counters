@@ -1,0 +1,13 @@
+scscfOrigAttemptedInvitePerAccess             = int ( rand(10000) + 10000 ) 
+scscfOrigSuccessfulEstablishedInvitePerAccess = int ( scscfOrigAttemptedInvitePerAccess - rand(scscfOrigAttemptedInvitePerAccess * 0.03) ) # up to 3% failures
+scscfOrigFailedInvitePerAccess                = int ( scscfOrigAttemptedInvitePerAccess - scscfOrigSuccessfulEstablishedInvitePerAccess )
+
+scscfTermAttemptedInvitePerAccess             = int ( rand(10000) + 10000 ) 
+scscfTermSuccessfulEstablishedInvitePerAccess = int ( scscfTermAttemptedInvitePerAccess - rand(scscfTermAttemptedInvitePerAccess * 0.04) ) # up to 4% failures
+scscfTermFailedInvitePerAccess                = int ( scscfTermAttemptedInvitePerAccess - scscfTermSuccessfulEstablishedInvitePerAccess )
+
+cscfOriginatingInviteToAsAttempts             = int ( rand(1000) + 100 )
+cscfTerminatingInviteToAsAttempts             = int ( rand(1000) + 100 )
+scscfTerminatingInviteNoAsAttempts            = int ( rand(1000) + 100 )
+cscfOriginatingInviteNoAsAttempts             = int ( rand(1000) + 100 )
+

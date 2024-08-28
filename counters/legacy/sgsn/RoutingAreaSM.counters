@@ -1,0 +1,15 @@
+# Replace any . (dot) chars with _ (underscore) in counter names
+
+# Constants must start with _ (underscore)
+_MAX_REQUESTS=10000000
+
+# Session Management
+# GSM
+SM_AttActPdpContextRa_G  = int( rand(_MAX_REQUESTS) )
+SM_SuccActPdpContextRa_G = int( rand(_MAX_REQUESTS) )
+
+
+# Session Management
+# WCDMA
+SM_AttActPdpContextRa_U  = int( rand(_MAX_REQUESTS) )
+SM_SuccActPdpContextRa_U = int( rand(_MAX_REQUESTS) )

@@ -1,0 +1,4 @@
+VS_LEM_CPULoad_Total = sprintf '%.6f',rand(100)  
+
+VS_LEM_Mem_PUsed     = sprintf '%.6f',rand(50)  
+

@@ -1,0 +1,8 @@
+# Constants
+_MAX_TRANSPORT_BLOCKS = 1000000
+
+# QOS counters
+#
+pmTransportBlocksAcUl       = int( rand(_MAX_TRANSPORT_BLOCKS) )
+pmFaultyTransportBlocksAcUl = int( rand(pmTransportBlocksAcUl * 0.02) )  # up to 2% fail
+

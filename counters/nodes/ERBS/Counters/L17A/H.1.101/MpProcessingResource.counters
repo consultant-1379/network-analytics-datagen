@@ -1,0 +1,2 @@
+pmProcessorLoadLcDistr = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d', rand(100), rand(50), rand(40), rand(35), rand(35), rand(30), rand(25), rand(25), rand(20), rand(15), rand(10)
+

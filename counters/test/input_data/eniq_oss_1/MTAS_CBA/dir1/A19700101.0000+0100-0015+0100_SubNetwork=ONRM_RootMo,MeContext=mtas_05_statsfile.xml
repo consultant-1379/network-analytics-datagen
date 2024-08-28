@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Ericsson" dnPrefix="SubNetwork=ONRM_RootMo,MeContext=mtas_05">
+<fileSender localDn="ManagedElement=1" elementType="MTAS"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="mtas_05" userLabel="mtas_05" swVersion="16A"/>
+
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttempt</measType>
+  <measValue measObjLdn="180.10.200.1">
+  <r p="1">135</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttempt</measType>
+  <measValue measObjLdn="181.10.202.2">
+  <r p="1">135</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttempt</measType>
+  <measValue measObjLdn="183.10.204.3">
+  <r p="1">108</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttempt</measType>
+  <measValue measObjLdn="184.10.199.4">
+  <r p="1">81</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttempt</measType>
+  <measValue measObjLdn="100.200.180.5">
+  <r p="1">83</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="400, Bad Request">
+  <r p="1">0</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="401, Unauthorized">
+  <r p="1">0</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="403, Forbidden">
+  <r p="1">48</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="404, Not Found">
+  <r p="1">9</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="407, Proxy Authentication Required">
+  <r p="1">101</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="484, Address Incomplete">
+  <r p="1">118</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="486, Busy Here">
+  <r p="1">58</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="500, Server Internal Error">
+  <r p="1">1</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="503, Service Unavailable">
+  <r p="1">0</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigFailedAttemptCause</measType>
+  <measValue measObjLdn="600, Busy Everywhere">
+  <r p="1">207</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="180">
+  <r p="1">9574</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="181">
+  <r p="1">2872</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="182">
+  <r p="1">4787</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="183">
+  <r p="1">957</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="199">
+  <r p="1">2872</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="200">
+  <r p="1">153190</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="202">
+  <r p="1">2872</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="204">
+  <r p="1">14364</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttempt</measType>
+  <measValue measObjLdn="180.10.200.1">
+  <r p="1">513</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttempt</measType>
+  <measValue measObjLdn="181.10.202.2">
+  <r p="1">513</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttempt</measType>
+  <measValue measObjLdn="183.10.204.3">
+  <r p="1">410</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttempt</measType>
+  <measValue measObjLdn="184.10.199.4">
+  <r p="1">308</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttempt</measType>
+  <measValue measObjLdn="100.200.180.5">
+  <r p="1">310</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="400, Bad Request">
+  <r p="1">8</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="401, Unauthorized">
+  <r p="1">7</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="403, Forbidden">
+  <r p="1">296</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="404, Not Found">
+  <r p="1">65</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="407, Proxy Authentication Required">
+  <r p="1">6</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="484, Address Incomplete">
+  <r p="1">395</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="486, Busy Here">
+  <r p="1">129</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="500, Server Internal Error">
+  <r p="1">7</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="503, Service Unavailable">
+  <r p="1">9</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="600, Busy Everywhere">
+  <r p="1">1132</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="180">
+  <r p="1">7301</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="181">
+  <r p="1">2190</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="182">
+  <r p="1">3650</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="183">
+  <r p="1">730</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="199">
+  <r p="1">2190</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="200">
+  <r p="1">116824</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="202">
+  <r p="1">2190</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtOrigUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="204">
+  <r p="1">10956</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttempt</measType>
+  <measValue measObjLdn="180.10.200.1">
+  <r p="1">234</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttempt</measType>
+  <measValue measObjLdn="181.10.202.2">
+  <r p="1">234</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttempt</measType>
+  <measValue measObjLdn="183.10.204.3">
+  <r p="1">187</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttempt</measType>
+  <measValue measObjLdn="184.10.199.4">
+  <r p="1">140</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttempt</measType>
+  <measValue measObjLdn="100.200.180.5">
+  <r p="1">143</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="400, Bad Request">
+  <r p="1">0</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="401, Unauthorized">
+  <r p="1">4</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="403, Forbidden">
+  <r p="1">63</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="404, Not Found">
+  <r p="1">23</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="407, Proxy Authentication Required">
+  <r p="1">37</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="484, Address Incomplete">
+  <r p="1">28</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="486, Busy Here">
+  <r p="1">120</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="500, Server Internal Error">
+  <r p="1">3</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="503, Service Unavailable">
+  <r p="1">2</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermFailedAttemptCause</measType>
+  <measValue measObjLdn="600, Busy Everywhere">
+  <r p="1">658</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="180">
+  <r p="1">5144</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="181">
+  <r p="1">1543</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="182">
+  <r p="1">2572</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="183">
+  <r p="1">514</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="199">
+  <r p="1">1543</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="200">
+  <r p="1">82317</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="202">
+  <r p="1">1543</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="204">
+  <r p="1">7721</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttempt</measType>
+  <measValue measObjLdn="180.10.200.1">
+  <r p="1">783</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttempt</measType>
+  <measValue measObjLdn="181.10.202.2">
+  <r p="1">783</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttempt</measType>
+  <measValue measObjLdn="183.10.204.3">
+  <r p="1">626</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttempt</measType>
+  <measValue measObjLdn="184.10.199.4">
+  <r p="1">469</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttempt</measType>
+  <measValue measObjLdn="100.200.180.5">
+  <r p="1">472</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="400, Bad Request">
+  <r p="1">6</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="401, Unauthorized">
+  <r p="1">9</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="403, Forbidden">
+  <r p="1">104</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="404, Not Found">
+  <r p="1">307</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="407, Proxy Authentication Required">
+  <r p="1">237</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="484, Address Incomplete">
+  <r p="1">771</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="486, Busy Here">
+  <r p="1">322</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="500, Server Internal Error">
+  <r p="1">13</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="503, Service Unavailable">
+  <r p="1">3</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregFailedAttemptCause</measType>
+  <measValue measObjLdn="600, Busy Everywhere">
+  <r p="1">1361</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="180">
+  <r p="1">4806</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="181">
+  <r p="1">1441</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="182">
+  <r p="1">2403</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="183">
+  <r p="1">480</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="199">
+  <r p="1">1441</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="200">
+  <r p="1">76896</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="202">
+  <r p="1">1441</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasMmt">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasMmtTermUnregNetworkSuccessSessionEstablish</measType>
+  <measValue measObjLdn="204">
+  <r p="1">7212</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasPriorityCall">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasPriorityCallWpsEstablished</measType>
+  <measType p="2">MtasPriorityCallWpsRequested</measType>
+  <measValue measObjLdn="DEFAULT">
+  <r p="1">89660</r>
+  <r p="2">89923</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasQos">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasFuncInitOrigSessNOkE</measType>
+  <measType p="2">MtasFuncInitOrigSessNOkI</measType>
+  <measType p="3">MtasFuncInitOrigSessOk</measType>
+  <measType p="4">MtasFuncInitTermSessNOkE</measType>
+  <measType p="5">MtasFuncInitTermSessNOkI</measType>
+  <measType p="6">MtasFuncInitTermSessOk</measType>
+  <measType p="7">MtasFuncTermOrigSessNOkE</measType>
+  <measType p="8">MtasFuncTermOrigSessNOkI</measType>
+  <measType p="9">MtasFuncTermOrigSessOk</measType>
+  <measType p="10">MtasFuncTermTermSessNOkE</measType>
+  <measType p="11">MtasFuncTermTermSessNOkI</measType>
+  <measType p="12">MtasFuncTermTermSessOk</measType>
+  <measValue measObjLdn="DEFAULT">
+  <r p="1">42</r>
+  <r p="2">138</r>
+  <r p="3">19877</r>
+  <r p="4">162</r>
+  <r p="5">123</r>
+  <r p="6">11877</r>
+  <r p="7">281</r>
+  <r p="8">556</r>
+  <r p="9">75452</r>
+  <r p="10">136</r>
+  <r p="11">437</r>
+  <r p="12">82822</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasScc">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasSccInitOrigSessCsNOkE</measType>
+  <measType p="2">MtasSccInitOrigSessCsNOkI</measType>
+  <measType p="3">MtasSccInitOrigSessCsOk</measType>
+  <measType p="4">MtasSccInitOrigUnregSessCsNOkE</measType>
+  <measType p="5">MtasSccInitOrigUnregSessCsNOkI</measType>
+  <measType p="6">MtasSccInitOrigUnregSessCsOk</measType>
+  <measValue measObjLdn="DEFAULT">
+  <r p="1">1067</r>
+  <r p="2">53</r>
+  <r p="3">57643</r>
+  <r p="4">1474</r>
+  <r p="5">251</r>
+  <r p="6">51528</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="MtasSds">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">MtasSdsCapInitDPNOkE</measType>
+  <measType p="2">MtasSdsCapInitDPNOkI</measType>
+  <measType p="3">MtasSdsCapInitDPOk</measType>
+  <measValue measObjLdn="DEFAULT">
+  <r p="1">1289</r>
+  <r p="2">1451</r>
+  <r p="3">98160</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

@@ -1,0 +1,14 @@
+MtasSubsDataAutoRegOk   = int ( rand(100000) + 50000 )
+
+MtasSubsDataInitialRegOk   = int ( rand(100000) + 50000 )
+MtasSubsDataInitialRegNOkE = int ( rand(MtasSubsDataInitialRegOk * 0.01) ) # up to 1%  failures
+MtasSubsDataInitialRegNOkI = int ( rand(MtasSubsDataInitialRegOk * 0.01) ) # up to 1%  failures
+
+MtasSubsDataDeregOk   = int ( rand(100000) + 50000 )
+MtasSubsDataDeregNOkE = int ( rand(MtasSubsDataDeregOk * 0.01) ) # up to 1%  failures
+MtasSubsDataDeregNOkI = int ( rand(MtasSubsDataDeregOk * 0.01) ) # up to 1%  failures
+
+MtasSubsDataReregOk   = int ( rand(100000) + 50000 )
+MtasSubsDataReregNOkE = int ( rand(MtasSubsDataReregOk * 0.01) ) # up to 1%  failures
+MtasSubsDataReregNOkI = int ( rand(MtasSubsDataReregOk * 0.01) ) # up to 1%  failures
+

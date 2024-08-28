@@ -1,0 +1,114 @@
+# Replace any . (dot) chars with _ (underscore) in counter names
+
+# Constants must start with _ (underscore)
+_MAX_REQUESTS=10000000
+
+# Mobility Management 
+# GSM
+attCombiAttach          = int( rand(_MAX_REQUESTS) )
+attGprsAttach           = int( rand(attCombiAttach) * 0.5 )
+attImsiAttach           = int( attCombiAttach - attGprsAttach )
+discardedGprsAttach     = int( rand(attGprsAttach)  * 0.02 )   # R7> only
+discardedCombiAttach    = int( rand(attCombiAttach) * 0.02 )   # R7> only
+gprsMmSgsnUnsuccessfulAttachRequests = int( rand(attCombiAttach) * 0.02 )
+
+MM_UnsuccAttachCC7_G    = int( rand(gprsMmSgsnUnsuccessfulAttachRequests) * 0.2 )
+MM_UnsuccAttachCC8_G    = int( rand(gprsMmSgsnUnsuccessfulAttachRequests) * 0.2 )
+MM_UnsuccAttachCC11_G   = int( rand(gprsMmSgsnUnsuccessfulAttachRequests) * 0.2 )   # R7> only
+MM_UnsuccAttachCC13_G   = int( rand(gprsMmSgsnUnsuccessfulAttachRequests) * 0.2 )
+MM_UnsuccAttachCC14_G   = int( rand(gprsMmSgsnUnsuccessfulAttachRequests) * 0.2 )
+MM_UnsuccAttachCC15_G   = int( gprsMmSgsnUnsuccessfulAttachRequests - MM_UnsuccAttachCC7_G - MM_UnsuccAttachCC8_G - MM_UnsuccAttachCC11_G - MM_UnsuccAttachCC13_G - MM_UnsuccAttachCC14_G )
+
+attIntraSgsnRaUpdate        = int( rand(_MAX_REQUESTS) )
+succIntraSgsnRaUpdate       = int( attIntraSgsnRaUpdate - rand(attIntraSgsnRaUpdate) * 0.03 )
+MM_UnsuccIntraSgsnRauCC14_G = int( rand(attIntraSgsnRaUpdate - succIntraSgsnRaUpdate) * 0.5 )
+
+attInterSgsnRaUpdate        = int( rand(_MAX_REQUESTS) )
+succInterSgsnRaUpdate       = int( attInterSgsnRaUpdate - rand(attInterSgsnRaUpdate) * 0.02 ) 
+MM_UnsuccInterSgsnRauCC9_G  = int( rand(attInterSgsnRaUpdate - succInterSgsnRaUpdate) * 0.3 )
+MM_UnsuccInterSgsnRauCC14_G = int( rand(attInterSgsnRaUpdate - succInterSgsnRaUpdate) * 0.3 )
+
+gprsMmSgsnSuccessfulPagingProcedures = int( rand(_MAX_REQUESTS) )  # R7> only
+unsuccPacketSwitchingPaging          = int( rand(gprsMmSgsnSuccessfulPagingProcedures) * 0.02 )  # R7> only
+
+MM_NbrActAttachedSub_G = int( rand(_MAX_REQUESTS) )
+SM_NbrActPdpContext_G  = int( rand(_MAX_REQUESTS) )
+
+
+# Mobility Management 
+# WCDMA
+attGprsAttachUmts          = int( rand(_MAX_REQUESTS) )
+unsuccGprsAttachUmts       = int( rand(attGprsAttachUmts)  * 0.02 )
+
+MM_UnsuccAttachCC7_U       = int( rand(unsuccGprsAttachUmts) * 0.2 )
+MM_UnsuccAttachCC8_U       = int( rand(unsuccGprsAttachUmts) * 0.2 )
+MM_UnsuccAttachCC11_U      = int( rand(unsuccGprsAttachUmts) * 0.2 )   # R7> only
+MM_UnsuccAttachCC13_U      = int( rand(unsuccGprsAttachUmts) * 0.2 )
+MM_UnsuccAttachCC14_U      = int( rand(unsuccGprsAttachUmts) * 0.1 )
+MM_UnsuccAttachCC15_U      = int( rand(unsuccGprsAttachUmts) * 0.1 )
+MM_UnsuccAttachCSPSCoord_U = int( unsuccGprsAttachUmts - MM_UnsuccAttachCC7_U - MM_UnsuccAttachCC8_U - MM_UnsuccAttachCC11_U - MM_UnsuccAttachCC13_U - MM_UnsuccAttachCC14_U - MM_UnsuccAttachCC15_U ) # for Multi-Operator Core Network only
+
+attIntraSgsnRaUpdateUmts   = int( rand(_MAX_REQUESTS) )
+succIntraSgsnRaUpdateUmts  = int( attIntraSgsnRaUpdateUmts - rand(attIntraSgsnRaUpdateUmts) * 0.02 )
+MM_UnsuccIntraSgsnRauCC14_U = int( rand(attIntraSgsnRaUpdateUmts - succIntraSgsnRaUpdateUmts) * 0.5 )
+
+attInterSgsnRaUpdateUmts    = int( rand(_MAX_REQUESTS) )
+succInterSgsnRaUpdateUmts   = int( attInterSgsnRaUpdateUmts - rand(attInterSgsnRaUpdateUmts) * 0.02 ) 
+MM_UnsuccInterSgsnRauCC9_U  = int( rand(attInterSgsnRaUpdateUmts - succInterSgsnRaUpdateUmts) * 0.3 )
+MM_UnsuccInterSgsnRauCC14_U = int( rand(attInterSgsnRaUpdateUmts - succInterSgsnRaUpdateUmts) * 0.3 )
+MM_UnsuccISRAUCSPSCoord_U   = int( rand(attInterSgsnRaUpdateUmts - succInterSgsnRaUpdateUmts) * 0.1 ) # for Multi-Operator Core Network only
+
+attPacketSwitchingPagingUmts    = int( rand(_MAX_REQUESTS) )  # R7> only
+unsuccPacketSwitchingPagingUmts = int( rand(attPacketSwitchingPagingUmts) * 0.02 )  # R7> only
+
+MM_NbrActAttachedSub_U = int( rand(_MAX_REQUESTS) )
+SM_NbrActPdpContext_U  = int( rand(_MAX_REQUESTS) )
+
+
+
+# Session Management
+# GSM
+SM_AttActPdpContext_G             = int( rand(_MAX_REQUESTS) )
+gprsSmSgsnUnsuccessfulActivations = int( rand(SM_AttActPdpContext_G) * 0.02 )
+
+SM_UnsuccActPdpContextCC27_28_G   = int( rand(gprsSmSgsnUnsuccessfulActivations) * 0.5 )
+SM_UnsuccActPdpContextCC29_G      = int( rand(gprsSmSgsnUnsuccessfulActivations) * 0.5 )
+SM_UnsuccActPdpContextCC32_33_G   = int( gprsSmSgsnUnsuccessfulActivations - SM_UnsuccActPdpContextCC27_28_G - SM_UnsuccActPdpContextCC29_G )
+
+SM_NbrActPdpContext_G             = int( rand(_MAX_REQUESTS) * 0.01 ) 
+SM_SuccActPdpContext_G            = int( rand(_MAX_REQUESTS) )
+SM_PdpContextsLost_G              = int( rand(SM_NbrActPdpContext_G + SM_SuccActPdpContext_G) * 0.01 )
+SM_AttDeactPdpContextSgsnCC38_G   = int( rand(SM_NbrActPdpContext_G + SM_SuccActPdpContext_G) * 0.01 )
+SM_AttDeactPdpContextSgsnCC39_G   = int( rand(SM_NbrActPdpContext_G + SM_SuccActPdpContext_G) * 0.01 )
+
+SM_AttActPdpContextRa_G		  = int( rand(_MAX_REQUESTS) )
+SM_SuccActPdpContextRa_G	  = int( rand(_MAX_REQUESTS) )
+
+
+# Session Management
+# WCDMA
+SM_AttActPdpContext_U             = int( rand(_MAX_REQUESTS) )
+SM_SuccActPdpContext_U            = int( SM_AttActPdpContext_U - rand(SM_AttActPdpContext_U) * 0.02 )
+SM_UnsuccActPdpContextCC27_28_U   = int( rand(SM_AttActPdpContext_U - SM_SuccActPdpContext_U) * 0.5 )   # up to 50% fail due to CC27_28
+SM_UnsuccActPdpContextCC29_U      = int( rand(SM_AttActPdpContext_U - SM_SuccActPdpContext_U) * 0.5 )   # up to 50% fail due to CC29
+SM_UnsuccActPdpContextCC32_33_U   = int( SM_AttActPdpContext_U - SM_SuccActPdpContext_U - SM_UnsuccActPdpContextCC27_28_U - SM_UnsuccActPdpContextCC29_U )    # remainder fail due to CC32_33
+
+SM_NbrActPdpContext_U             = int( rand(_MAX_REQUESTS) * 0.1 ) 
+SM_SuccActPdpContext_U            = int( rand(_MAX_REQUESTS) )
+SM_PdpContextsLost_U              = int( rand(SM_NbrActPdpContext_U + SM_SuccActPdpContext_U) * 0.01 )
+SM_AttDeactPdpContextSgsnCC38_U   = int( rand(SM_NbrActPdpContext_U + SM_SuccActPdpContext_U) * 0.01 )
+SM_AttDeactPdpContextSgsnCC39_U   = int( rand(SM_NbrActPdpContext_U + SM_SuccActPdpContext_U) * 0.01 )
+
+SM_AttActPdpContextRa_U		  = int( rand(_MAX_REQUESTS) )
+SM_SuccActPdpContextRa_U	  = int( rand(_MAX_REQUESTS) )
+
+
+
+# Payload
+# 2G Throughput
+downlinkSndcpOctetSent 		= int( rand(100000) )
+uplinkSndcpOctetReceivedMode 	= int( rand(100000) )
+
+# 3G Throughput
+GTP_GtpuInDataOctIu		= int( rand(100000) )
+GTP_GtpuOutDataOctIu		= int( rand(100000) )

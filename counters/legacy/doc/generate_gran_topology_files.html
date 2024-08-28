@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>generate_gran_topology_files - creates the ENIQ topology directories and files for BSC nodes.</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:rurban@x-ray.at" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+<!--
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#version">VERSION</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#required_arguments">REQUIRED ARGUMENTS</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#directories">Directories</a></li>
+		<li><a href="#cell">CELL</a></li>
+		<li><a href="#cell_set">CELL SET</a></li>
+		<li><a href="#bsc">BSC</a></li>
+		<li><a href="#site">Site</a></li>
+	</ul>
+
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#environment">ENVIRONMENT</a></li>
+	<li><a href="#exit_status">EXIT STATUS</a></li>
+	<li><a href="#configuration">CONFIGURATION</a></li>
+	<li><a href="#dependencies">DEPENDENCIES</a></li>
+	<li><a href="#incompatibilities">INCOMPATIBILITIES</a></li>
+	<li><a href="#bugs_and_limitations">BUGS AND LIMITATIONS</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#license_and_copyright">LICENSE AND COPYRIGHT</a></li>
+</ul>
+-->
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>generate_gran_topology_files - creates the ENIQ topology directories and files for BSC nodes.</p>
+<p>
+</p>
+<hr />
+<h1><a name="version">VERSION</a></h1>
+<p>This documentation refers to generate_gran_topology_files.pl version 1.0.</p>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<p>No arguments required, just run using the command:</p>
+<dl>
+<dt><strong><a name="item_generate_gran_topology_files_2epl">generate_gran_topology_files.pl</a></strong>
+
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="required_arguments">REQUIRED ARGUMENTS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script creates all the topology information needed for the ENIQ GRAN nodes.</p>
+<p>For the specification of the contents of the topology files, see ``Interwork Description for ENIQ-M xml files'',
+1/15519-APR 901 0199.</p>
+<p>
+</p>
+<h2><a name="directories">Directories</a></h2>
+<p>The topology directories created are:</p>
+<ul>
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fgran">/eniq/data/pmdata/eniq_oss_1/gran</a></strong>
+
+<li><strong><a name="item__2feniq_2fdata_2fpmdata_2feniq_oss_1_2fgran_2ftopo">/eniq/data/pmdata/eniq_oss_1/gran/topologyData</a></strong>
+
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/CELL</strong>
+
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/DIM_BSS_AREA</strong>
+
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/GranNetwork</strong>
+
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/Site</strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="cell">CELL</a></h2>
+<p>The Cell topology files are stored in the CELL directory, an example file is:</p>
+<ul>
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/CELL/CELL</strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="cell_set">CELL SET</a></h2>
+<p>The Cell Set topology files are stored in the DIM_BSS_AREA directory, an example file is:</p>
+<ul>
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/DIM_BSS_AREA/DIM_BSS_AREA</strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="bsc">BSC</a></h2>
+<p>The BSC topology files are stored in the BSC directory, an example file is:</p>
+<ul>
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/GranNetwork/BSC</strong>
+
+</ul>
+<p>
+</p>
+<h2><a name="site">Site</a></h2>
+<p>The Site topology files are stored in the Site directory, an example file is:</p>
+<ul>
+<li><strong>/eniq/data/pmdata/eniq_oss_1/gran/topologyData/Site/Site</strong>
+
+</ul>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="environment">ENVIRONMENT</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="exit_status">EXIT STATUS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="configuration">CONFIGURATION</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="dependencies">DEPENDENCIES</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="incompatibilities">INCOMPATIBILITIES</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs_and_limitations">BUGS AND LIMITATIONS</a></h1>
+<p>None</p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>eeikcoy</p>
+<p>
+</p>
+<hr />
+<h1><a name="license_and_copyright">LICENSE AND COPYRIGHT</a></h1>
+<p>Ericsson (2007)</p>
+
+</body>
+
+</html>

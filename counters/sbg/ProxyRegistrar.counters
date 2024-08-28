@@ -1,0 +1,12 @@
+_MAX_ATTEMPTS                    = 10000
+sbgSipRegStatInitialAttCnt       = int ( _MAX_ATTEMPTS + rand(10000) )
+
+sbgSipRegStatInitialAccCnt    	= int ( sbgSipRegStatInitialAttCnt - rand(sbgSipRegStatInitialAttCnt * 0.04) ) # up to 4% fail
+sbgSipRegStatRejInitialRegCnt400	= int ( rand( (sbgSipRegStatInitialAttCnt - sbgSipRegStatInitialAccCnt) * 0.035) ) # add some small number of rejects
+sbgSipRegStatRejInitialRegCnt403	= int ( rand( (sbgSipRegStatInitialAttCnt - sbgSipRegStatInitialAccCnt) * 0.065) ) # add some small number of rejects
+
+
+sbgInitRegTime                   = int ( rand(200000) )
+
+sbgSipEmerRegStatInitialAccCnt   = int ( rand(10000) )
+

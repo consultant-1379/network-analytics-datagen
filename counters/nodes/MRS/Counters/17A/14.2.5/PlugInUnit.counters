@@ -1,0 +1,3 @@
+pmProcessorLoad     = int ( rand(90) + 10 )
+pmProcessorCoreLoad = int ( rand(90) + 10 )
+

@@ -1,0 +1,12 @@
+pmEndcSetupUeAtt  = int ( rand(10000) + 300 )
+pmEndcSetupUeSucc = int ( pmEndcSetupUeAtt - rand(pmEndcSetupUeAtt * 0.025) ) # up to 2.5%  failures 
+
+pmEndcRelUeNormal          = int ( pmEndcSetupUeSucc  - rand(pmEndcSetupUeSucc  * 0.95) )   # up to 90% released normally
+pmEndcRelUeAbnormalMenb    = int ( pmEndcRelUeNormal   * 0.005 ) # up to 0.5% abnormal MeNB releases
+pmEndcRelUeAbnormalMenbAct = int ( pmEndcRelUeAbnormalMenb * 0.005 ) # up to 0.5% abnormal MeNB active releases
+pmEndcRelUeAbnormalSgnb    = int ( pmEndcRelUeNormal   * 0.005 ) # up to 0.5% abnormal SgNB releases
+pmEndcRelUeAbnormalSgnbAct = int ( pmEndcRelUeAbnormalSgnb * 0.005 ) # up to 0.5% abnormal SgNB active releases
+
+pmCellDowntimeAuto = 0
+pmCellDowntimeMan  = 0
+

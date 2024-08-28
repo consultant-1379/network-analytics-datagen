@@ -1,0 +1,6 @@
+pmAvMedStreamChanSetUpRate    = int ( rand(900) + 10 )
+pmNrOfMediaStreamChannelsBusy = int ( rand(90) + 10 )
+
+pmNrOfMediaStreamChannelsRejectedDueToCapacity = int ( rand(10) )
+pmNrOfMediaStreamChannelsReq                   = int ( rand(10000) )
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V8.0" vendorName="Ericsson" dnPrefix="">
+<fileSender localDn="ManagedElement=ggsn_02" elementType="PGW"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="ManagedElement=ggsn_02" userLabel="GGSN" swVersion="R3B"/>
+
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">pgwApnAttemptedEpsBearerActivation</measType>
+  <measType p="2">pgwApnAttemptedS2bEpsBearerActivation</measType>
+  <measType p="3">pgwApnCompletedEpsBearerActivation</measType>
+  <measType p="4">pgwApnCompletedS2bEpsBearerActivation</measType>
+  <measValue measObjLdn="ggsnApnStats,ggsnApnName=ggsn_02">
+  <r p="1">44210</r>
+  <r p="2">77113</r>
+  <r p="3">43391</r>
+  <r p="4">75819</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">IratHoAttFromUwlanToEutran</measType>
+  <measValue measObjLdn="pgwAttemptedEpsBearerStats">
+  <r p="1">10062</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">IratHoCompFromUwlanToEutran</measType>
+  <measValue measObjLdn="pgwCompletedEpsBearerStats">
+  <r p="1">10000</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

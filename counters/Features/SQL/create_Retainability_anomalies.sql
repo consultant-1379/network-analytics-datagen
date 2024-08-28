@@ -1,0 +1,6 @@
+update DC_E_ERBS_EUTRANCELLFDD_RAW_01 set pmErabRelAbnormalEnbAct=50, pmErabRelAbnormalMmeAct=30 WHERE erbs in ('erbs_1103', 'erbs_1129', 'erbs_1118')
+update DC_E_ERBS_EUTRANCELLFDD_RAW_02 set pmErabRelAbnormalEnbAct=50, pmErabRelAbnormalMmeAct=30 WHERE erbs in ('erbs_1103', 'erbs_1129', 'erbs_1118')
+update DC_E_ERBS_EUTRANCELLFDD_RAW_03 set pmErabRelAbnormalEnbAct=50, pmErabRelAbnormalMmeAct=30 WHERE erbs in ('erbs_1103', 'erbs_1129', 'erbs_1118')
+update DC_E_ERBS_EUTRANCELLFDD_RAW_04 set pmErabRelAbnormalEnbAct=50, pmErabRelAbnormalMmeAct=30 WHERE erbs in ('erbs_1103', 'erbs_1129', 'erbs_1118')
+update DC_E_ERBS_EUTRANCELLFDD_RAW_05 set pmErabRelAbnormalEnbAct=50, pmErabRelAbnormalMmeAct=30 WHERE erbs in ('erbs_1103', 'erbs_1129', 'erbs_1118')
+update DC_E_ERBS_EUTRANCELLFDD_RAW_06 set pmErabRelAbnormalEnbAct=50, pmErabRelAbnormalMmeAct=30 WHERE erbs in ('erbs_1103', 'erbs_1129', 'erbs_1118')

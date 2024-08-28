@@ -1,0 +1,5 @@
+Emergency_Calls_Attempted  = int( rand(20) )
+Failed_Emergency_Calls     = int( rand(Emergency_Calls_Attempted * 0.2) ) # up to 20% failures
+Successful_Emergency_Calls = Emergency_Calls_Attempted - Failed_Emergency_Calls
+Active_Emergency_Calls     = int(rand(Emergency_Calls_Attempted))
+

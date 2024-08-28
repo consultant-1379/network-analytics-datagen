@@ -1,0 +1,3 @@
+pmHoPrepAtt1xRttSrvcc  = int ( rand(1000) + 300 )
+pmHoPrepSucc1xRttSrvcc = int ( pmHoPrepAtt1xRttSrvcc  - rand(pmHoPrepAtt1xRttSrvcc  * 0.005) ) # up to 0.5%  failures
+

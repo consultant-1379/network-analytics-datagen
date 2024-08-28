@@ -1,0 +1,19 @@
+# QOS
+MtasFuncInitOrigSessOk   = int ( rand(100000) + 1000 )
+MtasFuncInitOrigSessNOkI = int ( rand(MtasFuncInitOrigSessOk * 0.015) ) # up to 1.5%  failures
+MtasFuncInitOrigSessNOkE = int ( rand(MtasFuncInitOrigSessOk * 0.035) ) # up to 3.5%  failures
+
+MtasFuncTermOrigSessOk   = int ( rand(100000) + 5000 )
+MtasFuncTermOrigSessNOkI = int ( rand(MtasFuncTermOrigSessOk * 0.045) ) # up to 4.5%  failures
+MtasFuncTermOrigSessNOkE = int ( rand(MtasFuncTermOrigSessOk * 0.005) ) # up to 0.5%  failures
+
+MtasFuncInitTermSessOk   = int ( rand(100000) + 1000 )
+MtasFuncInitTermSessNOkI = int ( rand(MtasFuncInitTermSessOk * 0.015) ) # up to 1.5%  failures
+MtasFuncInitTermSessNOkE = int ( rand(MtasFuncInitTermSessOk * 0.035) ) # up to 3.5%  failures
+
+MtasFuncTermTermSessOk   = int ( rand(100000) + 5000 )
+MtasFuncTermTermSessNOkI = int ( rand(MtasFuncTermTermSessOk * 0.045) ) # up to 4.5%  failures
+MtasFuncTermTermSessNOkE = int ( rand(MtasFuncTermTermSessOk * 0.005) ) # up to 0.5%  failures
+
+#SELECT Source, g3SubNetwork, MOID, g3ManagedElement, MtasQos, MTAS_DC, OSS_ID, SN, DATE_ID, YEAR_ID, MONTH_ID, DAY_ID, HOUR_ID, DATETIME_ID, MIN_ID, TIMELEVEL, SESSION_ID, BATCH_ID, PERIOD_DURATION, ROWSTATUS, DC_RELEASE, DC_SOURCE, DC_TIMEZONE, DC_SUSPECTFLAG, UTC_DATETIME_ID, MtasFuncPsiUnknown, MtasFuncInitTermSessNOkI, MtasFuncInitTermUnregSessNOkI, MtasFuncTermTermSessOk, MtasFuncInitTermUnregSessOk, MtasFuncInitOrigSessNOkE, MtasFuncInitOrigUnregSessNOkE, MtasFuncTermTermUnregSessNOkE, MtasFuncInitTermSessOk, MtasFuncTermOrigSessNOkI, MtasFuncInitOrigSessOk, MtasFuncInitOrigUnregSessNOkI, MtasFuncInitTermUnregSessNOkE, MtasFuncTermTermSessNOkI, MtasFuncTermOrigSessNOkE, MtasFuncTermOrigUnregSessOk, MtasFuncTermOrigUnregSessNOkE, MtasFuncTermTermUnregSessOk, MtasFuncTermTermUnregSessNOkI, MtasFuncInitTermSessNOkE, MtasFuncInitOrigSessNOkI, MtasFuncTermOrigUnregSessNOkI, MtasFuncPsiOk, MtasFuncTermTermSessNOkE, MtasFuncTermOrigSessOk, MtasFuncInitOrigUnregSessOk FROM DC_E_MTAS_MTASQOS_RAW;
+#

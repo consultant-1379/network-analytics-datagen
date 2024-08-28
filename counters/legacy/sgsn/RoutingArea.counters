@@ -1,0 +1,29 @@
+# Replace any . (dot) chars with _ (underscore) in counter names
+
+# Constants must start with _ (underscore)
+_MAX_REQUESTS=10000000
+
+# Mobility Management
+# GSM
+MM_NbrActAttachedSubRA_G   = int( rand(_MAX_REQUESTS) )
+MM_AttInterSgsnRaUpdate_G  = int( rand(_MAX_REQUESTS) )
+MM_SuccInterSgsnRaUpdate_G = int( rand(_MAX_REQUESTS) )
+MM_AttIntraSgsnRaUpdate_G  = int( rand(_MAX_REQUESTS) )
+MM_SuccIntraSgsnRaUpdate_G = int( rand(_MAX_REQUESTS) )
+MM_AttGprsAttach_G	   = int( rand(_MAX_REQUESTS) )
+MM_SuccGprsAttach_G	   = int( rand(_MAX_REQUESTS) )
+
+
+# Mobility Management
+# WCDMA
+MM_AttGprsAttach_U         = int( rand(_MAX_REQUESTS) )                                      # R6 only
+MM_SuccGprsAttach_U        = int( MM_AttGprsAttach_U - rand(MM_AttGprsAttach_U) * 0.02 )     # R6 only
+MM_NbrActAttachedSubRA_U   = int( rand(_MAX_REQUESTS) )
+MM_AttInterSgsnRaUpdate_U  = int( rand(_MAX_REQUESTS) )
+MM_SuccInterSgsnRaUpdate_U = int( rand(_MAX_REQUESTS) )
+MM_AttIntraSgsnRaUpdate_U  = int( rand(_MAX_REQUESTS) )
+MM_SuccIntraSgsnRaUpdate_U = int( rand(_MAX_REQUESTS) )
+MM_AttGprsAttach_U	   = int( rand(_MAX_REQUESTS) )
+MM_SuccGprsAttach_U	   = int( rand(_MAX_REQUESTS) )
+
+MM_AttCombiInterSgsnRaUpdate_G = 0  # Need this to ensure that MM table is populated. Problem with Tech Pack.

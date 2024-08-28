@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V9.0" vendorName="Ericsson" dnPrefix="SubNetwork=ONRM_RootMo,MeContext=sgsn_mme_03">
+<fileSender localDn="ManagedElement=1" elementType="SGSN-MME"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="sgsn_mme_03" userLabel="sgsn_mme_03" swVersion="15B"/>
+
+<measInfo measInfoId="SGSN-MME_Mobility_MM_E">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.MM.SrvccCsAndPsToWAtt.E</measType>
+  <measType p="2">VS.MM.SrvccCsAndPsToWCsSuccPsFailed.E</measType>
+  <measType p="3">VS.MM.SrvccCsAndPsToWSucc.E</measType>
+  <measType p="4">VS.MM.SrvccCsOnlyToGAtt.E</measType>
+  <measType p="5">VS.MM.SrvccCsOnlyToGSucc.E</measType>
+  <measType p="6">VS.MM.SrvccCsOnlyToWAtt.E</measType>
+  <measType p="7">VS.MM.SrvccCsOnlyToWSucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnFunction=1">
+  <r p="1">22104</r>
+  <r p="2">0</r>
+  <r p="3">21529</r>
+  <r p="4">21373</r>
+  <r p="5">21191</r>
+  <r p="6">2766</r>
+  <r p="7">2745</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=1">
+  <r p="1">24124</r>
+  <r p="2">23690</r>
+  <r p="3">378</r>
+  <r p="4">366</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=2">
+  <r p="1">9632</r>
+  <r p="2">9608</r>
+  <r p="3">302</r>
+  <r p="4">287</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=3">
+  <r p="1">4749</r>
+  <r p="2">4660</r>
+  <r p="3">861</r>
+  <r p="4">853</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=4">
+  <r p="1">22402</r>
+  <r p="2">21911</r>
+  <r p="3">670</r>
+  <r p="4">641</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=5">
+  <r p="1">21182</r>
+  <r p="2">21104</r>
+  <r p="3">528</r>
+  <r p="4">504</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=6">
+  <r p="1">16004</r>
+  <r p="2">15990</r>
+  <r p="3">671</r>
+  <r p="4">659</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=7">
+  <r p="1">17532</r>
+  <r p="2">17178</r>
+  <r p="3">832</r>
+  <r p="4">814</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=8">
+  <r p="1">5741</r>
+  <r p="2">5637</r>
+  <r p="3">234</r>
+  <r p="4">232</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=9">
+  <r p="1">10035</r>
+  <r p="2">9878</r>
+  <r p="3">497</r>
+  <r p="4">470</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="SGSN-MME_Session_SM_E_QCI">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">VS.SM.ActBearerQCIAtt.E</measType>
+  <measType p="2">VS.SM.ActBearerQCISucc.E</measType>
+  <measType p="3">VS.SM.CreateDedicatedBearerQCIAtt.E</measType>
+  <measType p="4">VS.SM.CreateDedicatedBearerQCISucc.E</measType>
+  <measValue measObjLdn="ManagedElement=sgsn_mme_03,SgsnMme=1,QosClassIdentifier=10">
+  <r p="1">15601</r>
+  <r p="2">15517</r>
+  <r p="3">549</r>
+  <r p="4">547</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

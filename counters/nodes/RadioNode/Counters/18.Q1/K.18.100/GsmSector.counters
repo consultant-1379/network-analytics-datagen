@@ -1,0 +1,5 @@
+# Energy
+#
+pmMicroTxSleepGsmTime       = int ( rand(10) )
+pmMicroTxSleepGsmMeasPeriod = int ( rand(10) )
+

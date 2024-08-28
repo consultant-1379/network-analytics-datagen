@@ -1,0 +1,12 @@
+# Constants
+_MAX_MSU=10000000
+_MAX_SU=10000000
+
+
+# SS7 Over TDM QoS
+
+pmNoOfNacks              = int( rand(_MAX_SU) * 0.001 )
+pmNoOfSuReceivedInError  = int( rand(_MAX_SU) * 0.001 )
+pmNoOfMSUReceived        = int( rand(_MAX_MSU) )
+pmNoOfMSUTransmitted     = int( pmNoOfMSUReceived - rand(pmNoOfMSUReceived) * 0.001 )
+

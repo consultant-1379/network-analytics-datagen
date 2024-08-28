@@ -1,0 +1,30 @@
+# Constants
+_MAX_ATM_CONNECTIONS=100000
+_MAX_IP_CONNECTIONS=100000
+
+
+# ATM Transport Qos, Jitter counters
+pmAtmCnConnMeasuredJitter0  = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmCnConnMeasuredJitter1  = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmCnConnMeasuredJitter2  = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmCnConnMeasuredJitter3  = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmCnConnMeasuredJitter4  = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmCnConnMeasuredJitter5  = int( rand(_MAX_ATM_CONNECTIONS) * 0.005 )
+
+pmAtmRanConnMeasuredJitter0 = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmRanConnMeasuredJitter1 = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmRanConnMeasuredJitter2 = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmRanConnMeasuredJitter3 = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmRanConnMeasuredJitter4 = int( rand(_MAX_ATM_CONNECTIONS) * 0.001 )
+pmAtmRanConnMeasuredJitter5 = int( rand(_MAX_ATM_CONNECTIONS) * 0.005 )
+
+
+# IP Transport Qos, Jitter counters
+pmIpCnConnMeasuredJitter0  = int( rand(_MAX_IP_CONNECTIONS) * 0.001 )
+pmIpCnConnMeasuredJitter1  = int( rand(_MAX_IP_CONNECTIONS) * 0.001 )
+pmIpCnConnMeasuredJitter2  = int( rand(_MAX_IP_CONNECTIONS) * 0.001 )
+pmIpCnConnMeasuredJitter3  = int( rand(_MAX_IP_CONNECTIONS) * 0.001 )
+pmIpCnConnMeasuredJitter4  = int( rand(_MAX_IP_CONNECTIONS) * 0.001 )
+pmIpCnConnMeasuredJitter5  = int( rand(_MAX_IP_CONNECTIONS) * 0.005 )
+
+

@@ -1,0 +1,9 @@
+# Constants
+_MAX_TDM_REQUESTS=100000
+
+
+# MGw Accessibility
+
+pmNrOfTdmTermsReq = int( rand(_MAX_TDM_REQUESTS) )
+pmNrOfTdmTermsRej = int( rand(pmNrOfTdmTermsReq) * 0.03 )
+

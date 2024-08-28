@@ -1,0 +1,11 @@
+# Constants
+_MAX_SDUS=10000000
+_MAX_SIGNALLING_LINK_FAILURES=10
+
+
+# SS7 Over ATM QoS
+
+pmNoOfSentSDUs      = int( rand(_MAX_SDUS) )
+pmNoOfReceivedSDUs  = int( pmNoOfSentSDUs - rand(pmNoOfSentSDUs) * 0.001 )
+pmNoOfAllSLFailures = int( rand(_MAX_SIGNALLING_LINK_FAILURES) )
+

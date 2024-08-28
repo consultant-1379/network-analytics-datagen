@@ -1,0 +1,11 @@
+TRAFF2BTBFSCAN = int( rand(100) )
+TRAFF2GTBFSCAN = int( rand(100) )
+TRAFF2ETBFSCAN = int( rand(100) )
+
+MUTILBASIC     = int( TRAFF2BTBFSCAN - int( rand(TRAFF2BTBFSCAN) ) )
+MUTILGPRS      = int( TRAFF2GTBFSCAN - int( rand(TRAFF2GTBFSCAN) ) )
+MUTILEGPRS     = int( TRAFF2ETBFSCAN - int( rand(TRAFF2ETBFSCAN) ) )
+
+MAXGTSDL       = int( rand(1000) )
+MAXEGTSDL      = int( rand(1000) )
+

@@ -1,0 +1,8 @@
+pmLicConnectedUsersTimeCong = int(rand(100))
+
+pmLicConnectedUsersMax	    = int(rand(100))
+pmLicConnectedUsersLevSum   = int(rand(100))
+pmLicConnectedUsersLevSamp  = int(rand(100))
+
+pmLicConnectedUsersLicense  = int ( pmLicConnectedUsersMax - rand(pmLicConnectedUsersMax * rand()) )
+

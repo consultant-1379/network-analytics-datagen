@@ -1,0 +1,8 @@
+CS12ULSCHED  = int( rand(1000) )
+CS12ULACK    = int( rand(CS12ULSCHED) * rand(1000) )
+
+MC19ULSCHED  = int( rand(1000) )
+MC19ULACK    = int( rand(MC19ULSCHED) * rand(1000) )
+
+PDRAC        = int( rand(1000) )
+

@@ -1,0 +1,4 @@
+CPULoad_Total     = int ( rand(10) + 10 ) 
+CPULoad_TotalVirt = int ( rand(20) + 20 ) 
+Mem_Used          = int ( rand(100000000) + 10000000 ) 
+

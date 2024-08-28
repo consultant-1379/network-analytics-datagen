@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE model PUBLIC "-//Ericsson NMS CIF CS//CS Filtered Export DTD//" "export.dtd">
+<model>  
+
+   <mo fdn="SubNetwork=ONRM_RootMo,ManagedElement=sbg_05" mimName="ONRM" mimVersion="14.2.5">
+      <attr name="sourceType">
+        <seq count="1">
+        <item>ISBlade</item>
+        </seq>
+      </attr>
+      <attr name="userLabel">sbg_05</attr>
+      <attr name="nodeVersion">3.1</attr>
+      <attr name="siteRef">SubNetwork=ONRM_RootMo,Site=Athlone</attr>
+      <attr name="managedElementType">
+        <seq count="1">
+          <item>Isite</item>
+        </seq>
+      </attr>
+   </mo>
+
+</model>
+

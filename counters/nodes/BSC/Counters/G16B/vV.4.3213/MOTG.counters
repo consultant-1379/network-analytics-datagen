@@ -1,0 +1,2 @@
+TSPSOFFTSTIME = int(rand(10))
+TSPSMEASPER = int(rand(10))

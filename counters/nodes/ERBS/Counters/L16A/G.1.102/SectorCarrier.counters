@@ -1,0 +1,50 @@
+pmBranchDeltaSinrDistr0 = sprintf '42,0,%d,1,%d,7,%d,10,%d,11,%d,12,%d,15,%d,16,%d,19,%d,20,%d,21,%d,22,%d,23,%d,24,%d,25,%d,26,%d,27,%d,29,%d,31,%d,32,%d,34,%d,36,%d,37,%d,38,%d,42,%d,43,%d,44,%d,46,%d,47,%d,48,%d,49,%d,50,%d,51,%d,52,%d,53,%d,54,%d,55,%d,56,%d,57,%d,58,%d,59,%d,60,%d',rand(17)+1,rand(3)+1,rand(93)+1,rand(14)+1,rand(17)+1,rand(39)+1,rand(57)+1,rand(52)+1,rand(90)+1,rand(99)+1,rand(67)+1,rand(97)+1,rand(2)+1,rand(62)+1,rand(80)+1,rand(22)+1,rand(40)+1,rand(11)+1,rand(80)+1,rand(40)+1,rand(90)+1,rand(49)+1,rand(47)+1,rand(28)+1,rand(77)+1,rand(25)+1,rand(14)+1,rand(29)+1,rand(21)+1,rand(82)+1,rand(44)+1,rand(46)+1,rand(26)+1,rand(28)+1,rand(100)+1,rand(23)+1,rand(10)+1,rand(57)+1,rand(46)+1,rand(9)+1,rand(28)+1,rand(47)+1
+
+pmBranchDeltaSinrDistr1 = sprintf '13,11,%d,13,%d,22,%d,24,%d,28,%d,32,%d,33,%d,38,%d,42,%d,49,%d,53,%d,55,%d,58,%d',rand(23)+1,rand(3)+1,rand(79)+1,rand(3)+1,rand(100)+1,rand(33)+1,rand(94)+1,rand(32)+1,rand(69)+1,rand(20)+1,rand(71)+1,rand(48)+1,rand(76)+1
+
+pmBranchDeltaSinrDistr2 = sprintf '9,3,%d,6,%d,9,%d,16,%d,19,%d,32,%d,37,%d,40,%d,60,%d',rand(1)+1,rand(12)+1,rand(42)+1,rand(47)+1,rand(21)+1,rand(37)+1,rand(8)+1,rand(41)+1,rand(66)+1
+
+pmBranchDeltaSinrDistr3 = sprintf '19,0,%d,5,%d,13,%d,18,%d,21,%d,22,%d,28,%d,30,%d,32,%d,33,%d,35,%d,39,%d,43,%d,45,%d,53,%d,56,%d,57,%d,59,%d,60,%d',rand(19)+1,rand(61)+1,rand(89)+1,rand(32)+1,rand(85)+1,rand(90)+1,rand(79)+1,rand(52)+1,rand(63)+1,rand(100)+1,rand(18)+1,rand(1)+1,rand(20)+1,rand(100)+1,rand(69)+1,rand(72)+1,rand(57)+1,rand(76)+1,rand(50)+1
+
+pmBranchDeltaSinrDistr4 = sprintf '39,0,%d,1,%d,3,%d,4,%d,5,%d,7,%d,9,%d,10,%d,11,%d,13,%d,14,%d,18,%d,19,%d,22,%d,23,%d,24,%d,25,%d,26,%d,27,%d,28,%d,30,%d,31,%d,32,%d,34,%d,35,%d,36,%d,37,%d,39,%d,40,%d,41,%d,43,%d,45,%d,47,%d,48,%d,49,%d,53,%d,56,%d,58,%d,59,%d',rand(59)+1,rand(6)+1,rand(78)+1,rand(28)+1,rand(13)+1,rand(44)+1,rand(19)+1,rand(51)+1,rand(80)+1,rand(82)+1,rand(87)+1,rand(28)+1,rand(27)+1,rand(58)+1,rand(83)+1,rand(84)+1,rand(88)+1,rand(61)+1,rand(90)+1,rand(78)+1,rand(32)+1,rand(14)+1,rand(27)+1,rand(75)+1,rand(43)+1,rand(28)+1,rand(12)+1,rand(88)+1,rand(29)+1,rand(19)+1,rand(31)+1,rand(71)+1,rand(47)+1,rand(97)+1,rand(66)+1,rand(74)+1,rand(62)+1,rand(41)+1,rand(2)+1
+
+pmBranchDeltaSinrDistr5 = sprintf '15,4,%d,5,%d,13,%d,19,%d,20,%d,29,%d,31,%d,32,%d,34,%d,35,%d,39,%d,52,%d,54,%d,59,%d,60,%d',rand(91)+1,rand(32)+1,rand(9)+1,rand(56)+1,rand(10)+1,rand(29)+1,rand(81)+1,rand(87)+1,rand(4)+1,rand(73)+1,rand(15)+1,rand(16)+1,rand(62)+1,rand(74)+1,rand(8)+1
+
+pmBranchDeltaSinrDistr6 = sprintf '17,4,%d,6,%d,22,%d,23,%d,26,%d,28,%d,29,%d,30,%d,31,%d,37,%d,39,%d,40,%d,49,%d,51,%d,53,%d,59,%d,60,%d',rand(84)+1,rand(77)+1,rand(56)+1,rand(10)+1,rand(80)+1,rand(84)+1,rand(65)+1,rand(26)+1,rand(88)+1,rand(3)+1,rand(14)+1,rand(18)+1,rand(92)+1,rand(91)+1,rand(75)+1,rand(23)+1,rand(18)+1
+
+
+
+#pmBranchDeltaSinrDistr0 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+#pmBranchDeltaSinrDistr1 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+#pmBranchDeltaSinrDistr2 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+#pmBranchDeltaSinrDistr3 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+#pmBranchDeltaSinrDistr4 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+#pmBranchDeltaSinrDistr5 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+#pmBranchDeltaSinrDistr6 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+
+
+
+# pmBranchDeltaSinrDistr0 The purpose of the measurement is to monitor the antenna status and detect the faulty antenna in antenna branch pair 0.
+# The measurement is the SINR difference of PUSCH channel between antenna branch A and antenna branch B in antenna branch pair 0.
+# PDF ranges:
+# [0]: less than or equals to -29 dB
+# [1]: ]-29..-28] dB
+# [2]: ]-28..-27] dB
+# ...
+# [29]: ]-1..0] dB
+# [30]: ]0..1] dB
+# [31]: ]1..2] dB
+# ...
+# [57]: ]27..28] dB
+# [58]: ]28..29] dB
+# [59]: greater than 29 dB
+# Compressed: true. 
+
+# Condition: Each sample steps up one bin counter increment but it depends on the measurement results to determine which bin counter is incremented. If the bin measurement value falls, the bin counter increments. This counter is used for antenna branch pair 0 with antenna branch A and B.
+# Counter type: CC/SUM
+# Counter is reset after measurement period: Yes
+
+# Energy
+#
+pmMicroTxSleepTime = int ( rand(100) )
+

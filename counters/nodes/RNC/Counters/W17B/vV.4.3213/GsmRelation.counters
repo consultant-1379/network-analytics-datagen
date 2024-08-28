@@ -1,0 +1,18 @@
+# Constants
+_MAX_TRAFFIC_VALUE        = 1000
+
+pmAttLbhoSpeech                                 =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmFailLbhoSpeechNotPhyChFail                    =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmFailLbhoSpeechPhyChFailReturn                 =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmFailLbhoSpeechUeReject                        =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoAttOutIratHoSpeech                          =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoAttOutSbHoSpeech                            =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoFailOutIratHoSpeechReturnOldChNotPhyChFail  =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoFailOutIratHoSpeechReturnOldChPhyChFail     =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoFailOutIratHoSpeechUeRejection              =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoFailOutSbHoSpeechReturnOldChNotPhyChFail    =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoFailOutSbHoSpeechReturnOldChPhyChFail       =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoFailOutSbHoSpeechUeRejection                =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoSuccessOutIratHoSpeech                      =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmNoSuccessOutSbHoSpeech                        =  int(  rand(_MAX_TRAFFIC_VALUE)  )
+pmSuccLbhoSpeech                                =  int(  rand(_MAX_TRAFFIC_VALUE)  )

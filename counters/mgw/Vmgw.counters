@@ -1,0 +1,20 @@
+# Constants
+_MAX_IP_TERMINATION_REQUESTS=100000
+_MAX_AAL2_TERMINATION_REQUESTS=100000
+_MAX_TERMINATION_FAULTS=10
+
+
+# MGw Accessibility
+
+pmNrOfAal2TermsReq = int( rand(_MAX_AAL2_TERMINATION_REQUESTS) )
+pmNrOfAal2TermsRej = int( rand(pmNrOfAal2TermsReq) * 0.005 )
+
+pmNrOfIpTermsReq   = int( rand(_MAX_IP_TERMINATION_REQUESTS) )
+pmNrOfIpTermsRej   = int( rand(pmNrOfIpTermsReq) * 0.005 )
+
+
+# MGw Retainability
+
+pmNrOfGcpNotifyCsdFaultAEst    = int( rand(_MAX_TERMINATION_FAULTS) )
+pmNrOfGcpNotifySpeechFaultAEst = int( rand(_MAX_TERMINATION_FAULTS) )   
+

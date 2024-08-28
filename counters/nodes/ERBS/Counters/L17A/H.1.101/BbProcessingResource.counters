@@ -1,0 +1,15 @@
+pmLicDlCapUsedMax	 = int(rand(200))
+pmLicDlCapUsedSamp = int(rand(200))
+pmLicDlCapUsedSum  = int(rand(200))
+
+pmLicUlCapUsedMax	 = int(rand(200))
+pmLicUlCapUsedSamp = int(rand(200))
+pmLicUlCapUsedSum  = int(rand(200))
+
+pmLicDlPrbUsedSum  = int(rand(200))
+pmLicDlPrbUsedSamp = int(rand(200))
+pmLicDlPrbUsedMax  = int(rand(200))
+
+pmLicUlPrbUsedSum  = int(rand(200))
+pmLicUlPrbUsedSamp = int(rand(200))
+pmLicUlPrbUsedMax  = int(rand(200))

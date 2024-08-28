@@ -1,0 +1,13 @@
+CxLocationQuery3gppRequests    = int ( rand(100000) + 50000 )  # [ACCUMULATED]
+CxQuery3gppRequests            = int ( rand(100000) + 50000 )  # [ACCUMULATED]
+CxPutPull3gppRequests          = int ( rand(100000) + 50000 )  # [ACCUMULATED]
+CxPutPull3gppAnswersDiaSuccess = int ( CxPutPull3gppRequests - rand(CxPutPull3gppRequests * 0.01) ) # up to 1%  failures [ACCUMULATED]
+
+CxLocationQuery3gppRequests                      = int ( rand(100000) + 50000 )  # [ACCUMULATED]
+CxLocationQuery3gppAnswersDiaSuccess             = int ( CxLocationQuery3gppRequests - rand(CxLocationQuery3gppRequests * 0.01) ) # up to 1%  failures [ACCUMULATED]
+CxLocationQuery3gppAnswersDiaUnregisteredService = int ( CxLocationQuery3gppRequests - rand(CxLocationQuery3gppRequests * 0.01) ) # up to 1%  failures [ACCUMULATED]
+
+CxAuthData3gppRequests          = int ( rand(100000) + 50000 )  # [ACCUMULATED]
+CxAuthData3gppAnswersDiaSuccess = int ( CxAuthData3gppRequests - rand(CxAuthData3gppRequests * 0.01) ) # up to 1%  failures [ACCUMULATED]
+
+

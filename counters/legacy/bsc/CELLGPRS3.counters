@@ -1,0 +1,21 @@
+GPRSCELLAVA    = int( rand(3) )
+
+GNOEXTIPLAT    = int( rand(15) )
+GEXTIPLAT      = int( rand(15) )
+
+ACCGEXTIPLAT   = int( rand(1000) * GEXTIPLAT )
+ACCGNOEXTIPLAT = int( rand(1000) * GNOEXTIPLAT )
+
+EGEXTIPLAT     = int( rand(15) )
+EGNOEXTIPLAT   = int( rand(15) )
+
+ACCEGEXTIPLAT   = int( rand(1000) * EGEXTIPLAT )
+ACCEGNOEXTIPLAT = int( rand(1000) * EGNOEXTIPLAT )
+
+DLSTRVOL       = int( rand(100000) )
+DLINTBGVOL     = int( rand(100000) )
+ULINTBGVOL     = int( rand(100000) )
+DLGMMVOL       = int( rand(100000) )
+ULGMMVOL       = int( rand(100000) )
+
+PREJABISCONG   = int( rand(1000) )

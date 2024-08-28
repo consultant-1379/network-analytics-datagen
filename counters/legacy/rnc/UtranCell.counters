@@ -1,0 +1,268 @@
+# Constants
+_MAX_TRAFFIC_VALUE           = 1000
+_MAX_USER_THROUGHPUT_SAMPLES = 1800  			           # 60(sec) * 15(min) * 2=1800 (2 samples per second) p123 58/1551-AXD 10503/1 Rev E
+_MAX_USER_THROUGHPUT_VALUE   = 192 * _MAX_USER_THROUGHPUT_SAMPLES  # 384(kbit/s) / 2(samples/s) = 192 _MAX user throughtput in kbit/s
+_MAX_RRC_CONNECTIONS         = 1000
+_MAX_RAB_CONNECTIONS         = 1000
+_MAX_HARD_HO_CONNECTIONS     = 10
+_MAX_ERLANG_SAMPLES          = 180    # 60(seconds) * 15(minutes) / 5(sample every 5 seconds)
+
+_MAX_BLER_1                  = 1000   # 0   <= bler < 0.5
+_MAX_BLER_2                  = 100    # 0.5 <= bler < 1
+_MAX_BLER_3                  = 80     # 1   <= bler < 1.5
+_MAX_BLER_4                  = 60     # etc ...
+_MAX_BLER_5                  = 40
+_MAX_BLER_6                  = 30
+_MAX_BLER_7                  = 25
+_MAX_BLER_8                  = 20
+_MAX_BLER_9                  = 15
+_MAX_BLER_10                 = 12
+_MAX_BLER_11                 = 10
+_MAX_BLER_12                 = 8
+_MAX_BLER_13                 = 6
+_MAX_BLER_14                 = 5
+_MAX_BLER_15                 = 4
+_MAX_BLER_16                 = 3
+_MAX_BLER_17                 = 2
+_MAX_BLER_18                 = 1.1
+
+
+# Cell Activity counters
+pmCellDowntimeAuto          = int( rand(1.1) )
+pmCellDowntimeMan           = int( rand(1.1) )
+pmTotalTimeUlCellCong       = int( rand(2) )
+pmTotalTimeDlCellCong       = int( rand(3) )
+pmTotNoRrcConnectReq        = int( rand(_MAX_RRC_CONNECTIONS) )
+pmTotNoRrcConnectReqSuccess = int( pmTotNoRrcConnectReq - rand(pmTotNoRrcConnectReq * 0.02) ) # up to 2% fail
+
+# P5 PS Interactive User Throughput counters
+pmSamplesActDlRlcUserPacketThp = int( _MAX_USER_THROUGHPUT_SAMPLES )
+pmSamplesActUlRlcUserPacketThp = int( _MAX_USER_THROUGHPUT_SAMPLES )
+pmSumActDlRlcUserPacketThp     = int( rand(_MAX_USER_THROUGHPUT_VALUE) )
+pmSumActUlRlcUserPacketThp     = int( rand(_MAX_USER_THROUGHPUT_VALUE) )
+
+# P6 PS Interactive User Throughput counters
+pmSamplesDchDlRlcUserPacketThp = int( _MAX_USER_THROUGHPUT_SAMPLES )
+pmSamplesDchUlRlcUserPacketThp = int( _MAX_USER_THROUGHPUT_SAMPLES )
+pmSamplesHsDlRlcUserPacketThp  = int( _MAX_USER_THROUGHPUT_SAMPLES )
+pmSamplesEulUlRlcUserPacketThp = int( _MAX_USER_THROUGHPUT_SAMPLES )
+pmSumDchDlRlcUserPacketThp     = int( rand(_MAX_USER_THROUGHPUT_VALUE) )
+pmSumDchUlRlcUserPacketThp     = int( rand(_MAX_USER_THROUGHPUT_VALUE) )
+pmSumHsDlRlcUserPacketThp      = int( rand(_MAX_USER_THROUGHPUT_VALUE) )
+pmSumEulUlRlcUserPacketThp     = int( rand(_MAX_USER_THROUGHPUT_VALUE) )
+
+# Traffic counters
+pmDlTrafficVolumeAmr4750     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeAmr5900     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeAmr7950     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeCs12        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeCs12Ps0     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeCs12Ps64    = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeCs57        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeCs64        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumeCs64Ps8     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePs128       = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePs384       = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePs64        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePs8         = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePsCommon    = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePsStr128    = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePsStr128Ps8 = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePsStr16     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePsStr64     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmDlTrafficVolumePsStr64Ps8  = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeAmr5900     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeAmr7950     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeCs12        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeCs12Ps0     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeCs12Ps64    = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeCs57        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeCs64        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumeCs64Ps8     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePs128       = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePs384       = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePs64        = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePs8         = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePsCommon    = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePsStr128    = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePsStr128Ps8 = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePsStr16     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePsStr64     = int( rand(_MAX_TRAFFIC_VALUE) )
+pmUlTrafficVolumePsStr64Ps8  = int( rand(_MAX_TRAFFIC_VALUE) )
+
+
+
+# QOS counters
+#
+# RRC 
+pmTotNoRrcConnectReq              = int( rand(_MAX_RRC_CONNECTIONS) )
+
+# assume RRC connections split 60/39/1 for CS/PS/Load sharing
+pmTotNoRrcConnectReqCs            = int( pmTotNoRrcConnectReq * 0.6 )    # 60% CS
+pmTotNoRrcConnectReqPs            = int( pmTotNoRrcConnectReq * 0.39 )   # 39% PS
+pmNoLoadSharingRrcConn            = int( pmTotNoRrcConnectReq * 0.01 )   #  1% of connections are Load Sharing
+
+pmTotNoRrcConnectReqSuccess       = int( pmTotNoRrcConnectReq   - rand(pmTotNoRrcConnectReq   * 0.02) )  # up to 2% fail
+pmTotNoRrcConnectReqCsSucc        = int( pmTotNoRrcConnectReqCs - rand(pmTotNoRrcConnectReqCs * 0.02) )  # up to 2% fail
+pmTotNoRrcConnectReqPsSucc        = int( pmTotNoRrcConnectReqPs - rand(pmTotNoRrcConnectReqPs * 0.02) )  # up to 2% fail
+
+
+# Speech Accessibility
+# assume CS RABs split 90/5/5 for Speech/CS64/CS57
+pmNoRabEstablishAttemptSpeech     = int( pmTotNoRrcConnectReqCs * 0.9 )  # 90% of CS RABs are speech    
+pmNoRabEstablishSuccessSpeech     = int( pmNoRabEstablishAttemptSpeech - rand(pmNoRabEstablishAttemptSpeech * 0.03) )   # a few % fail
+
+# Speech Retainability
+pmNoNormalRabReleaseSpeech        = int( pmNoRabEstablishSuccessSpeech - rand(pmNoRabEstablishAttemptSpeech * 0.03) )   # some releases are system instead of normal
+pmNoSystemRabReleaseSpeech        = int( pmNoRabEstablishSuccessSpeech - pmNoNormalRabReleaseSpeech )
+
+# Speech Utilisation
+pmSumBestCs12Establish            = int( pmNoRabEstablishSuccessSpeech * 0.6 )  #  60% CS12 calls
+pmSumBestAmr4750RabEstablish      = int( pmNoRabEstablishSuccessSpeech * 0.1 )  #  10% AMR4750 calls  
+pmSumBestAmr5900RabEstablish      = int( pmNoRabEstablishSuccessSpeech * 0.1 )  #  10% AMR5900 calls
+pmSumBestAmr7950RabEstablish      = int( pmNoRabEstablishSuccessSpeech * 0.1 )  #  10% AMR7950 calls
+pmSumBestAmr12200RabEstablish     = int( pmNoRabEstablishSuccessSpeech * 0.1 )  #  10% AMR12200 calls
+pmSumBestAmrWbRabEstablish	  = int( pmNoRabEstablishSuccessSpeech * 0.1 )  #  10% AmrWb calls
+
+pmSamplesBestCs12Establish        = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestAmr4750RabEstablish  = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestAmr5900RabEstablish  = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestAmr7950RabEstablish  = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestAmr12200RabEstablish = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestAmrWbRabEstablish    = int( rand(_MAX_ERLANG_SAMPLES) ) 
+
+# Speech Integrity (use Speech+Streaming instead of this one on it's own)
+# DL BLER Service and Measurement Quantity value 257 = 256 * 1(speech) + 1(DL BLER)
+##pmRes1 = "257," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+# UL BLER Service and Measurement Quantity value 258 = 256 * 1(speech) + 2(UL BLER)
+##pmRes2 = "258," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+
+
+# CS64 Accessibility  
+pmNoRabEstablishAttemptCs64   = int( pmTotNoRrcConnectReqCs * 0.5 )  # 5% of CS RABs are CS64     
+pmNoRabEstablishSuccessCs64   = int( pmNoRabEstablishAttemptCs64 - rand(pmNoRabEstablishAttemptCs64 * 0.02) )   # a few % fail
+
+# CS64 Retainability  
+pmNoNormalRabReleaseCs64      = int( pmNoRabEstablishSuccessCs64 - rand(pmNoRabEstablishSuccessCs64 * 0.03) )   # some releases are system instead of normal
+pmNoSystemRabReleaseCs64      = int( pmNoRabEstablishSuccessCs64 - pmNoNormalRabReleaseCs64 )
+
+# CS64 Utilisation
+pmSumBestCs64RabEstablish     = int( rand(pmNoRabEstablishSuccessCs64) )
+pmSamplesBestCs64RabEstablish = int( rand(_MAX_ERLANG_SAMPLES) ) 
+
+# CS64 Integrity
+# DL BLER Service and Measurement Quantity value 513 = 256 * 2(video) + 1(DL BLER)
+pmRes1 = "513," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+# UL BLER Service and Measurement Quantity value 514 = 256 * 2(video) + 2(UL BLER)
+pmRes2 = "514," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+
+
+# CS57 Streaming Accessibility  
+pmNoRabEstablishAttemptCs57   = int( pmTotNoRrcConnectReqCs * 0.5 )  # 5% of CS RABs are CS57   
+pmNoRabEstablishSuccessCs57   = int( pmNoRabEstablishAttemptCs57 - rand(pmNoRabEstablishAttemptCs57 * 0.04) )   # a few % fail
+
+# CS57 Streaming Retainability  
+pmNoNormalRabReleaseCsStream  = int( pmNoRabEstablishSuccessCs57 - rand(pmNoRabEstablishSuccessCs57 * 0.03) )   # some releases are system instead of normal
+pmNoSystemRabReleaseCsStream  = int( pmNoRabEstablishSuccessCs57 - pmNoNormalRabReleaseCsStream )
+
+# CS57 Utilisation
+pmSumBestCs57RabEstablish     = int( rand(pmNoRabEstablishSuccessCs57) )
+pmSamplesBestCs57RabEstablish = int( rand(_MAX_ERLANG_SAMPLES) ) 
+
+# CS57 Integrity (use Speech+Streaming instead of this one on it's own)
+# DL BLER Service and Measurement Quantity value 769 = 256 * 3(streaming) + 1(DL BLER)
+##pmRes1 = "769," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+# UL BLER Service and Measurement Quantity value 770 = 256 * 3(streaming) + 2(UL BLER)
+##pmRes2 = "770," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+
+
+# PS Interactive Accessibility
+# assume OS RABs split 90/5/5 for Normal/HSDPA/EUL
+pmNoRabEstablishAttemptPacketInteractive    = int( rand(_MAX_RAB_CONNECTIONS) )     
+pmNoRabEstablishSuccessPacketInteractive    = int( pmNoRabEstablishAttemptPacketInteractive    - rand(pmNoRabEstablishAttemptPacketInteractive    * 0.02) )   # a few % fail
+
+pmNoRabEstablishAttemptPacketInteractiveHs  = int( pmNoRabEstablishAttemptPacketInteractive * 0.5 )    # 5% of Packet RABs are HS 
+pmNoRabEstablishSuccessPacketInteractiveHs  = int( pmNoRabEstablishAttemptPacketInteractiveHs  - rand(pmNoRabEstablishAttemptPacketInteractiveHs  * 0.02) )   # a few % fail
+
+pmNoRabEstablishAttemptPacketInteractiveEul = int( pmNoRabEstablishAttemptPacketInteractive * 0.5 )    # 5% of Packet RABs are EUL
+pmNoRabEstablishSuccessPacketInteractiveEul = int( pmNoRabEstablishAttemptPacketInteractiveEul - rand(pmNoRabEstablishAttemptPacketInteractiveEul * 0.02) )   # a few % fail
+
+pmNoOutgoingHsHardHoAttempt    = int( rand(_MAX_HARD_HO_CONNECTIONS) )    
+pmNoHsHardHoReturnOldChSource  = int( rand(pmNoOutgoingHsHardHoAttempt) ) 
+pmNoIncomingHsHardHoAttempt    = int( rand(_MAX_HARD_HO_CONNECTIONS) )  
+pmNoHsHardHoReturnOldChTarget  = int( rand(pmNoIncomingHsHardHoAttempt) ) 
+
+# PS Interactive Retainability (excluding URA releases)
+pmNoNormalRabReleasePacket     = int( pmNoRabEstablishSuccessPacketInteractive - rand(pmNoRabEstablishSuccessPacketInteractive * 0.03) )   # some releases are system instead of normal
+pmNoSystemRabReleasePacket     = int( pmNoRabEstablishSuccessPacketInteractive - pmNoNormalRabReleasePacket )
+
+pmNoSystemRbReleaseHs          = int( rand(pmNoRabEstablishSuccessPacketInteractiveHs  * 0.03) )
+pmNoSystemRbReleaseEul         = int( rand(pmNoRabEstablishSuccessPacketInteractiveEul * 0.03) )
+
+
+
+
+# PS Interactive Utilisation
+pmSumPsInteractive                   = int( rand(pmNoRabEstablishSuccessPacketInteractive) )
+pmSumRabFach                         = int( rand(pmNoRabEstablishSuccessPacketInteractive) )
+pmSumBestDchPsIntRabEstablish        = int( rand(pmSumPsInteractive) )
+pmSumFachPsIntRabEstablish           = int( rand(pmSumRabFach) )
+pmSumBestPsHsAdchRabEstablish        = int( rand(pmNoRabEstablishSuccessPacketInteractiveHs) )
+pmSumBestPsEulRabEstablish           = int( rand(pmNoRabEstablishSuccessPacketInteractiveEul) )
+
+
+pmSamplesPsInteractive               = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesRabFach                     = int( rand(_MAX_ERLANG_SAMPLES) )
+pmSamplesBestDchPsIntRabEstablish    = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesFachPsIntRabEstablish       = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestPsHsAdchRabEstablish    = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestPsEulRabEstablish       = int( rand(_MAX_ERLANG_SAMPLES) ) 
+
+
+# DL BLER Service and Measurement Quantity value 1025 = 256 * 4(Interactive) + 1(DL BLER)
+pmRes3 = "1025," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+# UL BLER Service and Measurement Quantity value 1026 = 256 * 4(Interactive) + 2(UL BLER)
+pmRes4 = "1026," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+
+
+# PS Streaming Accessibility
+pmNoRabEstablishAttemptPacketStream     = int( rand(_MAX_RAB_CONNECTIONS) )     
+pmNoRabEstablishAttemptPacketStream128  = int( rand(_MAX_RAB_CONNECTIONS) )     
+pmNoRabEstAttemptPsStreamHs		= int( rand(_MAX_RAB_CONNECTIONS) )     
+
+pmNoRabEstablishSuccessPacketStream     = int( pmNoRabEstablishAttemptPacketStream    - rand(pmNoRabEstablishAttemptPacketStream    * 0.03) )   # a few % fail
+pmNoRabEstablishSuccessPacketStream128  = int( pmNoRabEstablishAttemptPacketStream128 - rand(pmNoRabEstablishAttemptPacketStream128 * 0.03) )   # a few % fail
+pmNoRabEstSuccessPsStreamHs		= int( pmNoRabEstAttemptPsStreamHs 	      - rand(pmNoRabEstAttemptPsStreamHs 	    * 0.03) )   # a few % fail
+
+# PS Streaming Retainability
+pmNoNormalRabReleasePacketStream        = int( pmNoRabEstablishSuccessPacketStream    - rand(pmNoRabEstablishSuccessPacketStream    * 0.03) )   # some releases are system instead of normal
+pmNoNormalRabReleasePacketStream128     = int( pmNoRabEstablishSuccessPacketStream128 - rand(pmNoRabEstablishSuccessPacketStream128 * 0.03) )   # some releases are system instead of normal
+pmNoNormalRabReleasePsStreamHs		= int( pmNoRabEstSuccessPsStreamHs	      - rand(pmNoRabEstSuccessPsStreamHs	    * 0.03) )   # some releases are system instead of normal
+
+pmNoSystemRabReleasePacketStream        = int( pmNoRabEstablishSuccessPacketStream    - pmNoNormalRabReleasePacketStream )
+pmNoSystemRabReleasePacketStream128     = int( pmNoRabEstablishSuccessPacketStream128 - pmNoNormalRabReleasePacketStream128 )
+pmNoSystemRabReleasePsStreamHs		= int( pmNoRabEstSuccessPsStreamHs	      - pmNoNormalRabReleasePsStreamHs )
+
+# DL BLER Service and Measurement Quantity value 1537 = 256 * 6(Speech+Streaming) + 1(DL BLER)
+pmRes5 = "1537," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+# UL BLER Service and Measurement Quantity value 1538 = 256 * 6(Speech+Streaming) + 2(UL BLER)
+pmRes6 = "1538," . int(rand(_MAX_BLER_1)) . "," . int(rand(_MAX_BLER_2)) . "," . int(rand(_MAX_BLER_3)) . "," . int(rand(_MAX_BLER_4)) . "," . int(rand(_MAX_BLER_5)) . "," . int(rand(_MAX_BLER_6)) . "," . int(rand(_MAX_BLER_7)) . "," . int(rand(_MAX_BLER_8)) . "," . int(rand(_MAX_BLER_9)) . "," . int(rand(_MAX_BLER_10)) . "," . int(rand(_MAX_BLER_11)) . "," . int(rand(_MAX_BLER_12)) . "," . int(rand(_MAX_BLER_13)) . "," . int(rand(_MAX_BLER_14)) . "," . int(rand(_MAX_BLER_15)) . "," . int(rand(_MAX_BLER_16)) . "," . int(rand(_MAX_BLER_17)) . "," . int(rand(_MAX_BLER_18))
+
+# PS Streaming Utilisation
+pmSumBestPsStr64Ps8RabEstablish      = int( rand(pmNoRabEstablishSuccessPacketStream) )
+pmSumBestPsStr128Ps8RabEstablish     = int( rand(pmNoRabEstablishAttemptPacketStream128) )
+pmSumBestPsStreamHsRabEst	     = int( rand(pmNoRabEstAttemptPsStreamHs) )
+
+pmSamplesBestPsStr64Ps8RabEstablish  = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestPsStr128Ps8RabEstablish = int( rand(_MAX_ERLANG_SAMPLES) ) 
+pmSamplesBestPsStreamHsRabEst	     = int( rand(_MAX_ERLANG_SAMPLES) ) 
+

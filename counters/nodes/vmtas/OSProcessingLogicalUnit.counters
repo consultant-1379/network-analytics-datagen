@@ -1,0 +1,2 @@
+CPULoad_Total = int ( rand(95) + 5 )
+

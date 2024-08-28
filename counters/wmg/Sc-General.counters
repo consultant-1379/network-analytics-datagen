@@ -1,0 +1,32 @@
+Total_PDN_Connections        = int( rand(100) + rand(50) + rand(10) )
+Total_Ipv4_PDN_Connections   = int( rand(Total_PDN_Connections * 0.8) )
+Total_Ipv4v6_PDN_Connections = int( rand(Total_PDN_Connections * 0.1) )
+Total_Ipv6_PDN_Connections   = int( Total_PDN_Connections - Total_Ipv4_PDN_Connections - Total_Ipv4v6_PDN_Connections )
+Total_Non_Sim_Calls          = int( rand(Total_PDN_Connections * 0.001) )
+Total_UEs_Connected          = int( rand(Total_PDN_Connections * 0.2) )
+
+Active_PDN_Connections        = int( rand(Total_PDN_Connections  * 0.5) )
+Active_Ipv4_PDN_Connections   = int( rand(Active_PDN_Connections * 0.8) )
+Active_Ipv4v6_PDN_Connections = int( rand(Active_PDN_Connections * 0.1) )
+Active_Ipv6_PDN_Connections   = int( Active_PDN_Connections - Active_Ipv4_PDN_Connections - Active_Ipv4v6_PDN_Connections )
+Active_Non_Sim_Calls          = int( rand(Total_Non_Sim_Calls    * 0.2) )
+Active_UEs_Connected          = int( rand(Total_UEs_Connected    * 0.2) )
+
+TWAG_Total_PDN_Connections       = int( rand(Total_PDN_Connections           * 0.5) )
+TWAG_Total_Ipv4_PDN_Connections  = int( rand(TWAG_Total_PDN_Connections      * 0.6) )
+TWAG_Active_PDN_Connections      = int( rand(TWAG_Total_Ipv4_PDN_Connections * 0.6) )
+TWAG_Active_Ipv4_PDN_Connections = int( rand(TWAG_Active_PDN_Connections     * 0.8) )
+TWAG_Total_UEs_Connected         = int( rand(Total_UEs_Connected             * 0.5) )
+TWAG_Active_UEs_Connected        = int( rand(TWAG_Total_UEs_Connected        * 0.5) )
+
+ePDG_Total_PDN_Connections       = int( Total_PDN_Connections - TWAG_Total_PDN_Connections )
+ePDG_Total_Ipv4_PDN_Connections  = int( rand(ePDG_Total_PDN_Connections      * 0.6) )
+ePDG_Active_PDN_Connections      = int( rand(ePDG_Total_Ipv4_PDN_Connections * 0.7) )
+ePDG_Active_Ipv4_PDN_Connections = int( rand(ePDG_Active_PDN_Connections     * 0.8) )
+ePDG_Total_UEs_Connected         = int( Total_UEs_Connected - TWAG_Total_UEs_Connected )
+ePDG_Active_UEs_Connected        = int( rand(ePDG_Total_UEs_Connected * 0.6) )
+   
+Failed_Calls_Due_To_Reaching_Licensed_Limit      = 0
+TWAG_Failed_Calls_Due_To_Reaching_Licensed_Limit = 0
+ePDG_Failed_Calls_Due_To_Reaching_Licensed_Limit = 0
+ 

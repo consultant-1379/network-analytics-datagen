@@ -1,0 +1,13 @@
+TBFULGPRS   = int( rand(100000) )
+TBFULEGPRS  = int( rand(100000) )
+
+ULTBFPBPDCH = int( rand(100000) )
+ULTBFPGPDCH = int( rand(100000) )
+ULBPDCH     = int( rand(100) )
+ULGPDCH     = int( rand(100) )
+
+TRAFFULGPRSSCAN = int( rand(100) ) + ULBPDCH + ULGPDCH
+
+ULTBFPEPDCH = int( rand(100000) )
+ULEPDCH     = int( rand(100) )
+

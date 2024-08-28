@@ -1,0 +1,20 @@
+# Replace any . (dot) chars with _ (underscore) in counter names
+
+# Constants must start with _ (underscore)
+_MAX_REQUESTS=25000
+_MAX_ATTEMPTS=1000
+
+
+# Session Management 
+
+# Default Bearer
+#VS_SM_ActBearerQCIAtt_E  = int( rand(_MAX_REQUESTS) )
+#VS_SM_ActBearerQCISucc_E = int( VS_SM_ActBearerQCIAtt_E - rand(VS_SM_ActBearerQCIAtt_E) * 0.025 )
+
+# Dedicated Bearer
+#VS_SM_CreateDedicatedBearerQCIAtt_E  = int( rand(_MAX_ATTEMPTS) )
+#VS_SM_CreateDedicatedBearerQCISucc_E = int( VS_SM_CreateDedicatedBearerQCIAtt_E - rand(VS_SM_CreateDedicatedBearerQCIAtt_E) * 0.055 )
+
+
+
+VS_SM_NbrActBearerQCI_E  = int( rand(_MAX_REQUESTS) )

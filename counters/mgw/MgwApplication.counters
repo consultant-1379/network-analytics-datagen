@@ -1,0 +1,9 @@
+# Constants
+_MAX_MEDIA_STREAM_CHANNELS=1000
+
+
+# Traffic Load
+
+maxNrOfLicMediaStreamChannels = int( rand(_MAX_MEDIA_STREAM_CHANNELS) )
+pmNrOfMediaStreamChannelsBusy = int( rand(maxNrOfLicMediaStreamChannels) )
+   

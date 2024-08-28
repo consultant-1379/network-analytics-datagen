@@ -1,0 +1,236 @@
+# Create all Managed Objects
+for i in /eniq/home/dcuser/counters/Features/All/create_*; do echo $i; $i; done
+
+# Bulk CM, ERBS, RadioNode
+cd /eniq/sw/installer && for i in INTF_DC_E_BULK_CM INTF_DC_E_ERBS INTF_DC_E_ERBSG2 INTF_DC_E_EVENTS_ERBS INTF_DC_E_RADIONODE_MIXED INTF_DC_E_RADIONODE_COMMON INTF_DIM_E_LTE_ERBS INTF_DIM_E_LTE_SITE; do echo $i; for o in eniq_oss_1 eniq_oss_2 eniq_oss_3; do echo $o; ./activate_interface -o $o -i $i; done; done && cd -
+
+
+# IP Probe
+cd /eniq/sw/installer && for i in INTF_DIM_E_IPPROBE_PROBE_CONFIG INTF_DIM_E_IPPROBE_RESPONDER INTF_DIM_E_IPPROBE_SESSION_CONFIG INTF_DIM_E_IPPROBE_SESSION_SLCONFIG INTF_DC_E_IPPROBE_RRMEAS; do echo $i; for o in eniq_oss_1 eniq_oss_2 eniq_oss_3; do echo $o; ./activate_interface -o $o -i $i; done; done && cd -
+
+# WCDMA
+cd /eniq/sw/installer && for i in INTF_DC_E_RBS INTF_DC_E_RBSG2 INTF_DC_E_RNC INTF_DIM_RAN_BASE_RBS INTF_DIM_RAN_BASE_RNC; do echo $i; for o in eniq_oss_1; do echo $o; ./activate_interface -o $o -i $i; done; done && cd -
+
+
+# GSM
+cd /eniq/sw/installer && for i in INTF_DIM_E_GRAN_CELL INTF_DIM_E_GRAN_NW; do echo $i; for o in eniq_oss_1; do echo $o; ./activate_interface -o $o -i $i; done; done && cd -
+
+
+# TWAMP
+cd /eniq/sw/installer && for i in INTF_DIM_E_IPRAN_TWAMPSESSIONS; do echo $i; for o in eniq_oss_1; do echo $o; ./activate_interface -o $o -i $i; done; done && cd -
+
+
+
+-----------
+
+cd /eniq/sw/installer/
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_BSS_IOG
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_BULK_CM
+./activate_interface -o eniq_oss_2 -i INTF_DC_E_BULK_CM
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_BULK_CM
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_ERBS
+./activate_interface -o eniq_oss_2 -i INTF_DC_E_ERBS
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_ERBS
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_ERBSG2
+./activate_interface -o eniq_oss_2 -i INTF_DC_E_ERBSG2
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_ERBSG2
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_EVENTS_ERBS
+./activate_interface -o eniq_oss_2 -i INTF_DC_E_EVENTS_ERBS
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_EVENTS_ERBS
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_RADIONODE_MIXED
+./activate_interface -o eniq_oss_2 -i INTF_DC_E_RADIONODE_MIXED
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_RADIONODE_MIXED
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_RADIONODE_COMMON
+
+./activate_interface -o eniq_oss_1 -i INTF_DIM_E_LTE_ERBS
+./activate_interface -o eniq_oss_2 -i INTF_DIM_E_LTE_ERBS
+./activate_interface -o eniq_oss_3 -i INTF_DIM_E_LTE_ERBS
+
+./activate_interface -o eniq_oss_1 -i INTF_DIM_E_LTE_SITE
+./activate_interface -o eniq_oss_2 -i INTF_DIM_E_LTE_SITE
+./activate_interface -o eniq_oss_3 -i INTF_DIM_E_LTE_SITE
+
+./activate_interface -o eniq_oss_2 -i INTF_DC_E_CSCFv
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_IMS
+
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_GGSN
+./activate_interface -o eniq_oss_3 -i INTF_DC_E_GGSN_MPG
+
+
+./activate_interface -o eniq_oss_1 -i INTF_DIM_E_IPRAN_TWAMPSESSIONS
+
+
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_RBS
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_RBSG2
+./activate_interface -o eniq_oss_1 -i INTF_DC_E_RNC
+
+./activate_interface -o eniq_oss_1 -i INTF_DIM_E_GRAN_CELL
+./activate_interface -o eniq_oss_1 -i INTF_DIM_E_GRAN_NW
+
+./activate_interface -o eniq_oss_1 -i INTF_DIM_RAN_BASE_RBS
+./activate_interface -o eniq_oss_1 -i INTF_DIM_RAN_BASE_RNC
+
+
+
+ls -lR /eniq/data/pmdata/eniq_oss_[123]/{lterbs,rnc,rbs,RadioNode/MIXED,bulkcm,bsc-iog}/dir1
+
+
+/eniq/sw/installer/get_active_interfaces | egrep 'RBS|GRAN|RNC|BULK|BSS|RADIONODE|EVENTS|TWAMP|SITE'
+
+atclvm1352[eniq_stats] {dcuser} #: /eniq/sw/installer/get_active_interfaces | egrep 'E_RBS|E_ERBS|GRAN_[CN]|E_RNC|BULK|BSS_IOG|RADIONODE_MIXED|EVENTS|TWAMP|LTE_SITE '
+ INTF_DC_E_BSS_IOG eniq_oss_1
+ INTF_DC_E_BULK_CM eniq_oss_1
+ INTF_DC_E_BULK_CM eniq_oss_2
+ INTF_DC_E_BULK_CM eniq_oss_3
+ INTF_DC_E_ERBS eniq_oss_1
+ INTF_DC_E_ERBS eniq_oss_2
+ INTF_DC_E_ERBS eniq_oss_3
+ INTF_DC_E_ERBSG2 eniq_oss_1
+ INTF_DC_E_ERBSG2 eniq_oss_2
+ INTF_DC_E_ERBSG2 eniq_oss_3
+ INTF_DC_E_EVENTS_ERBS eniq_oss_1
+ INTF_DC_E_EVENTS_ERBS eniq_oss_2
+ INTF_DC_E_EVENTS_ERBS eniq_oss_3
+ INTF_DC_E_RADIONODE_MIXED eniq_oss_1
+ INTF_DC_E_RADIONODE_MIXED eniq_oss_2
+ INTF_DC_E_RADIONODE_MIXED eniq_oss_3
+ INTF_DC_E_RBS eniq_oss_1
+ INTF_DC_E_RBSG2 eniq_oss_1
+ INTF_DC_E_RNC eniq_oss_1
+ INTF_DIM_E_GRAN_CELL eniq_oss_1
+ INTF_DIM_E_GRAN_NW eniq_oss_1
+ INTF_DIM_E_IPRAN_TWAMPSESSIONS eniq_oss_1
+ INTF_DIM_E_LTE_ERBS eniq_oss_1
+ INTF_DIM_E_LTE_ERBS eniq_oss_2
+ INTF_DIM_E_LTE_ERBS eniq_oss_3
+ INTF_DIM_E_LTE_SITE eniq_oss_1
+ INTF_DIM_E_LTE_SITE eniq_oss_2
+ INTF_DIM_E_LTE_SITE eniq_oss_3
+ INTF_DIM_RAN_BASE_RBS eniq_oss_1
+ INTF_DIM_RAN_BASE_RNC eniq_oss_1
+
+cd /eniq/sw/installer && for i in INTF_DIM_E_IPPROBE_PROBE_CONFIG INTF_DIM_E_IPPROBE_RESPONDER INTF_DIM_E_IPPROBE_SESSION_CONFIG INTF_DIM_E_IPPROBE_SESSION_SLCONFIG INTF_DC_E_IPPROBE_RRMEAS; do echo $i; for o in eniq_oss_1 eniq_oss_2 eniq_oss_3; do echo $o; ./activate_interface -o $o -i $i; done; done && cd -
+
+
+
+eniqs[eniq_stats] {dcuser} #:  /eniq/sw/installer/get_active_interfaces | egrep 'E_RBS|E_ERBS|GRAN_[CN]|E_RNC|BULK|BSS_IOG|RADIONODE_MIXED|EVENTS|TWAMP|LTE_SITE |GGSN|SBG|CSCF|CNAXE|SGSN|MTAS'
+ INTF_CV_CNAXE_MSC eniq_oss_1
+ INTF_CV_CSCF_CSCF eniq_oss_1
+ INTF_CV_GGSN_PGW eniq_oss_1
+ INTF_CV_IMSGW_SBG eniq_oss_1
+ INTF_CV_MTAS_MTAS eniq_oss_1
+ INTF_CV_SGSN_MME eniq_oss_1
+ INTF_DC_E_BSS_IOG eniq_oss_1
+ INTF_DC_E_BULK_CM eniq_oss_1
+ INTF_DC_E_BULK_CM eniq_oss_2
+ INTF_DC_E_BULK_CM eniq_oss_3
+ INTF_DC_E_CNAXE_APG eniq_oss_1
+ INTF_DC_E_CNAXE_HLRCL_APG eniq_oss_1
+ INTF_DC_E_CNAXE_HLRVLRSUB eniq_oss_1
+ INTF_DC_E_CNAXE_IOG eniq_oss_1
+ INTF_DC_E_CNAXE_MSCCL_APG eniq_oss_1
+ INTF_DC_E_CNAXE_MSCCL_OMS_TRAR eniq_oss_1
+ INTF_DC_E_CNAXE_MSCCL_OMS_TRART eniq_oss_1
+ INTF_DC_E_CNAXE_MSCCL_OMS_TRDIP eniq_oss_1
+ INTF_DC_E_CNAXE_OMS_TRAR eniq_oss_1
+ INTF_DC_E_CNAXE_OMS_TRART eniq_oss_1
+ INTF_DC_E_CNAXE_OMS_TRDIP eniq_oss_1
+ INTF_DC_E_CSCFv eniq_oss_1
+ INTF_DC_E_CSCFv eniq_oss_2
+ INTF_DC_E_ERBS eniq_oss_1
+ INTF_DC_E_ERBS eniq_oss_2
+ INTF_DC_E_ERBS eniq_oss_3
+ INTF_DC_E_ERBSG2 eniq_oss_1
+ INTF_DC_E_ERBSG2 eniq_oss_2
+ INTF_DC_E_ERBSG2 eniq_oss_3
+ INTF_DC_E_EVENTS_ERBS_ENM eniq_oss_1
+ INTF_DC_E_GGSN eniq_oss_1
+ INTF_DC_E_GGSN eniq_oss_3
+ INTF_DC_E_GGSN_MPG eniq_oss_1
+ INTF_DC_E_GGSN_MPG eniq_oss_3
+ INTF_DC_E_IMSGW_SBG eniq_oss_1
+ INTF_DC_E_IMSGW_SBG_ECIM eniq_oss_1
+ INTF_DC_E_MTAS eniq_oss_1
+ INTF_DC_E_MTAS_ECIM eniq_oss_1
+ INTF_DC_E_RADIONODE_MIXED eniq_oss_1
+ INTF_DC_E_RADIONODE_MIXED eniq_oss_2
+ INTF_DC_E_RADIONODE_MIXED eniq_oss_3
+ INTF_DC_E_RBS eniq_oss_1
+ INTF_DC_E_RBSG2 eniq_oss_1
+ INTF_DC_E_RNC eniq_oss_1
+ INTF_DC_E_SGSN eniq_oss_1
+ INTF_DC_E_SGSNMME_ECIM eniq_oss_1
+ INTF_DC_E_SGSN_3GPP eniq_oss_1
+ INTF_DC_E_SGSN_MME eniq_oss_1
+ INTF_DIM_E_GRAN_CELL eniq_oss_1
+ INTF_DIM_E_GRAN_NW eniq_oss_1
+ INTF_DIM_E_IPRAN_TWAMPASCII eniq_oss_1
+ INTF_DIM_E_IPRAN_TWAMPSESSIONS eniq_oss_1
+ INTF_DIM_E_LTE_ERBS eniq_oss_1
+ INTF_DIM_E_LTE_ERBS eniq_oss_2
+ INTF_DIM_E_LTE_ERBS eniq_oss_3
+ INTF_DIM_E_LTE_SITE eniq_oss_1
+ INTF_DIM_E_WLE_RBS_INFO eniq_oss_1
+ INTF_DIM_RAN_BASE_RBS eniq_oss_1
+ INTF_DIM_RAN_BASE_RNC eniq_oss_1
+
+
+ls -lR /eniq/data/pmdata/eniq_oss_[123]/{lterbs,rnc,rbs,RadioNode/MIXED,bulkcm,sgsn_mme_cba,ggsn-mpg-xml,cscf,ims,msccluster-sts,wmg,GGSN,MTAS_CBA,SBG,msc-iog}/dir1
+ls -lR /eniq/data/pmdata/eniq_oss_[123]/{utran,gsm,gran,lte,ipran,core}/topologyData
+
+
+
+# generate all topology files
+for i in /eniq/home/dcuser/counters/bin/generate_*_topology_files.pl; do echo $i; $i; done
+
+# generate all counter files
+for i in /eniq/home/dcuser/counters/bin/generate_*_counter_files.pl; do echo $i; $i; done
+
+# generate all Bulk CM files
+for i in /eniq/home/dcuser/counters/bin/generate_*_bulkcm_files.pl; do echo $i; $i; done
+
+#./counters/Features/All/create_RadioNode_managed_objects.pl
+#./counters/Features/All/create_ERBS_managed_objects.pl
+#./counters/Features/All/create_WCDMA_managed_objects.pl
+#./counters/Features/All/create_GSM_managed_objects.pl
+#./counters/Features/All/create_SGSN_MME_managed_objects.pl
+
+#./counters/bin/generate_RadioNode_topology_files.pl
+#./counters/bin/generate_ERBS_topology_files.pl
+#./counters/bin/generate_WCDMA_topology_files.pl
+#./counters/bin/generate_BSC_topology_files.pl
+#./counters/bin/generate_Site_topology_files.pl
+#./counters/bin/generate_TWAMP_topology_files.pl
+#./counters/bin/generate_SGSN_MME_topology_files.pl
+#./counters/bin/generate_core_topology_files.pl
+#
+#./counters/bin/generate_RadioNode_counter_files.pl
+#./counters/bin/generate_ERBS_counter_files.pl
+#./counters/bin/generate_RNC_counter_files.pl
+#./counters/bin/generate_RBS_counter_files.pl
+#./counters/bin/generate_BSC_counter_files.pl
+#./counters/bin/generate_SGSN_MME_counter_files.pl
+
+#./counters/bin/generate_ERBS_bulkcm_files.pl
+#./counters/bin/generate_RadioNode_bulkcm_files.pl
+
+ls -lR /eniq/data/pmdata/eniq_oss_[123]/{lterbs,rnc,rbs,RadioNode/MIXED,bulkcm,sgsn_mme_cba}/dir1
+ls -lR /eniq/data/pmdata/eniq_oss_[123]/{utran,gsm,gran,lte,ipran,core}/topologyData
+
+ll /eniq/data/pmdata/eniq_oss_[123]
+/eniq/sw/installer/get_active_interfaces
+crontab -l
+export EDITOR=vi && crontab -e
+rm -rf /eniq/data/pmdata/
+rm -rf ManagedObjects
+
+
+

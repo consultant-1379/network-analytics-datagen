@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Ericsson" dnPrefix="SubNetwork=ONRM_RootMo,MeContext=erbsG2_0114">
+<fileSender localDn="MeContext=erbsG2_0114" elementType="ERBS"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="MeContext=erbsG2_0114" userLabel="erbsG2_0114" swVersion="16A"/>
+
+<measInfo measInfoId="EUtranCellFDD">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">pmErabEstabAttAddedHoOngoingQci</measType>
+  <measType p="2">pmErabEstabAttAddedQci</measType>
+  <measType p="3">pmErabEstabAttInitQci</measType>
+  <measType p="4">pmErabEstabSuccAddedQci</measType>
+  <measType p="5">pmErabEstabSuccInitQci</measType>
+  <measType p="6">pmErabRelAbnormalEnbActQci</measType>
+  <measType p="7">pmErabRelAbnormalEnbQci</measType>
+  <measType p="8">pmErabRelAbnormalMmeActQci</measType>
+  <measType p="9">pmErabRelAbnormalMmeQci</measType>
+  <measType p="10">pmErabRelMmeQci</measType>
+  <measType p="11">pmErabRelNormalEnbQci</measType>
+  <measType p="12">pmPdcpInactSecDlVolteDistr</measType>
+  <measType p="13">pmPdcpInactSecUlVolteDistr</measType>
+  <measType p="14">pmPdcpLatPktTransDl</measType>
+  <measType p="15">pmPdcpLatTimeDl</measType>
+  <measType p="16">pmPdcpVolDlDrb</measType>
+  <measType p="17">pmPdcpVolDlDrbLastTTI</measType>
+  <measType p="18">pmPdcpVolUlDrb</measType>
+  <measType p="19">pmRrcConnEstabAtt</measType>
+  <measType p="20">pmRrcConnEstabAttMod</measType>
+  <measType p="21">pmRrcConnEstabAttMta</measType>
+  <measType p="22">pmRrcConnEstabAttReatt</measType>
+  <measType p="23">pmRrcConnEstabAttReattMod</measType>
+  <measType p="24">pmRrcConnEstabAttReattMta</measType>
+  <measType p="25">pmRrcConnEstabFailMmeOvlMod</measType>
+  <measType p="26">pmRrcConnEstabSucc</measType>
+  <measType p="27">pmRrcConnEstabSuccMod</measType>
+  <measType p="28">pmRrcConnEstabSuccMta</measType>
+  <measType p="29">pmS1SigConnEstabAtt</measType>
+  <measType p="30">pmS1SigConnEstabAttMod</measType>
+  <measType p="31">pmS1SigConnEstabAttMta</measType>
+  <measType p="32">pmS1SigConnEstabSucc</measType>
+  <measType p="33">pmS1SigConnEstabSuccMod</measType>
+  <measType p="34">pmS1SigConnEstabSuccMta</measType>
+  <measType p="35">pmSchedActivityCellDl</measType>
+  <measType p="36">pmSchedActivityCellUl</measType>
+  <measType p="37">pmUeThpTimeDl</measType>
+  <measType p="38">pmUeThpTimeUl</measType>
+  <measType p="39">pmUeThpVolUl</measType>
+  <measType p="40">pmVoipQualityRbUlNok</measType>
+  <measType p="41">pmVoipQualityRbUlOk</measType>
+  <measValue measObjLdn="ManagedElement=1,ENodeBFunction=1,EUtranCellTDD=erbsG2_0114-1">
+  <r p="1">10,0,20,1,44,2,2,3,0,4,26,5,4,6,0,7,3,8,0,9,0</r>
+  <r p="2">10,0,1047,1,1035,2,102,3,100,4,1030,5,100,6,104,7,104,8,100,9,103</r>
+  <r p="3">10,0,934,1,986,2,97,3,96,4,958,5,99,6,96,7,99,8,96,9,98</r>
+  <r p="4">10,0,922,1,900,2,90,3,94,4,938,5,93,6,92,7,90,8,93,9,92</r>
+  <r p="5">10,0,913,1,915,2,94,3,93,4,942,5,94,6,93,7,93,8,91,9,91</r>
+  <r p="6">10,0,24,1,3,2,26,3,16,4,28,5,14,6,11,7,9,8,16,9,6</r>
+  <r p="7">10,0,23,1,24,2,6,3,21,4,46,5,42,6,18,7,1,8,8,9,8</r>
+  <r p="8">10,0,14,1,8,2,17,3,17,4,14,5,6,6,10,7,14,8,6,9,4</r>
+  <r p="9">10,0,5,1,11,2,7,3,0,4,0,5,14,6,8,7,17,8,0,9,17</r>
+  <r p="10">10,0,1047,1,1033,2,1043,3,1009,4,1031,5,1012,6,1032,7,1042,8,1037,9,1031</r>
+  <r p="11">10,0,1031,1,1043,2,1000,3,1033,4,1007,5,1005,6,1036,7,1012,8,1005,9,1015</r>
+  <r p="12">44,45,24,5,7,4,9,0,5,4</r>
+  <r p="13">63,49,0,8,4,9,7,6,4,9</r>
+  <r p="14">31</r>
+  <r p="15">1086</r>
+  <r p="16">104100</r>
+  <r p="17">37</r>
+  <r p="18">51878</r>
+  <r p="19">1433</r>
+  <r p="20">43172</r>
+  <r p="21">36667</r>
+  <r p="22">1</r>
+  <r p="23">5</r>
+  <r p="24">23</r>
+  <r p="25">9</r>
+  <r p="26">1424</r>
+  <r p="27">43077</r>
+  <r p="28">36532</r>
+  <r p="29">1419</r>
+  <r p="30">42915</r>
+  <r p="31">36398</r>
+  <r p="32">1412</r>
+  <r p="33">42716</r>
+  <r p="34">36257</r>
+  <r p="35">969</r>
+  <r p="36">226</r>
+  <r p="37">550</r>
+  <r p="38">107</r>
+  <r p="39">26649</r>
+  <r p="40">13</r>
+  <r p="41">6152</r>
+  </measValue>
+  <measValue measObjLdn="ManagedElement=1,ENodeBFunction=1,EUtranCellTDD=erbsG2_0114-2">
+  <r p="1">10,0,14,1,26,2,2,3,0,4,11,5,2,6,2,7,1,8,1,9,3</r>
+  <r p="2">10,0,1023,1,1047,2,103,3,101,4,1037,5,102,6,100,7,102,8,103,9,103</r>
+  <r p="3">10,0,922,1,951,2,96,3,99,4,963,5,95,6,95,7,96,8,96,9,95</r>
+  <r p="4">10,0,907,1,939,2,94,3,90,4,913,5,93,6,94,7,92,8,93,9,91</r>
+  <r p="5">10,0,914,1,938,2,94,3,90,4,940,5,90,6,93,7,94,8,94,9,91</r>
+  <r p="6">10,0,12,1,22,2,18,3,8,4,17,5,11,6,22,7,7,8,8,9,26</r>
+  <r p="7">10,0,39,1,15,2,4,3,49,4,41,5,4,6,30,7,26,8,4,9,25</r>
+  <r p="8">10,0,4,1,8,2,13,3,13,4,8,5,1,6,0,7,7,8,3,9,14</r>
+  <r p="9">10,0,6,1,17,2,19,3,5,4,13,5,14,6,4,7,12,8,5,9,16</r>
+  <r p="10">10,0,1023,1,1041,2,1002,3,1041,4,1007,5,1039,6,1032,7,1043,8,1007,9,1037</r>
+  <r p="11">10,0,1011,1,1037,2,1033,3,1003,4,1041,5,1027,6,1049,7,1041,8,1032,9,1043</r>
+  <r p="12">86,9,4,13,8,8,4,1,4,4</r>
+  <r p="13">95,30,16,11,0,1,9,5,7,0</r>
+  <r p="14">59</r>
+  <r p="15">1092</r>
+  <r p="16">102652</r>
+  <r p="17">242</r>
+  <r p="18">53065</r>
+  <r p="19">1016</r>
+  <r p="20">99622</r>
+  <r p="21">23146</r>
+  <r p="22">0</r>
+  <r p="23">38</r>
+  <r p="24">45</r>
+  <r p="25">117</r>
+  <r p="26">1015</r>
+  <r p="27">98473</r>
+  <r p="28">22679</r>
+  <r p="29">1010</r>
+  <r p="30">98368</r>
+  <r p="31">22602</r>
+  <r p="32">1006</r>
+  <r p="33">98134</r>
+  <r p="34">22520</r>
+  <r p="35">305</r>
+  <r p="36">46</r>
+  <r p="37">771</r>
+  <r p="38">29</r>
+  <r p="39">27213</r>
+  <r p="40">49</r>
+  <r p="41">4249</r>
+  </measValue>
+  <measValue measObjLdn="ManagedElement=1,ENodeBFunction=1,EUtranCellTDD=erbsG2_0114-3">
+  <r p="1">10,0,41,1,40,2,2,3,0,4,43,5,1,6,4,7,1,8,3,9,2</r>
+  <r p="2">10,0,1020,1,1046,2,104,3,101,4,1037,5,103,6,103,7,102,8,101,9,103</r>
+  <r p="3">10,0,929,1,955,2,97,3,95,4,989,5,96,6,95,7,95,8,96,9,97</r>
+  <r p="4">10,0,941,1,901,2,91,3,91,4,905,5,91,6,93,7,94,8,90,9,90</r>
+  <r p="5">10,0,900,1,922,2,91,3,93,4,934,5,93,6,92,7,90,8,91,9,90</r>
+  <r p="6">10,0,14,1,17,2,25,3,5,4,0,5,26,6,27,7,6,8,14,9,12</r>
+  <r p="7">10,0,39,1,44,2,48,3,19,4,32,5,18,6,34,7,33,8,31,9,39</r>
+  <r p="8">10,0,6,1,9,2,7,3,14,4,14,5,5,6,17,7,15,8,19,9,8</r>
+  <r p="9">10,0,8,1,0,2,8,3,16,4,8,5,19,6,8,7,2,8,12,9,7</r>
+  <r p="10">10,0,1003,1,1013,2,1002,3,1005,4,1038,5,1024,6,1028,7,1013,8,1039,9,1008</r>
+  <r p="11">10,0,1016,1,1035,2,1028,3,1021,4,1025,5,1040,6,1022,7,1018,8,1034,9,1043</r>
+  <r p="12">89,2,8,5,5,4,8,7,2,4</r>
+  <r p="13">65,29,15,11,5,8,0,9,1,6</r>
+  <r p="14">81</r>
+  <r p="15">1053</r>
+  <r p="16">106001</r>
+  <r p="17">50</r>
+  <r p="18">52457</r>
+  <r p="19">1462</r>
+  <r p="20">57516</r>
+  <r p="21">3924</r>
+  <r p="22">5</r>
+  <r p="23">40</r>
+  <r p="24">3</r>
+  <r p="25">40</r>
+  <r p="26">1436</r>
+  <r p="27">56612</r>
+  <r p="28">3871</r>
+  <r p="29">1433</r>
+  <r p="30">56412</r>
+  <r p="31">3869</r>
+  <r p="32">1429</r>
+  <r p="33">56309</r>
+  <r p="34">3868</r>
+  <r p="35">431</r>
+  <r p="36">219</r>
+  <r p="37">776</r>
+  <r p="38">122</r>
+  <r p="39">26854</r>
+  <r p="40">17</r>
+  <r p="41">1146</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="UtranCellRelation">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">pmHoExeAtt</measType>
+  <measType p="2">pmHoExeSucc</measType>
+  <measType p="3">pmHoPrepSuccSrvcc</measType>
+  <measValue measObjLdn="ManagedElement=1,ENodeBFunction=1,EUtranCellTDD=erbsG2_0114-1,UtranFreqRelation=1,UtranCellRelation=1">
+  <r p="1">5264</r>
+  <r p="2">5256</r>
+  <r p="3">85</r>
+  </measValue>
+  <measValue measObjLdn="ManagedElement=1,ENodeBFunction=1,EUtranCellTDD=erbsG2_0114-2,UtranFreqRelation=1,UtranCellRelation=1">
+  <r p="1">9126</r>
+  <r p="2">9076</r>
+  <r p="3">1743</r>
+  </measValue>
+  <measValue measObjLdn="ManagedElement=1,ENodeBFunction=1,EUtranCellTDD=erbsG2_0114-3,UtranFreqRelation=1,UtranCellRelation=1">
+  <r p="1">8402</r>
+  <r p="2">8201</r>
+  <r p="3">1187</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

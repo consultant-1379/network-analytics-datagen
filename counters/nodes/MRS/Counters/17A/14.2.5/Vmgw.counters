@@ -1,0 +1,9 @@
+pmNrOfOrigNbInit        = int ( rand(1000) + 10 )
+pmNrOfOrigNbInitFaults  = int ( pmNrOfOrigNbInit - rand(pmNrOfOrigNbInit * 0.03) ) # up to 3% failures
+
+pmMrfpSessions          = int ( rand(900) + 100 )
+pmVideoParticipants     = int ( rand(900) + 100 )
+pmAudioConfParticipants = int ( rand(900) + 100 )
+pmVoiceTransSess        = int ( rand(900) + 100 )
+pmHdVoiceTransSess      = int ( rand(900) + 100 )
+

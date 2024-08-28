@@ -1,0 +1,7 @@
+Bearer_Establishment_Attempts = int( rand(1000) + rand(50) )
+Bearer_Establish_Failure      = int( rand(Bearer_Establishment_Attempts * 0.02) ) # up to 2% failures
+Bearer_Establishment_Success  = Bearer_Establishment_Attempts - Bearer_Establish_Failure
+
+Total_Bearers  = int( Bearer_Establishment_Success )
+Active_Bearers = int( rand(Total_Bearers * 0.1) )
+

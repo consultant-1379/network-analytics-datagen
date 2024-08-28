@@ -1,0 +1,6 @@
+pmAnncSessionCreateReqs       = int ( rand(1000000) + 10 )
+pmAnncSessionCreateReqsFailed = int ( pmAnncSessionCreateReqs - rand(pmAnncSessionCreateReqs * 0.05) ) # up to 5% failures
+
+pmConfSessionCreateReqs       = int ( rand(1000000) + 10 )
+pmConfSessionCreateReqsFailed = int ( pmConfSessionCreateReqs - rand(pmConfSessionCreateReqs * 0.05) ) # up to 5% failures
+

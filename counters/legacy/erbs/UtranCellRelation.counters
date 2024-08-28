@@ -1,0 +1,9 @@
+pmHoPrepAtt        = int ( rand(100) )
+pmHoPrepSucc       = int ( pmHoPrepAtt  - rand(pmHoPrepAtt  * 0.025) ) # up to 2.5%  failures
+pmHoExeAtt         = int ( pmHoPrepSucc - rand(pmHoPrepSucc * 0.005) ) # up to 0.5%  failures
+pmHoExeSucc        = int ( pmHoExeAtt - rand(pmHoExeAtt * 0.025) ) # up to 2.5%  failures
+pmHoPrepAttNonMob  = int ( rand(pmHoExeSucc * 0.05) )
+pmHoPrepSuccNonMob = int ( pmHoExeAtt - rand(pmHoExeAtt * 0.025) ) # up to 2.5%  failures
+
+pmHoPrepSuccSrvcc  = int ( rand(pmHoExeSucc * 0.25) )
+

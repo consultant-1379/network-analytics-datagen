@@ -1,0 +1,4 @@
+DLINTBGVOL = int( rand(10000) + rand(500) )
+DLSTRVOL   = int( rand(10000) + rand(500) )
+ULINTBGVOL = int( rand(10000) + rand(500) )
+

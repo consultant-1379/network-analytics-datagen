@@ -1,0 +1,80 @@
+---
+# The statistics for TWAMP are calculated for each measure from arrays of random numbers.
+# The parameters below guide the range of random values to be generated.
+#
+# Random selector argument parameters per TWAMP measure in this order:
+#  - count of random numbers to be generated
+#  - minimum value
+#  - maximum value
+#
+# Example 
+# - 20
+# - 50
+# - 1500 
+# generates 20 individual random values each between 50 and 1500
+#
+
+delayRt:
+  - 20
+  - 200
+  - 300
+dscpRec:
+  - 10
+  - 50
+  - 500
+duplicPktFwd:
+  - 1
+  - 0
+  - 5
+duplicPktRev:
+  - 1
+  - 0
+  - 6
+ipdvFwd:
+  - 20
+  - 0
+  - 20
+ipdvRev:
+  - 20
+  - 0
+  - 20
+lostPeriod:
+  - 10
+  - 0
+  - 10
+lostPeriodsFwd:
+  - 1
+  - 0
+  - 10
+lostPeriodsRev:
+  - 1
+  - 0
+  - 15
+lostPktsFwd:
+  - 1
+  - 0
+  - 10
+lostPktsRev:
+  - 1
+  - 0
+  - 15
+reorderPktFwd:
+  - 1
+  - 0
+  - 20
+reorderPktRev:
+  - 1
+  - 0
+  - 25
+rxPkts:
+  - 1
+  - 600
+  - 3000
+ttl:
+  - 10
+  - 1
+  - 255
+txPkts:
+  - 1
+  - 600
+  - 3000

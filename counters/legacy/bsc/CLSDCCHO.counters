@@ -1,0 +1,4 @@
+_MAX_CONG_TIME=900  # congestion time in seconds
+
+CTCONSUB   = int( rand(_MAX_CONG_TIME) * 0.02)       # up to 2% congestion  
+

@@ -1,0 +1,15 @@
+_MAX_SDCCH_ESTAB=100       # number of SDCCH establishments
+_MIN_SDCCH_ESTAB=50        # number of SDCCH establishments
+_MAX_SDCCH_ERLANG=10
+_MAX_SDCCH_SCAN=90        # scans occur every 10s, so 6 (per min) * 15 (rop length) = 90 in 15 mins (max)
+_MAX_SDCCH_CONG_TIME=900  # congestion time in seconds
+
+CNSCAN    = int( rand(_MAX_SDCCH_SCAN) )
+CTRALACC  = int( rand(_MAX_SDCCH_ERLANG) * CNSCAN )
+CMSESTAB  = int( _MIN_SDCCH_ESTAB + CTRALACC/CNSCAN * rand(_MAX_SDCCH_ESTAB) )
+   
+CTCONGS   = int( rand(_MAX_SDCCH_CONG_TIME) * 0.02)   # up to 2% congestion  
+
+CNDROP    = int( 20 + rand(CMSESTAB) * 0.03)  # up to 3% fail
+CNRELCONG = int( rand(CNDROP)   * 0.5)   # up to 50% of drops are due to congestion
+

@@ -1,0 +1,8 @@
+ReceivedWinfoSubscribeRequests		= int ( rand(100000) )
+SuccessfulWinfoSubscribeRequests 	= int ( ReceivedWinfoSubscribeRequests - ( rand(ReceivedWinfoSubscribeRequests * 0.02) ) ) # 2% failure rate
+
+ReceivedPublishRequests			= int ( rand(100000) )
+SuccessfulPublishRequests	 	= int ( ReceivedPublishRequests - ( rand(ReceivedPublishRequests * 0.02) ) ) # 2% failure rate
+
+SentWinfoNotifyRequests			= int ( rand(100000) )
+SuccessfulSentWinfoNotifyRequests 	= int ( SentWinfoNotifyRequests - ( rand(SentWinfoNotifyRequests * 0.02) ) ) # 2% failure rate

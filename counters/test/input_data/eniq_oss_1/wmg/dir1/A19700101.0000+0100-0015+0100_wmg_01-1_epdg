@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V8.0" vendorName="Ericsson" dnPrefix="">
+<fileSender localDn="ManagedElement=wmg_01" elementType="WMG"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="ManagedElement=wmg_01" userLabel="WMG" swVersion="R16B"/>
+
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">Authentication and Authorization Attempts</measType>
+  <measType p="2">Authentication and Authorization Success</measType>
+  <measType p="3">Authentication and Authorization Success Rate %</measType>
+  <measType p="4">IKE SA Establishment Attempts</measType>
+  <measType p="5">IKE SA Establishment Success</measType>
+  <measType p="6">IKE SA Establishment Success Rate %</measType>
+  <measType p="7">IPsec Tunnel Establishment Attempts</measType>
+  <measType p="8">IPsec Tunnel Establishment Success</measType>
+  <measType p="9">IPsec Tunnel Establishment Success Rate %</measType>
+  <measValue measObjLdn="Ipsec,Summary,Group=1">
+  <r p="1">52396</r>
+  <r p="2">52147</r>
+  <r p="3">99.5247728834262</r>
+  <r p="4">38896</r>
+  <r p="5">38696</r>
+  <r p="6">99.4858083093377</r>
+  <r p="7">106544</r>
+  <r p="8">106304</r>
+  <r p="9">99.7747409520949</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="1">
+  <job jobId="1"/>
+  <granPeriod duration="PT900S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT900S"/>
+  <measType p="1">Handoff Calls Attempted</measType>
+  <measType p="2">Successful Handoff Calls</measType>
+  <measValue measObjLdn="Sc,Handoff_Call,Group=1">
+  <r p="1">100655</r>
+  <r p="2">100366</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

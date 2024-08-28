@@ -1,0 +1,3 @@
+pmDpLoad = int ( rand(90) + 10 )
+pmNpLoad = int ( rand(80) + 20 )
+

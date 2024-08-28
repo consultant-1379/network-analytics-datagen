@@ -1,0 +1,9 @@
+# Constants
+_MAX_IP_PACKETS=10000000
+
+# IP Transport QoS, Packet Loss counters
+
+pmRtpReceivedPkts  = int( rand(_MAX_IP_PACKETS) )
+pmRtpDiscardedPkts = int( rand(pmRtpReceivedPkts) * 0.001 )
+pmRtpLostPkts      = int( rand(pmRtpReceivedPkts) * 0.001 )
+

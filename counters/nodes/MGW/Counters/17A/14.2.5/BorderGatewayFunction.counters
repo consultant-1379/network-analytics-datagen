@@ -1,0 +1,3 @@
+pmHdVoiceTransSess     = int ( rand(990) + 10 )
+pmVoiceTransSess       = int ( rand(990) + 10 )
+

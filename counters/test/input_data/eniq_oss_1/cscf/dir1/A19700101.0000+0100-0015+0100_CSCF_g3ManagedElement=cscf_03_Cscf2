@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type=text/xsl href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Ericsson" dnPrefix="DC=ims.ericsson.se,g3SubNetwork=IMS,g3ManagedElement=cscf_03">
+<fileSender localDn="g3ManagedElement=cscf_03" elementType="CSCF"/>
+<measCollec beginTime="1970-01-01T00:00:00+0100"/>
+</fileHeader>
+<measData>
+<managedElement localDn="g3ManagedElement=cscf_03" userLabel="cscf_03" swVersion="16A"/>
+
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11b, DEFAULT">
+     <r p="1">11204</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11b, SIPResponseCode=484">
+     <r p="1">102</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11b, SIPResponseCode=503">
+     <r p="1">102</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11b, SUM">
+     <r p="1">204</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11b, DEFAULT">
+     <r p="1">11000</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="400">
+     <r p="1">103</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">103</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">16908</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ah, DEFAULT">
+     <r p="1">16043</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ah, SIPResponseCode=400">
+     <r p="1">25</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ah, SIPResponseCode=401">
+     <r p="1">25</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ah, SIPResponseCode=403">
+     <r p="1">25</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ah, SIPResponseCode=404">
+     <r p="1">25</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ah, SIPResponseCode=484">
+     <r p="1">25</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ah, SIPResponseCode=500">
+     <r p="1">25</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ah, SUM">
+     <r p="1">152</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ah, DEFAULT">
+     <r p="1">15891</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="401">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">23</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">12658</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11n, DEFAULT">
+     <r p="1">10029</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11n, SIPResponseCode=403">
+     <r p="1">177</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11n, SUM">
+     <r p="1">177</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11n, DEFAULT">
+     <r p="1">9852</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="401">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="404">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="407">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="486">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">158</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">16445</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3j, DEFAULT">
+     <r p="1">17627</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=400">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=401">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=403">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=404">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=486">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=500">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SIPResponseCode=600">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3j, SUM">
+     <r p="1">186</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3j, DEFAULT">
+     <r p="1">17441</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="400">
+     <r p="1">14</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">14</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">14</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">14</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">14</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">14</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">87</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">10970</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, DEFAULT">
+     <r p="1">15090</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=401">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=486">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=500">
+     <r p="1">22</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SUM">
+     <r p="1">67</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, DEFAULT">
+     <r p="1">15023</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="407">
+     <r p="1">118</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">118</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">17537</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ae, DEFAULT">
+     <r p="1">14869</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ae, SIPResponseCode=407">
+     <r p="1">66</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ae, SUM">
+     <r p="1">66</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ae, DEFAULT">
+     <r p="1">14803</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="403">
+     <r p="1">175</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">175</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">19759</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3an, DEFAULT">
+     <r p="1">18971</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3an, SIPResponseCode=400">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3an, SIPResponseCode=486">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3an, SIPResponseCode=500">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3an, SUM">
+     <r p="1">180</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3an, DEFAULT">
+     <r p="1">18791</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="486">
+     <r p="1">67</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">67</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">134</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">15157</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3z, DEFAULT">
+     <r p="1">17354</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3z, SIPResponseCode=403">
+     <r p="1">12</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3z, SIPResponseCode=404">
+     <r p="1">12</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3z, SIPResponseCode=407">
+     <r p="1">12</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3z, SIPResponseCode=484">
+     <r p="1">12</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3z, SIPResponseCode=500">
+     <r p="1">12</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3z, SIPResponseCode=503">
+     <r p="1">12</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3z, SUM">
+     <r p="1">74</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3z, DEFAULT">
+     <r p="1">17280</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="401">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="404">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="407">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="486">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">89</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">18551</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3, DEFAULT">
+     <r p="1">10432</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3, SIPResponseCode=403">
+     <r p="1">154</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3, SUM">
+     <r p="1">154</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3, DEFAULT">
+     <r p="1">10278</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="404">
+     <r p="1">70</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">70</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">141</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">19995</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, DEFAULT">
+     <r p="1">16163</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=400">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=401">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=403">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=484">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=486">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=500">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=600">
+     <r p="1">21</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SUM">
+     <r p="1">149</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, DEFAULT">
+     <r p="1">16014</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="400">
+     <r p="1">40</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">40</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">40</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">40</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">161</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">19758</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3y, DEFAULT">
+     <r p="1">12071</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3y, SIPResponseCode=484">
+     <r p="1">214</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3y, SUM">
+     <r p="1">214</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3y, DEFAULT">
+     <r p="1">11857</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="400">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="401">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="407">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">4</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">36</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">13606</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ak, DEFAULT">
+     <r p="1">10822</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ak, SIPResponseCode=401">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ak, SIPResponseCode=484">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ak, SIPResponseCode=486">
+     <r p="1">26</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ak, SUM">
+     <r p="1">80</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ak, DEFAULT">
+     <r p="1">10742</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="403">
+     <r p="1">23</r>
+  </measValue>
+  <measValue measObjLdn="404">
+     <r p="1">23</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">23</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">23</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">95</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">13240</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3aq, DEFAULT">
+     <r p="1">14713</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3aq, SIPResponseCode=401">
+     <r p="1">2</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3aq, SIPResponseCode=404">
+     <r p="1">2</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3aq, SIPResponseCode=500">
+     <r p="1">2</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3aq, SIPResponseCode=503">
+     <r p="1">2</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3aq, SUM">
+     <r p="1">11</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3aq, DEFAULT">
+     <r p="1">14702</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="401">
+     <r p="1">5</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">5</r>
+  </measValue>
+  <measValue measObjLdn="407">
+     <r p="1">5</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">5</r>
+  </measValue>
+  <measValue measObjLdn="486">
+     <r p="1">5</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">5</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">32</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">19376</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11a, DEFAULT">
+     <r p="1">19602</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11a, SIPResponseCode=484">
+     <r p="1">71</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11a, SIPResponseCode=486">
+     <r p="1">71</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11a, SUM">
+     <r p="1">143</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11a, DEFAULT">
+     <r p="1">19459</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="404">
+     <r p="1">165</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">165</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">18462</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3i, DEFAULT">
+     <r p="1">12400</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3i, SIPResponseCode=403">
+     <r p="1">102</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3i, SUM">
+     <r p="1">102</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3i, DEFAULT">
+     <r p="1">12298</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="400">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="401">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="404">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="407">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="486">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="500">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">11</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">77</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">18474</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfAttemptedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, DEFAULT">
+     <r p="1">18295</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfFailedRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=400">
+     <r p="1">39</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=401">
+     <r p="1">39</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=404">
+     <r p="1">39</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=484">
+     <r p="1">39</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=486">
+     <r p="1">39</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=600">
+     <r p="1">39</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SUM">
+     <r p="1">239</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfSuccessfulRegistrationPerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, DEFAULT">
+     <r p="1">18056</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationFailure</measType>
+  <measValue measObjLdn="400">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="401">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="403">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="484">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="486">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="503">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="600">
+     <r p="1">13</r>
+  </measValue>
+  <measValue measObjLdn="SUM">
+     <r p="1">91</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfRegistrationStatistics">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfThirdPartyRegistrationSuccess</measType>
+  <measValue measObjLdn="DEFAULT">
+     <r p="1">14667</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, DEFAULT">
+     <r p="1">18475</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=401">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=407">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=484">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=486">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=500">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=503">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=600">
+     <r p="1">29</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SUM">
+     <r p="1">208</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, DEFAULT">
+     <r p="1">18267</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, DEFAULT">
+     <r p="1">13208</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=400">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=401">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=404">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=407">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=484">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=486">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=500">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SIPResponseCode=600">
+     <r p="1">60</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3e, SUM">
+     <r p="1">487</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3e, DEFAULT">
+     <r p="1">12721</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3u, DEFAULT">
+     <r p="1">10938</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=403">
+     <r p="1">42</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=407">
+     <r p="1">42</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=486">
+     <r p="1">42</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=500">
+     <r p="1">42</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=503">
+     <r p="1">42</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=600">
+     <r p="1">42</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SUM">
+     <r p="1">253</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3u, DEFAULT">
+     <r p="1">10685</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3u, DEFAULT">
+     <r p="1">13897</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=403">
+     <r p="1">79</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SIPResponseCode=600">
+     <r p="1">79</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3u, SUM">
+     <r p="1">159</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3u, DEFAULT">
+     <r p="1">13738</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, DEFAULT">
+     <r p="1">19136</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=401">
+     <r p="1">132</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=404">
+     <r p="1">132</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=500">
+     <r p="1">132</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=503">
+     <r p="1">132</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SUM">
+     <r p="1">528</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, DEFAULT">
+     <r p="1">18608</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, DEFAULT">
+     <r p="1">14376</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=403">
+     <r p="1">16</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=404">
+     <r p="1">16</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=484">
+     <r p="1">16</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=500">
+     <r p="1">16</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=503">
+     <r p="1">16</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SIPResponseCode=600">
+     <r p="1">16</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.3ab, SUM">
+     <r p="1">101</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.3ab, DEFAULT">
+     <r p="1">14275</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, DEFAULT">
+     <r p="1">19192</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=401">
+     <r p="1">534</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SUM">
+     <r p="1">534</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfOrigSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, DEFAULT">
+     <r p="1">18658</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermAttemptedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, DEFAULT">
+     <r p="1">15235</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermFailedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=400">
+     <r p="1">35</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=403">
+     <r p="1">35</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=407">
+     <r p="1">35</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=484">
+     <r p="1">35</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=486">
+     <r p="1">35</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SIPResponseCode=600">
+     <r p="1">35</r>
+  </measValue>
+  <measValue measObjLdn="IEEE-802.11g, SUM">
+     <r p="1">214</r>
+  </measValue>
+</measInfo>
+<measInfo measInfoId="CscfSession">
+  <job jobId="1"/>
+  <granPeriod duration="PT300S" endTime="1970-01-01T00:15:00+0100"/>
+  <repPeriod duration="PT300S"/>
+  <measType p="1">scscfTermSuccessfulEstablishedInvitePerAccess</measType>
+  <measValue measObjLdn="IEEE-802.11g, DEFAULT">
+     <r p="1">15021</r>
+  </measValue>
+</measInfo>
+</measData>
+<fileFooter>
+<measCollec endTime="1970-01-01T00:15:00+0100"/>
+</fileFooter>
+</measCollecFile>
+

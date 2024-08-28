@@ -1,0 +1,157 @@
+# KPI 24
+pmVoipQualityRbUlOk  = int ( rand(10000) )
+pmVoipQualityRbUlNok = int ( rand(pmVoipQualityRbUlOk * 0.02) ) # up to 2%  failures
+
+# KPI 29
+pmRrcConnEstabAttMod        = int ( rand(10000) + 300 )
+pmRrcConnEstabAttMta        = int ( rand(10000) + 300 )
+pmRrcConnEstabSuccMod       = int ( pmRrcConnEstabAttMod - rand(pmRrcConnEstabAttMod * 0.025) ) # up to 2.5%  failures
+pmRrcConnEstabSuccMta       = int ( pmRrcConnEstabAttMta - rand(pmRrcConnEstabAttMta * 0.025) ) # up to 2.5%  failures
+
+pmRrcConnEstabAttReattMod   = int ( rand(pmRrcConnEstabAttMod - pmRrcConnEstabSuccMod) * 0.10 ) # up to 10.0% of Originating reattempts
+pmRrcConnEstabAttReattMta   = int ( rand(pmRrcConnEstabAttMta - pmRrcConnEstabSuccMta) * 0.25 ) # up to 25.0% of Terminating reattempts
+pmRrcConnEstabFailMmeOvlMod = int ( rand(pmRrcConnEstabAttMod - pmRrcConnEstabSuccMod) * 0.15 ) # up to 15.0% of failed establishments for Originating
+
+pmS1SigConnEstabAttMod      = int ( pmRrcConnEstabSuccMod   - rand(pmRrcConnEstabSuccMod   * 0.005) )  # Fewer S1 connection attempts than RRC successes
+pmS1SigConnEstabAttMta      = int ( pmRrcConnEstabSuccMta   - rand(pmRrcConnEstabSuccMta   * 0.005) )  # Fewer S1 connection attempts than RRC successes
+pmS1SigConnEstabSuccMod     = int ( pmS1SigConnEstabAttMod  - rand(pmS1SigConnEstabAttMod  * 0.005) )  # up to 0.5%  failures
+pmS1SigConnEstabSuccMta     = int ( pmS1SigConnEstabAttMta  - rand(pmS1SigConnEstabAttMta  * 0.005) )  # up to 0.5%  failures
+
+
+
+# Vector Counters
+#
+#
+# KPI 32
+pmPdcpInactSecDlVolteDistr = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d', rand(100), rand(50), rand(30), rand(20), rand(10), rand(10), rand(10), rand(10), rand(10), rand(10)
+
+# KPI 33
+pmPdcpInactSecUlVolteDistr = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d', rand(100), rand(50), rand(30), rand(20), rand(10), rand(10), rand(10), rand(10), rand(10), rand(10)
+
+#
+# Format for vector(256) counters is (Number_of_values, Index_0, Value_0, Index_1, Value_1, ...)
+#
+# KPI 29
+pmErabEstabAttInitQci  = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20)+920, rand(50)+950, rand(5)+95, rand(5)+95, rand(50)+950, rand(5)+95, rand(5)+95, rand(5)+95, rand(5)+95, rand(5)+95
+pmErabEstabSuccInitQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20)+900, rand(50)+900, rand(5)+90, rand(5)+90, rand(50)+900, rand(5)+90, rand(5)+90, rand(5)+90, rand(5)+90, rand(5)+90
+
+# KPI 30
+pmErabEstabAttAddedQci          = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(50)+1000, rand(50)+1000, rand(5)+100, rand(5)+100, rand(50)+1000, rand(5)+100, rand(5)+100, rand(5)+100, rand(5)+100, rand(5)+100
+pmErabEstabSuccAddedQci         = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(50)+900,  rand(50)+900,  rand(5)+90,  rand(5)+90,  rand(50)+900,  rand(5)+90,  rand(5)+90,  rand(5)+90,  rand(5)+90,  rand(5)+90
+pmErabEstabAttAddedHoOngoingQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(50),      rand(50),      rand(5),     rand(5),     rand(50),      rand(5),     rand(5),     rand(5),     rand(5),     rand(5)
+
+# KPI 31
+pmErabRelNormalEnbQci      = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000
+pmErabRelMmeQci            = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000, rand(50)+1000
+pmErabRelAbnormalEnbQci    = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(50),      rand(50),      rand(50),      rand(50),      rand(50),      rand(50),      rand(50),      rand(50),      rand(50),      rand(50)
+pmErabRelAbnormalEnbActQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(30),      rand(30),      rand(30),      rand(30),      rand(30),      rand(30),      rand(30),      rand(30),      rand(30),      rand(30)
+pmErabRelAbnormalMmeActQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20),      rand(20),      rand(20),      rand(20),      rand(20),      rand(20),      rand(20),      rand(20),      rand(20),      rand(20)
+
+
+# LTE Overview Counters
+#
+# Accessibility
+pmRrcConnEstabAtt             = pmRrcConnEstabAttMod      + pmRrcConnEstabAttMta
+pmRrcConnEstabSucc            = pmRrcConnEstabSuccMod     + pmRrcConnEstabSuccMta
+pmRrcConnEstabAttReatt        = pmRrcConnEstabAttReattMod + pmRrcConnEstabAttReattMta
+pmRrcConnEstabFailMmeOvlMos   = int ( rand( (pmRrcConnEstabAtt - pmRrcConnEstabSucc) * 0.25) )
+#pmRrcConnEstabFailMmeOvlMod is declared above in KPI 29 section
+
+pmS1SigConnEstabAtt           = pmS1SigConnEstabAttMod  + pmS1SigConnEstabAttMta
+pmS1SigConnEstabSucc          = pmS1SigConnEstabSuccMod + pmS1SigConnEstabSuccMta
+pmS1SigConnEstabFailMmeOvlMos = int ( rand( (pmS1SigConnEstabAtt - pmS1SigConnEstabSucc) * 0.25) )
+
+pmErabEstabAttInit            = int ( pmS1SigConnEstabSucc - rand(pmS1SigConnEstabSucc * 0.005) )  # Fewer ERAB connection attempts than S1 successes
+pmErabEstabSuccInit           = int ( pmErabEstabAttInit   - rand(pmErabEstabAttInit   * 0.005) )  # up to 0.5%  failures
+
+pmErabEstabAttAdded           = int ( pmErabEstabSuccInit - rand(pmErabEstabSuccInit * 0.2) )  
+pmErabEstabSuccAdded          = int ( pmErabEstabAttAdded - rand(pmErabEstabAttAdded * 0.005) )  # up to 0.5%  failures
+pmErabEstabAttAddedHoOngoing  = int ( rand( (pmErabEstabAttAdded - pmErabEstabSuccAdded) * 0.25) )
+
+pmErabRelMme                  = int ( pmErabEstabSuccInit  - rand(pmErabEstabSuccInit  * 0.6) )   # up to 60% released due to MME
+pmErabRelNormalEnb            = int ( pmErabEstabSuccInit  - rand(pmErabEstabSuccInit  * 0.4) )   # up to 40% released due to eNB
+pmErabRelAbnormalEnb          = int ( pmErabRelNormalEnb   * 0.005 ) # up to 0.5% abnormal eNB releases
+pmErabRelAbnormalEnbAct       = int ( pmErabRelAbnormalEnb * 0.005 ) # up to 0.5% abnormal eNB active releases
+pmErabRelAbnormalMmeAct       = int ( pmErabRelMme         * 0.005 ) # up to 0.5% abnormal MME active releases
+
+pmRrcConnEstabFailLic         = int ( rand(pmRrcConnEstabSucc   * 0.01) )  # up to 1%  failures
+
+
+
+
+
+# Integrity - Throughput
+
+# Downlink
+pmPdcpVolDlDrb        = int ( rand(10000) + 100000 )
+pmPdcpVolDlDrbLastTTI = int ( rand(pmPdcpVolDlDrb * 0.0025) + 10 ) 
+pmSchedActivityCellDl = int ( rand(pmPdcpVolDlDrb * 0.01)   + 10 )
+pmUeThpTimeDl         = int ( rand(pmPdcpVolDlDrb * 0.01)   + 10 )
+pmMacCellThpTimeDl    = int ( rand(pmPdcpVolDlDrb * 0.005)  + 10 )
+pmMacUeThpTimeDl      = int ( rand(pmPdcpVolDlDrb * 0.01)   + 10 )
+
+
+# Uplink
+pmPdcpVolUlDrb        = int ( rand(5000)  + 50000 )
+pmSchedActivityCellUl = int ( rand(pmPdcpVolUlDrb * 0.005)  + 10 )
+pmUeThpVolUl          = int ( rand(pmPdcpVolUlDrb * 0.005)  + 10 )
+pmUeThpTimeUl         = int ( rand(pmPdcpVolUlDrb * 0.005)  + 10 )
+pmMacCellThpTimeUl    = int ( rand(pmPdcpVolUlDrb * 0.005)  + 10 )
+pmMacUeThpTimeUl      = int ( rand(pmPdcpVolUlDrb * 0.005)  + 10 )
+
+
+# Latency 
+pmPdcpLatTimeDl       = int ( rand(100) + 1000 )
+pmPdcpLatPktTransDl   = int ( rand(pmPdcpLatTimeDl * 0.1)   + 10 )
+
+
+# Mobility
+pmHoPrepRejInUlThres      = int ( rand(10) )
+
+pmCellHoPrepAttLteIntraF  = int ( rand(20000) + 10000 )
+pmCellHoPrepSuccLteIntraF = int ( pmCellHoPrepAttLteIntraF  - rand(pmCellHoPrepAttLteIntraF  * 0.025) ) # up to 2.5%  failures
+
+pmCellHoExeAttLteIntraF   = int ( pmCellHoPrepSuccLteIntraF - rand(pmCellHoPrepSuccLteIntraF * 0.005) ) # Fewer HO EXE attempts than Prep successes
+pmCellHoExeSuccLteIntraF  = int ( pmCellHoExeAttLteIntraF   - rand(pmCellHoExeAttLteIntraF   * 0.025) ) # up to 2.5%  failures
+
+pmCellHoPrepAttLteInterF  = int ( rand(10000) + 10000 )
+pmCellHoPrepSuccLteInterF = int ( pmCellHoPrepAttLteInterF  - rand(pmCellHoPrepAttLteInterF  * 0.025) ) # up to 2.5%  failures
+
+pmCellHoExeAttLteInterF   = int ( pmCellHoPrepSuccLteInterF - rand(pmCellHoPrepSuccLteInterF * 0.005) ) # Fewer HO EXE attempts than Prep successes
+pmCellHoExeSuccLteInterF  = int ( pmCellHoExeAttLteInterF   - rand(pmCellHoExeAttLteInterF   * 0.025) ) # up to 2.5%  failures
+
+
+# Vector Counters
+#
+pmPdcpVolUlDrbQci       = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20)
+pmErabRelAbnormalMmeQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20), rand(20)
+
+
+# Energy
+#
+pmMimoSleepTime   = int ( rand(100) )
+pmCellSleepTime   = int ( rand(50) )
+pmCellDowntimeMan = int ( rand(10) )
+
+
+# Cell Coverage
+#
+pmTaDistr = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d',rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(5),rand(1),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(8),rand(12),rand(53),rand(11),rand(31),rand(2),rand(46),rand(91),rand(59),rand(27),rand(8),rand(65),rand(120),rand(14),rand(154),rand(88),rand(30),rand(278),rand(140),rand(110),rand(336),rand(81),rand(354),rand(181),rand(96),rand(247),rand(74),rand(86),rand(104),rand(152),rand(215),rand(138),rand(96),rand(181),rand(49),rand(15),rand(139),rand(161),rand(229),rand(72),rand(124),rand(66),rand(44),rand(70),rand(50),rand(8),rand(38),rand(21),rand(0),rand(15),rand(22),rand(0),rand(1),rand(0),rand(0),rand(5),rand(0),rand(6),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0),rand(0)
+
+
+pmActiveUeDlSumQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20)+10, rand(50)+90, rand(5)+9, rand(5)+5, rand(5)+2, rand(5)+1, rand(4), rand(3), rand(2), rand(1)
+pmPrbUsedDlDtchFirstTransQci = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20)+10, rand(50)+90, rand(5)+9, rand(5)+5, rand(5)+2, rand(5)+1, rand(4), rand(3), rand(2), rand(1)
+
+pmRadioTxRankDistr    = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d', rand(100), rand(50), rand(30), rand(20), rand(10), rand(10), rand(10), rand(10), rand(10), rand(10)
+pmRadioUeRepCqiDistr  = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d', rand(100), rand(50), rand(30), rand(20), rand(10), rand(10), rand(10), rand(10), rand(10), rand(10)
+pmRadioUeRepCqiDistr2 = sprintf '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d', rand(100), rand(50), rand(30), rand(20), rand(10), rand(10), rand(10), rand(10), rand(10), rand(10)
+
+
+pmPrbAvailDl          = int( rand(1000000) + 30000 )
+pmPrbAvailUl          = int( rand(1000000) + 30000 )
+pmPrbUsedDlReTrans    = int( rand(pmPrbAvailDl * 0.10) ) # up to 10%
+pmPrbUsedDlFirstTrans = int( rand(pmPrbAvailDl * 0.10) ) # up to 10%
+pmPdcchCceActivity    = int( rand(100000) + 3000 )
+pmActiveUeDlSum       = int( rand(100000) + 3000 )
+
+

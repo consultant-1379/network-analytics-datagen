@@ -1,0 +1,25 @@
+_MAX_ATTEMPTS                    = 10000
+sbgSipRegStatInitialAttCnt       = int ( _MAX_ATTEMPTS + rand(10000) )
+sbgSipRegStatInitialAccCnt    	= int ( sbgSipRegStatInitialAttCnt - rand(sbgSipRegStatInitialAttCnt * 0.04) ) # up to 4% fail
+
+sbgSipRegStatRejInitialRegCnt 	= int ( rand( sbgSipRegStatInitialAttCnt    * 0.040) ) # up to 4% fail
+sbgSipRegStatRejInitialRegCnt400	= int ( rand( sbgSipRegStatRejInitialRegCnt * 0.035) ) # distribute rejects
+sbgSipRegStatRejInitialRegCnt403	= int ( rand( sbgSipRegStatRejInitialRegCnt * 0.065) ) # distribute rejects
+sbgSipRegStatRejInitialRegCnt404	= int ( rand( sbgSipRegStatRejInitialRegCnt * 0.015) ) # distribute rejects
+
+sbgInitRegTime                   = int ( rand(200000) )
+
+sbgSipEmerRegStatInitialAttCnt   = int ( _MAX_ATTEMPTS + rand(250) )
+sbgSipEmerRegStatInitialAccCnt   = int ( sbgSipEmerRegStatInitialAttCnt - rand(sbgSipEmerRegStatInitialAttCnt * 0.01) ) # up to 1% fail
+
+sbgSipRegStatReRegAttCnt         = int ( rand(sbgSipRegStatInitialAccCnt * 0.10) ) # up to 10% re-registrations
+sbgSipRegStatReRegAccCnt         = int ( sbgSipRegStatReRegAttCnt - rand(sbgSipRegStatReRegAttCnt * 0.04) ) # up to 4% fail
+
+sbgSipRegStatRejReRegCnt         = int ( rand( sbgSipRegStatReRegAccCnt * 0.100) ) # up to 10% re-registrations rejected
+sbgSipRegStatRejReRegCnt400      = int ( rand( sbgSipRegStatRejReRegCnt * 0.035) ) # distribute rejects
+sbgSipRegStatRejReRegCnt403      = int ( rand( sbgSipRegStatRejReRegCnt * 0.035) ) # distribute rejects
+
+sbgSipRegStatDeRegAttCnt         = int ( rand(sbgSipRegStatInitialAccCnt * 0.10) ) # up to 10% de-registrations
+sbgSipRegStatDeRegAccCnt         = int ( sbgSipRegStatDeRegAttCnt - rand(sbgSipRegStatDeRegAttCnt * 0.01) ) # up to 1% fail
+
+

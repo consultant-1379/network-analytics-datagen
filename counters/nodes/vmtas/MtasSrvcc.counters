@@ -1,0 +1,9 @@
+#SRVCC
+
+MtasSrvccTransferOk   = int ( rand(10000) + 5000 )
+MtasSrvccTransferNOkE = int ( rand(MtasSrvccTransferOk * 0.01) ) # up to 1%  failures
+MtasSrvccTransferNOkI = int ( rand(MtasSrvccTransferOk * 0.01) ) # up to 1%  failures
+
+
+#SELECT g3SubNetwork, MTAS_DC, MOID, g3ManagedElement, SN, OSS_ID, MtasSrvcc, Source, DATE_ID, YEAR_ID, MONTH_ID, DAY_ID, HOUR_ID, DATETIME_ID, MIN_ID, TIMELEVEL, SESSION_ID, BATCH_ID, PERIOD_DURATION, ROWSTATUS, DC_RELEASE, DC_SOURCE, DC_TIMEZONE, DC_SUSPECTFLAG, UTC_DATETIME_ID, MtasSrvccPreAlertingTransferNOkUser, MtasSrvccAlertingTransferNOkNet, MtasSrvccActiveTransferOk, MtasSrvccActiveTransferNOkUser, MtasSrvccAlertingTransferOk, MtasSrvccActiveAttempt, MtasSrvccPreAlertingTransferOk, MtasSrvccPreAlertingTransferNOkNet, MtasSrvccAlertingAttempt, MtasSrvccPreAlertingAttempt, MtasSrvccActiveTransferNOkNet, MtasSrvccAlertingTransferNOkUser, MtasSrvccETransferNOkI, MtasSrvccETransferOk, MtasSrvccETransferNOkE, MtasSrvccEAttempt, MtasSrvccAttempt, MtasSrvccTransferNOkE, MtasSrvccTransferOk, MtasSrvccTransferNOkI, MtasSrvccMidcallAttempt, MtasSrvccMidcallTransferOk, MtasSrvccMidcallTransferNOkNet, MtasSrvccMidcallTransferNOkUser FROM DC_E_MTAS_MTASSRVCC_RAW;
+

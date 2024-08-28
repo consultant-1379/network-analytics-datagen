@@ -1,0 +1,2 @@
+DTMULSTRDATA = int( rand(10000) )
+

@@ -1,0 +1,28 @@
+pmBranchDeltaSinrDistr0 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+pmBranchDeltaSinrDistr1 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+pmBranchDeltaSinrDistr2 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+pmBranchDeltaSinrDistr3 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+pmBranchDeltaSinrDistr4 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+pmBranchDeltaSinrDistr5 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+pmBranchDeltaSinrDistr6 = sprintf '10,0,%d,1,%d,2,%d,3,%d,4,%d,5,%d,6,%d,7,%d,8,%d,9,%d', rand(20), rand(10), rand(5), rand(5), rand(50), rand(5), rand(5), rand(5), rand(5), rand(5)
+
+
+# pmBranchDeltaSinrDistr0 The purpose of the measurement is to monitor the antenna status and detect the faulty antenna in antenna branch pair 0.
+# The measurement is the SINR difference of PUSCH channel between antenna branch A and antenna branch B in antenna branch pair 0.
+# PDF ranges:
+# [0]: less than or equals to -29 dB
+# [1]: ]-29..-28] dB
+# [2]: ]-28..-27] dB
+# ...
+# [29]: ]-1..0] dB
+# [30]: ]0..1] dB
+# [31]: ]1..2] dB
+# ...
+# [57]: ]27..28] dB
+# [58]: ]28..29] dB
+# [59]: greater than 29 dB
+# Compressed: true. 
+
+# Condition: Each sample steps up one bin counter increment but it depends on the measurement results to determine which bin counter is incremented. If the bin measurement value falls, the bin counter increments. This counter is used for antenna branch pair 0 with antenna branch A and B.
+# Counter type: CC/SUM
+# Counter is reset after measurement period: Yes

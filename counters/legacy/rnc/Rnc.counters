@@ -1,0 +1,41 @@
+# Constants
+# Assume that duration is split equally between the 4 types, i.e. each has a _MAX of 5 mins
+_MAX_INTERACTIVE_THROUGHPUT_DURATION = 225000   # 60(sec) * 15(min) * 1000(millisecs) / 4 = 225,000   p109 58/1551-AXD 10503/1 Rev E
+_MAX_CHANNEL_RATE = 384000		        # bit/s
+_MAX_RETRANSMISSION_OVERHEAD_PERCENTAGE = 10    # up to 10% overhead
+_MAX_RAB_ACTIVITY_PERIODS = 1000		       
+_MAX_HS_CHANNEL_RATE = 3000000		        # bit/s
+
+
+# PS Interactive Average Throughput counters
+pmTotalPacketDuration1   = int( rand(_MAX_INTERACTIVE_THROUGHPUT_DURATION) )
+pmTotalPacketDuration2   = int( rand(_MAX_INTERACTIVE_THROUGHPUT_DURATION) )
+pmTotalPacketDuration3   = int( rand(_MAX_INTERACTIVE_THROUGHPUT_DURATION) )
+pmTotalPacketDuration4   = int( rand(_MAX_INTERACTIVE_THROUGHPUT_DURATION) )
+
+pmTotalPacketDurationHs3 = int( rand(_MAX_INTERACTIVE_THROUGHPUT_DURATION) )
+pmTotalPacketDurationHs4 = int( rand(_MAX_INTERACTIVE_THROUGHPUT_DURATION) )
+   
+pmSentPacketData1        = int( rand( (pmTotalPacketDuration1/1000) * _MAX_CHANNEL_RATE / 8) ) # duration (secs) * channel rate (bytes)
+pmSentPacketData2        = int( rand( (pmTotalPacketDuration2/1000) * _MAX_CHANNEL_RATE / 8) )
+pmSentPacketData3        = int( rand( (pmTotalPacketDuration3/1000) * _MAX_CHANNEL_RATE / 8) )
+pmSentPacketData4        = int( rand( (pmTotalPacketDuration4/1000) * _MAX_CHANNEL_RATE / 8) )
+
+pmSentPacketDataHs3      = int( rand( (pmTotalPacketDuration4/1000) * _MAX_CHANNEL_RATE / 8) )
+pmSentPacketDataHs4      = int( rand( (pmTotalPacketDuration4/1000) * _MAX_CHANNEL_RATE / 8) )
+
+
+
+
+# PS Interactive Retransmission Rate counters
+pmSentPacketDataInclRetrans1 = int( pmSentPacketData1 * (1 + rand(_MAX_RETRANSMISSION_OVERHEAD_PERCENTAGE)/100) )
+pmSentPacketDataInclRetrans2 = int( pmSentPacketData2 * (1 + rand(_MAX_RETRANSMISSION_OVERHEAD_PERCENTAGE)/100) )
+pmSentPacketDataInclRetrans3 = int( pmSentPacketData3 * (1 + rand(_MAX_RETRANSMISSION_OVERHEAD_PERCENTAGE)/100) )
+pmSentPacketDataInclRetrans4 = int( pmSentPacketData4 * (1 + rand(_MAX_RETRANSMISSION_OVERHEAD_PERCENTAGE)/100) )
+
+
+pmNoOfPacketCallDuration1 = int( rand(_MAX_RAB_ACTIVITY_PERIODS) )
+pmNoOfPacketCallDuration2 = int( rand(_MAX_RAB_ACTIVITY_PERIODS) )
+pmNoOfPacketCallDuration3 = int( rand(_MAX_RAB_ACTIVITY_PERIODS) )
+pmNoOfPacketCallDuration4 = int( rand(_MAX_RAB_ACTIVITY_PERIODS) )
+

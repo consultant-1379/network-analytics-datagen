@@ -1,0 +1,4 @@
+DicosCpuLoad = sprintf '%.6f',rand(100)  
+
+MemUsage     = sprintf '%.6f',rand(50)  
+
